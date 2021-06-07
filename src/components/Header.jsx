@@ -21,10 +21,11 @@ function Header() {
           <li>
             <Link className="link" to='/'>Boka konsultation</Link>
           </li>
+          <div className="header-divider"></div>
         </ul>
         <div className="header-icons">
           <i class="fas fa-shopping-cart"></i>
-          <button className="log-in-btn">Logga in</button>
+          <Link to='/login' className="log-in-btn">Logga in</Link>
           {/* <i class="fas fa-user"></i> */}
         </div>
       </nav>

@@ -1,0 +1,195 @@
+.login-container {
+  width: 36rem;
+  background: rgb(49, 62, 95);
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login-container h2 {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.headers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 0;
+}
+
+.login-text, .create-account-text {
+  padding: .75rem 3rem;
+  border-radius: 10px 10px 0 0;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0;
+}
+
+.login-text.active {
+  color: var(--clr-dark-blue);
+  background: white;
+}
+
+.create-account-text.active {
+  color: var(--clr-dark-blue);
+  background: white;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-top: 0;
+  color: var(--clr-dark-blue);
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 16px;
+}
+
+.login-section form input {
+  padding: .5rem .5rem;
+  border: none;
+  background: rgb(228, 228, 228);
+  margin-bottom: 1.25rem;
+  border-radius: 6px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.login-section form input:focus {
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 6px;
+}
+
+.login-section form label {
+  margin-bottom: .35rem;
+}
+
+.login-btn {
+  border: none;
+  padding: .6rem 1.5rem;
+  background: white;
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: .35s ease-in-out;
+  white-space: nowrap;
+  font-size: .9rem;
+  text-decoration: none;
+  background: black;
+  width: 8rem;
+  margin-top: .5rem;
+  transition: .35s ease-in-out;
+}
+
+.login-btn:hover {
+  background: var(--clr-main);
+}
+
+.login-error {
+  font-size: .8rem;
+  color: red;
+  text-align: center;
+}
+
+
+
+
+
+
+.create-account form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-top: 0;
+  color: var(--clr-dark-blue);
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 16px;
+}
+
+.create-account form input, .create-account form select {
+  padding: .5rem .5rem;
+  border: none;
+  background: rgb(228, 228, 228);
+  margin-bottom: 1.25rem;
+  border-radius: 6px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.create-account form input:focus {
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 6px;
+}
+
+.create-account form label {
+  margin-bottom: .35rem;
+}
+
+.create-account-btn {
+  border: none;
+  padding: .6rem 1.5rem;
+  background: white;
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: .35s ease-in-out;
+  white-space: nowrap;
+  font-size: .9rem;
+  text-decoration: none;
+  background: black;
+  width: 10rem;
+  margin-top: .5rem;
+  transition: .35s ease-in-out;
+}
+
+.create-account-btn:hover {
+  background: var(--clr-main);
+}
+
+.split-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.split-row input, .split-row select {
+  margin: 0;
+  width: 9rem;
+}
+
+.split-row div label {
+  margin-right: .75rem;
+}
+
+.split-row-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.split-row-2 input {
+  margin: 0;
+  width: 7rem;
+}
+
+.split-row-2 div label {
+  margin-right: .75rem;
+}
+
+
+
+.hide {
+  display: none;
+}
