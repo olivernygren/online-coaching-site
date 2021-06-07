@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import '../css/main.css'
 import '../css/header.css'
 
 function Header() {
@@ -21,18 +22,12 @@ function Header() {
             <Link className="link" to='/'>Boka konsultation</Link>
           </li>
         </ul>
-        {/* <ul>
-          <li><a className="link" href="/">Home</a></li>
-          <li><a className="link" href="/">Work</a></li>
-          <li><a className="link" href="/">Blog</a></li>
-          <li><a className="link" href="/">Contact</a></li>
-        </ul> */}
+        <div className="header-icons">
+          <i class="fas fa-shopping-cart"></i>
+          <button className="log-in-btn">Logga in</button>
+          {/* <i class="fas fa-user"></i> */}
+        </div>
       </nav>
-      <div className="header-icons">
-        <button className="log-in-btn">Logga in</button>
-        {/* <i class="fas fa-user"></i> */}
-        <i class="fas fa-shopping-cart"></i>
-      </div>
     </header>
   )
 }
