@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&family=Merriweather+Sans:ital,wght@1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Maven Pro', sans-serif;
+  background: rgb(48, 48, 48);
+  color: white;
+}
