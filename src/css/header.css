@@ -11,6 +11,8 @@ header {
   font-family: 'Merriweather Sans', sans-serif;
   margin: 0;
   white-space: nowrap;
+  text-decoration: none;
+  color: white;
 }
 
 .header-logo b {

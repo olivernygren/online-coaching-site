@@ -6,7 +6,7 @@ import '../css/header.css'
 function Header() {
   return (
     <header>
-      <h2 className="header-logo">ON<b>fitness</b></h2>
+      <h2 className="header-logo"> <Link className="header-logo" to='/'> ON<b>fitness</b> </Link> </h2>
       <nav>
         <ul>
           <li>
