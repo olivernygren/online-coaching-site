@@ -1,0 +1,67 @@
+.hero {
+  padding: 4rem;
+}
+
+.hero .text {
+  width: 60%;
+}
+
+.hero .text h1 {
+  font-size: 2.75rem;
+  margin: 0
+}
+
+.hero .text h4 {
+  font-size: .9rem;
+  margin: .5rem 0;
+  font-weight: 500;
+  color: rgb(97, 97, 97);
+  text-transform: uppercase;
+}
+
+.hero .text p {
+  margin: 1rem 0;
+  font-weight: 400;
+  width: 60%;
+  line-height: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.hero .buttons {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero .buttons a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.hero .buttons .primary {
+  padding: .8rem 2rem;
+  background: var(--clr-main);
+  color: black;
+  border-radius: 50px;
+  transition: .35s ease-in-out;
+}
+
+.hero .buttons .secondary {
+  padding: .6rem 1.5rem;
+  margin-left: 1rem;
+  transition: .35s ease-in-out;
+}
+
+.hero .buttons .primary:hover {
+  background: white
+}
+
+.hero .buttons .secondary:hover {
+  color: var(--clr-main)
+}
+
+.fa-arrow-right {
+  margin-left: .6rem;
+  font-size: .9rem;
+}

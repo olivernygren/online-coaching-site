@@ -21,7 +21,13 @@ function Login() {
     return (
       <div className="login-container">
         <div className="headers">
+          <div className="circle-left">
+            <div className="circle"></div>
+          </div>
           <h4 className="login-text active">Logga in</h4>
+          <div className="circle-right">
+            <div className="circle"></div>
+          </div>
           <h4 onClick={handleRegisterClick} className="create-account-text">Skapa konto</h4>
         </div>
         <div className="login-section active">
@@ -33,7 +39,7 @@ function Login() {
             <label htmlFor="password">Lösenord</label>
             <input type="password" name="password" required />
             <span className="login-error"></span>
-            <button className="login-btn" type="submit">Logga in</button>
+            <button className="login-btn" type="submit">Logga in <i class="fas fa-sign-in-alt"></i> </button>
           </form>
         </div>
       </div>
@@ -46,7 +52,13 @@ function Login() {
       <div className="login-container">
         <div className="headers">
           <h4 onClick={handleLoginClick} className="login-text">Logga in</h4>
+          <div className="circle-left-ca">
+            <div className="circle"></div>
+          </div>
           <h4 className="create-account-text active">Skapa konto</h4>
+          <div className="circle-right-ca">
+            <div className="circle"></div>
+          </div>
         </div>
         <div className="create-account active">
           <form>
@@ -95,7 +107,7 @@ function Login() {
             <input type="password" name="password" required />
             <span className="login-error"></span>
 
-            <button className="create-account-btn" type="submit">Skapa konto</button>
+            <button className="create-account-btn" type="submit">Skapa konto <i className="fas fa-user"></i> </button>
           </form>
         </div>
       </div>
