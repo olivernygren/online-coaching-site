@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import '../css/main.css' 
 import Login from './Login'
 import Home from './Home'
@@ -11,8 +11,10 @@ function Layout() {
     <>
       <Router>
         <Header/>
-        <Route path='/' component={Home} />
-        <Route path='/login' component={Login} />
+          <Switch>    
+            <Route exact path='/' component={Home} />
+            <Route path='/login' component={Login} />
+          </Switch>
         <Footer/>
       </Router>
     </>
