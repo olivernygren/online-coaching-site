@@ -1,0 +1,85 @@
+footer {
+  background: rgb(44, 44, 44);
+}
+
+footer .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 20rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+footer .column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+footer .logo {
+  font-family: 'Merriweather Sans', sans-serif;
+  margin: 0;
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+}
+
+footer .logo b {
+  color: rgb(197, 197, 197);
+}
+
+footer .column-1 {
+  justify-content: space-evenly;
+}
+
+footer .column-1 p {
+  color: grey;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+footer .column-2 {
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+footer .column-2 span {
+  position: relative;
+  transition: .35s ease-in-out;
+  white-space: nowrap;
+  width: fit-content;
+  cursor: pointer;
+  padding: .75rem 0;
+  font-weight: 500;
+}
+
+footer .column-2 span::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 4px;
+  right: 0;
+  background: var(--clr-main);
+  transition: width .35s ease;
+  -webkit-transition: width .35s ease;
+}
+
+footer .column-2 span:hover::after {
+  width: 100%;
+  left: 0;
+  background: var(--clr-main);
+}
+
+footer .column-2 span a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .column-3 i {
+  color: white;
+  font-size: 3rem;
+}

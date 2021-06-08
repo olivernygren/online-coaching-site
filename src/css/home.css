@@ -1,6 +1,6 @@
 .home-online-coaching {
   margin-top: -6rem;
-  background: linear-gradient(324deg, rgba(41,41,41,1) 20%, rgba(85,85,85,1) 100%);
+  background: linear-gradient(324deg, rgba(41,41,41,1) 20%, rgba(65,65,65,1) 100%);
   transform: skewY(-4deg);
   padding: 4rem 4rem 5rem 4rem;
   display: flex;
@@ -81,6 +81,7 @@
 
 .home-book-consultation p {
   font-size: .9rem;
+  font-weight: 500;
   color: rgb(58, 58, 58);
 }
 
@@ -109,7 +110,7 @@
 .home-ebooks-and-programs {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0 6rem 0;
+  padding: 2rem 0 3rem 0;
 }
 
 .home-ebooks-and-programs .content, .home-ebooks-and-programs .content-reverse {
@@ -173,9 +174,11 @@
 .three-blocks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
   height: 24rem;
   padding: 3rem;
+  max-width: 1300px;
+  margin: 0 auto 5rem auto
 }
 
 .three-blocks .box {
