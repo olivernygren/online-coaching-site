@@ -1,5 +1,6 @@
 .hero {
-  padding: 4rem;
+  padding: 6rem 4rem;
+  max-width: 1200px;
 }
 
 .hero .text {
@@ -25,6 +26,7 @@
   width: 60%;
   line-height: 1.25rem;
   letter-spacing: 1px;
+  color: rgb(228, 228, 228);
 }
 
 .hero .buttons {
@@ -58,7 +60,8 @@
 }
 
 .hero .buttons .secondary:hover {
-  color: var(--clr-main)
+  color: var(--clr-main);
+  margin-left: 1.5rem;
 }
 
 .fa-arrow-right {

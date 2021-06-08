@@ -3,7 +3,6 @@ import Header from './Header'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import '../css/main.css' 
 import Login from './Login'
-import Hero from './Hero'
 import Home from './Home'
 
 function Layout() {

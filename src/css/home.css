@@ -1,0 +1,69 @@
+.home-online-coaching {
+  background: rgb(58, 58, 58);
+  transform: skewY(-4deg);
+  padding: 4rem 4rem 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.home-online-coaching h2 {  
+  font-size: 2.75rem;
+  text-align: center;
+  transform: skewY(4deg);
+  box-shadow: inset 0 -16px 0 0 var(--clr-main);
+  width: fit-content;
+  margin: 2rem auto 0 auto;
+}
+
+.home-online-coaching .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: skewY(4deg);
+  padding: 4rem 0 2rem 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home-online-coaching .content .text {
+  padding-right: 5rem;
+}
+
+.home-online-coaching .content .text h3 {
+  font-size: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+.home-online-coaching .content .text p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  margin-bottom: 3rem;
+  color: rgb(228, 228, 228);
+}
+
+.home-oc-link {
+  /* color: var(--clr-main);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500; */
+
+  color: black;
+  padding: .7rem 1.75rem;
+  background: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: .35s ease-in-out;
+}
+
+.home-oc-link:hover {
+  background: var(--clr-main);
+  padding: 0.7rem 2rem;
+}
+
+.fa-globe {
+  margin-left: 1rem;
+}

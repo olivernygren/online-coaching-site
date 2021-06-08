@@ -39,7 +39,7 @@ function Login() {
             <label htmlFor="password">Lösenord</label>
             <input type="password" name="password" required />
             <span className="login-error"></span>
-            <button className="login-btn" type="submit">Logga in <i class="fas fa-sign-in-alt"></i> </button>
+            <button className="login-btn" type="submit">Logga in <i className="fas fa-sign-in-alt"></i> </button>
           </form>
         </div>
       </div>
