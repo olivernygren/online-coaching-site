@@ -4,6 +4,7 @@ import '../css/main.css'
 import '../css/home.css'
 import Blob from '../images/blob.svg'
 import Blob2 from '../images/blob-2.svg'
+// import Book from '../images/book-cover.png'
 import { Link } from 'react-router-dom'
 
 function Home() {
@@ -42,13 +43,15 @@ function Home() {
             </div>
           </div>
           <div className="image">
-            <img src={Blob} alt="blob" />
+            <img className="blob-img" src={Blob} alt="blob" />
+            {/* <img className="book-img" src={Book} alt="book" /> */}
           </div>
         </div>
 
         <div className="content-reverse">
           <div className="image">
-            <img src={Blob2} alt="blob" />
+            <img className="blob-img" src={Blob2} alt="blob" />
+            {/* <img className="book-img" src={Book} alt="book" /> */}
           </div>
           <div className="text">
             <h3>Program 2 <i className="fas fa-book"></i> </h3>
@@ -70,13 +73,15 @@ function Home() {
             </div>
           </div>
           <div className="image">
-            <img src={Blob} alt="blob" />
+            <img className="blob-img" src={Blob} alt="blob" />
+            {/* <img className="book-img" src={Book} alt="book" /> */}
           </div>
         </div>
 
         <div className="content-reverse">
           <div className="image">
-            <img src={Blob2} alt="blob" />
+            <img className="blob-img" src={Blob2} alt="blob" />
+            {/* <img className="book-img" src={Book} alt="book" /> */}
           </div>
           <div className="text">
             <h3>E-bok 2 <i className="fas fa-book"></i> </h3>
@@ -88,6 +93,21 @@ function Home() {
           </div>
         </div>
 
+      </div>
+
+      <div className="three-blocks">
+        <div className="box box-1">
+          <h3>Träning <i className="fas fa-dumbbell"></i> </h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt quis, molestiae cupiditate illum sapiente reiciendis delectus sunt eius ex earum hic mollitia temporibus ab, officia minima est eos voluptatum!</p>
+        </div>
+        <div className="box box-2">
+          <h3>Kost <i className="fas fa-utensils"></i> </h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt quis, molestiae cupiditate illum sapiente reiciendis delectus sunt eius ex earum hic mollitia temporibus ab, officia minima est eos voluptatum!</p>
+        </div>
+        <div className="box box-3">
+          <h3>Hållbarhet <i class="fas fa-chart-line"></i> </h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt quis, molestiae cupiditate illum sapiente reiciendis delectus sunt eius ex earum hic mollitia temporibus ab, officia minima est eos voluptatum!</p>
+        </div>
       </div>
 
 

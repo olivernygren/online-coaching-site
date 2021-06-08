@@ -1,8 +1,12 @@
 .hero {
-  padding: 10rem 4rem 6rem 4rem;
-  max-width: 1600px;
-  margin: -4rem auto 0 auto;
+  padding: 10rem 4rem 12rem 4rem;
+  margin-top: -4rem;
   background: linear-gradient(324deg, rgba(32,32,32,1) 20%, rgba(57,57,57,1) 100%);
+}
+
+.hero .content {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero .text {
