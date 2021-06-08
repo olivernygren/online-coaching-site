@@ -17,7 +17,6 @@ body {
   margin: 0;
   font-family: 'Maven Pro', sans-serif;
   background: rgb(32,32,32);
-  background: linear-gradient(324deg, rgba(32,32,32,1) 20%, rgba(57,57,57,1) 100%);
   color: white;
 }
 

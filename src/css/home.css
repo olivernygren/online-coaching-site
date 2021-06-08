@@ -4,7 +4,6 @@
   padding: 4rem 4rem 5rem 4rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
 }
 
 .home-online-coaching h2 {  
@@ -65,5 +64,104 @@
 }
 
 .fa-globe {
-  margin-left: 1rem;
+  margin-left: .75rem;
+}
+
+
+
+.home-book-consultation {
+  background: rgb(248, 248, 248);
+  color: rgb(31, 31, 31);
+  transform: skewY(-4deg);
+  padding: 1rem 6rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.home-book-consultation p {
+  font-size: .9rem;
+  color: rgb(58, 58, 58);
+}
+
+.home-book-consultation a {
+  color: rgb(58, 58, 58);
+  text-decoration: none;
+}
+
+.home-book-consultation h2 {
+  font-size: 3rem;
+  margin: 1.25rem 0;
+  transition: .35s ease-in-out;
+}
+
+.home-book-consultation h2:hover {
+  margin: 1.5rem 0;
+}
+
+.home-book-consultation i {
+  font-size: 2rem;
+}
+
+
+
+
+.home-ebooks-and-programs {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 6rem 0;
+}
+
+.home-ebooks-and-programs .content, .home-ebooks-and-programs .content-reverse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.5rem 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home-ebooks-and-programs h2 {  
+  font-size: 2.75rem;
+  text-align: center;
+  box-shadow: inset 0 -16px 0 0 var(--clr-main);
+  width: fit-content;
+  margin: 2rem auto 1rem auto;
+}
+
+.home-ebooks-and-programs h3 {  
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.home-ebooks-and-programs p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  margin-bottom: 3rem;
+  color: rgb(228, 228, 228);
+}
+
+.home-ebooks-and-programs .content .text {
+  padding-right: 6rem;
+}
+
+.home-ebooks-and-programs .content-reverse .text {
+  padding-left: 6rem;
+  text-align: right;
+}
+
+.fa-book {
+  margin-left: .75rem;
+}
+
+.fa-cart-plus {
+  margin-left: 2rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: .35s ease-in-out;
+}
+
+.fa-cart-plus:hover {
+  transform: scale(1.1);
+  color: var(--clr-main);
 }
