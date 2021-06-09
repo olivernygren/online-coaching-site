@@ -93,7 +93,7 @@
 .home-book-consultation h2 {
   font-size: 3rem;
   margin: 1.25rem 0;
-  transition: .35s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .home-book-consultation h2:hover {

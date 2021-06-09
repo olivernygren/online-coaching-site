@@ -13,7 +13,7 @@ function Header() {
             <Link className="link" to='/'>Hem</Link>
           </li>
           <li>
-            <Link className="link" to='/'>E-böcker och färdiga program</Link>
+            <Link className="link" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
           </li>
           <li>
             <Link className="link" to='/'>Online Coaching</Link>
