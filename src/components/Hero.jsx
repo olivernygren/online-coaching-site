@@ -12,8 +12,8 @@ function Hero() {
           <h1>Lorem ipsum dolor sit amet consectetur.</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugit repellat! Omnis dolorum distinctio maxime debitis ratione suscipit ad similique officiis, necessitatibus excepturi.</p>
           <div className="buttons">
-            <Link to="/" className="primary">Click here</Link>
-            <Link to="/" className="secondary">Click here too <i className="fas fa-arrow-right"></i> </Link>
+            <Link to="/" className="primary">Online Coaching</Link>
+            <Link to="/" className="secondary">träningsprogram och e-böcker <i className="fas fa-arrow-right"></i> </Link>
           </div>
         </div>
         <div className="illustration"></div>

@@ -2,6 +2,10 @@ footer {
   background: rgb(44, 44, 44);
 }
 
+footer .logo-icon {
+  height: 8rem;
+}
+
 footer .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -81,5 +85,6 @@ footer .column-2 span a {
 
 footer .column-3 i {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin: 1rem;
 }

@@ -1,6 +1,6 @@
 header {
   background: trans;
-  padding: 0 4rem;
+  padding: 1rem 4rem 0 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,16 +9,8 @@ header {
   margin: 0 auto;
 }
 
-.header-logo {
-  font-family: 'Merriweather Sans', sans-serif;
-  margin: 0;
-  white-space: nowrap;
-  text-decoration: none;
-  color: white;
-}
-
-.header-logo b {
-  color: rgb(197, 197, 197);
+header .logo {
+  height: 2.5rem;
 }
 
 nav {
@@ -108,4 +100,10 @@ nav li a {
   width: 1px;
   background: rgb(111, 111, 111);
   margin: 0 1rem;
+}
+
+@media (max-width: 1350px) {
+  .header-logo {
+    display: none;
+  }
 }

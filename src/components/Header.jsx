@@ -2,11 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../css/main.css'
 import '../css/header.css'
+import Logo from '../images/ONfitness-light.svg'
 
 function Header() {
   return (
     <header>
-      <h2 className="header-logo"> <Link className="header-logo" to='/'> ON<b>fitness</b> </Link> </h2>
+      <div className="logo">
+        {/* <Link to="/"><img className="logo-icon" src={logoIcon} alt="Logo Icon" /></Link>
+        <h2 className="header-logo"> <Link className="header-logo" to='/'> ON<b>fitness</b> </Link> </h2> */}
+        <img className="logo" src={Logo} alt="Logo" />
+      </div>
       <nav>
         <ul>
           <li>
