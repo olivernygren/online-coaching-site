@@ -27,8 +27,8 @@ function Home() {
 
       <div className="home-book-consultation">
         <p>Är du osäker på hur du kan ta din träning eller kost till optimal nivå?</p>
-        <Link to="/"> <h2>Boka konsultation <i className="fas fa-arrow-right"></i> </h2> </Link>
-        <p>för endast 149 kr</p>
+        <Link to="/"> <h2>Boka  gratis konsultation <i className="fas fa-arrow-right"></i> </h2> </Link>
+        <p>för att se hur vi kan nå dina mål</p>
       </div>
 
       <div className="home-ebooks-and-programs">

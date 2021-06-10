@@ -7,25 +7,29 @@ import Logo from '../images/ONfitness-light.svg'
 function Header() {
   return (
     <header>
-      <div className="logo">
-        {/* <Link to="/"><img className="logo-icon" src={logoIcon} alt="Logo Icon" /></Link>
-        <h2 className="header-logo"> <Link className="header-logo" to='/'> ON<b>fitness</b> </Link> </h2> */}
-        <img className="logo" src={Logo} alt="Logo" />
-      </div>
+      <img className="logo" src={Logo} alt="Logo" />
       <nav>
         <ul>
           <li>
             <Link className="link" to='/'>Hem</Link>
           </li>
           <li>
-            <Link className="link" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
+            <Link className="link default-link" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
           </li>
           <li>
-            <Link className="link" to='/'>Online Coaching</Link>
+            <Link className="link default-link" to='/'>Online Coaching</Link>
           </li>
           <li>
-            <Link className="link" to='/'>Boka konsultation</Link>
+            <Link className="link default-link" to='/'>Boka gratis konsultation</Link>
           </li>
+          <div className="services-dropdown">
+            <button className="dropdown-btn">Mina Services <i className="fas fa-angle-down"></i> </button>
+            <div className="dropdown-links">
+              <Link className="link dropdown-item" to='/'>Boka gratis konsultation</Link>
+              <Link className="link dropdown-item" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
+              <Link className="link dropdown-item" to='/'>Online Coaching</Link>
+            </div>
+          </div>
           <div className="header-divider"></div>
         </ul>
         <div className="header-icons">

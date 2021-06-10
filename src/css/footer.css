@@ -9,7 +9,7 @@ footer .logo-icon {
 footer .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 20rem;
+  height: 22rem;
   max-width: 1100px;
   margin: 0 auto;
 }

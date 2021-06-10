@@ -14,6 +14,7 @@ function Footer() {
         </div>
         <div className="column column-2">
           <span>FAQ</span>
+          <span>Om Mig</span>
           <span>Kontakta Mig</span>
           <span>Köpvillkor</span>
           <span>Integritetspolicy</span>

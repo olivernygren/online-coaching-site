@@ -1,11 +1,11 @@
 .hero {
-  padding: 10rem 4rem 12rem 4rem;
   margin-top: -4rem;
   background: linear-gradient(324deg, rgba(32,32,32,1) 20%, rgba(57,57,57,1) 100%);
 }
 
 .hero .content {
   max-width: 1600px;
+  padding: 10rem 4rem 12rem 4rem;
   margin: 0 auto;
 }
 
@@ -53,16 +53,19 @@
   color: black;
   border-radius: 50px;
   transition: .35s ease-in-out;
+  white-space: nowrap;
 }
 
 .hero .buttons .secondary {
   padding: .6rem 1.5rem;
   margin-left: 1rem;
   transition: .35s ease-in-out;
+  white-space: nowrap;
 }
 
 .hero .buttons .primary:hover {
-  background: white
+  background: white;
+  box-shadow: 7px 9px 0px rgb(21, 21, 21);
 }
 
 .hero .buttons .secondary:hover {
