@@ -116,6 +116,7 @@ function OnlineCoaching() {
               att skapa hållbara rutiner och en livsstil som du kan ha med dig livet ut, oavsett hur länge vi jobbar tillsammans.
             </p>
           </div>
+          <a className="cta-link" href="#plans">Kom igång nu <i className="fas fa-arrow-right"></i> </a>
         </div>
       </div>
 
@@ -125,7 +126,7 @@ function OnlineCoaching() {
           <div className="levels">
             <div className="beginner">
               <div className="number">1</div>
-              <h3>För Nybörjare</h3>
+              <h3>För nybörjare</h3>
               <h5>Oerfaren eller precis kommit igång</h5>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>

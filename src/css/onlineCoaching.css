@@ -290,3 +290,26 @@
 .whats-included ul li b {
   color: var(--clr-main);
 }
+
+.whats-included .sustainability {
+  margin-bottom: 4rem;
+}
+
+.whats-included .cta-link {
+  color: rgb(39, 39, 39);
+  background: var(--clr-main);
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  text-decoration: none;
+  width: fit-content;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .35s ease-in-out;
+}
+
+.whats-included .cta-link:hover {
+  color: rgb(39, 39, 39);
+  background: white;
+  padding-left: 3.5rem;
+}
