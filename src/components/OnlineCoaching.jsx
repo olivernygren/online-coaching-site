@@ -59,19 +59,19 @@ function OnlineCoaching() {
         <div className="content">
           <h2>Vad ingår i online coaching?</h2>
           <p>
-            Redan direkt efter ditt köp får du kontaktuppgifter till mig. Då är jag redo att svara på alla frågor du kan tänka dig.
+            Redan direkt efter ditt köp får du kontaktuppgifter till mig. Då är jag redo att svara på alla frågor du kan tänka dig. <br /> <br />
             Dessutom får du efter köp av valfritt online-coaching-paket ett motsvarande svarsformulär. Här svarar du på
             de frågor som finns och fyller i den information jag frågar efter. När jag fått tillbaka ifyllt formulär med
             den information jag behöver så börjar jag bygga ditt träningsprogram, kostschema eller båda, beroende på
             vilket paket du köpt, utifrån dina preferenser. Detta bör ta ca 3-7 arbetsdagar beroende på en rad olika faktorer, framför allt vilket 
-            paket du köpt. Denna tid krävs för att bygga ett så personligt anpassat program som möjligt. Betalningen börjar den dag
+            paket du köpt. Denna tid krävs för att bygga ett så personligt anpassat program som möjligt. <br /> <br /> Betalningen börjar den dag
             då du får ditt färdigbyggda, personligt anpassade program. Hädanefter kommer vi ha möten online var 7e eller 14e dag,
-            beroende på vad du vill, kan och behöver. Efter varje vecka kommer du i ett PM gradera hur det gått med träningpass, kost, 
-            motivation, energi, sömn och en valfri kommentar. På så sätt kan vi enkelt upptäcka mönster som kräver förändring i programmet. 
+            beroende på vad du vill, kan och behöver. Dräför bokas dessa möten in av dig på valfri ledig tid. Efter varje vecka kommer du i ett PM gradera hur det gått med träningpass, kost, 
+            motivation, energi, sömn och en valfri kommentar. På så sätt kan vi enkelt upptäcka mönster som kräver förändring i programmet. <br /> <br />
             Nu är det upp till dig att nå maximala resultat!
           </p>
           <div className="training">
-            <h3>Träningsprogram</h3>
+            <h3>Träningsprogram <i className="fas fa-dumbbell"></i> </h3>
             <p>Baserat på dina svar på frågorna i formuläret bygger jag ett träningsprogram som passar just dig!</p>
             <ul>
               <li> <b>Träningstyp</b> bestäms utifrån din budget, tid, skador och andra preferenser. Detta kan vara alltifrån bodybuilding till hemmaträning utan redskap.</li>
@@ -80,7 +80,7 @@ function OnlineCoaching() {
             </ul>
           </div>
           <div className="nutrition">
-            <h3>Kostschema</h3>
+            <h3>Kostschema <i className="fas fa-utensils"></i> </h3>
             <p>Baserat på dina svar på frågorna i formuläret bygger jag ett kostschema som passar just dig!</p>
             <ul>
               <li> <b>Antal måltider</b> bestäms utifrån dina svar i formuläret.</li>
@@ -93,7 +93,7 @@ function OnlineCoaching() {
             </ul>
           </div>
           <div className="communication">
-            <h3>Kommunikation med mig</h3>
+            <h3>Kommunikation med mig <i className="fas fa-comments"></i> </h3>
             <p>
               Efter köp av online-coaching-paket kommer jag finnas tillänglig för att svara på frågor på diverse sociala medier eller på email. Som jag nämnt ovan
               kommer även online-möten bokas in av dig på lämplig tid, ca var 7e eller 14e dag, beroende på vad som passar dig bäst. Varje söndag kommer du också
@@ -101,14 +101,14 @@ function OnlineCoaching() {
             </p>
           </div>
           <div className="facebook-group">
-            <h3>Privat facebook-grupp</h3>
+            <h3>Privat facebook-grupp <i class="fab fa-facebook"></i><i class="fas fa-lock"></i> </h3>
             <p>
               Direkt efter ditt köp kommer du få inbjudan till en privat facebook-grupp, endast för online-coaching klienter. Här kan du chatta med mig och alla andra
               coaching klienter om vad som helst.
             </p>
           </div>
           <div className="sustainability">
-            <h3>Alltid fokus på hållbarhet i längden!</h3>
+            <h3>Alltid fokus på hållbarhet i längden! <i class="fas fa-check"></i> </h3>
             <p>
               Oavsett vilket online-coaching-paket du väljer kommer fokus ligga på att du ska få hållbara resultat, något som håller i längden. Jag jobbar inte kortsiktigt.
               Kortsiktiga mål ger kortsiktiga resultat. Nästan alla som går "på en diet" lyckas gå ner i vikt. Men endast 5% lyckas hålla vikten nere. I princip alla ökar 
