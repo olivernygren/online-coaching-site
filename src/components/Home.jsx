@@ -4,6 +4,7 @@ import '../css/main.css'
 import '../css/home.css'
 import Blob from '../images/blob.svg'
 import Blob2 from '../images/blob-2.svg'
+import PlaceholderCover from '../images/covers/placeholder.png'
 // import Book from '../images/book-cover.png'
 import { Link } from 'react-router-dom'
 
@@ -44,14 +45,14 @@ function Home() {
           </div>
           <div className="image">
             <img className="blob-img" src={Blob} alt="blob" />
-            {/* <img className="book-img" src={Book} alt="book" /> */}
+            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
           </div>
         </div>
 
         <div className="content-reverse">
           <div className="image">
             <img className="blob-img" src={Blob2} alt="blob" />
-            {/* <img className="book-img" src={Book} alt="book" /> */}
+            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
           </div>
           <div className="text">
             <h3>Program 2 <i className="fas fa-book"></i> </h3>
@@ -74,14 +75,14 @@ function Home() {
           </div>
           <div className="image">
             <img className="blob-img" src={Blob} alt="blob" />
-            {/* <img className="book-img" src={Book} alt="book" /> */}
+            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
           </div>
         </div>
 
         <div className="content-reverse">
           <div className="image">
             <img className="blob-img" src={Blob2} alt="blob" />
-            {/* <img className="book-img" src={Book} alt="book" /> */}
+            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
           </div>
           <div className="text">
             <h3>E-bok 2 <i className="fas fa-book"></i> </h3>

@@ -27,7 +27,7 @@ function Header() {
             <div className="dropdown-links">
               <Link className="link dropdown-item" to='/'>Boka gratis konsultation</Link>
               <Link className="link dropdown-item" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
-              <Link className="link dropdown-item" to='/'>Online Coaching</Link>
+              <Link className="link dropdown-item" to='/online-coaching'>Online Coaching</Link>
             </div>
           </div>
           <div className="header-divider"></div>

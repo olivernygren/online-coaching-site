@@ -113,6 +113,23 @@
   padding: 2rem 0 3rem 0;
 }
 
+.home-ebooks-and-programs .image {
+  position: relative;
+}
+
+.blob-img {
+  height: 15rem;
+}
+
+.home-cover-img {
+  height: 14rem;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .home-ebooks-and-programs .content, .home-ebooks-and-programs .content-reverse {
   display: flex;
   justify-content: space-between;
