@@ -7,17 +7,17 @@ import Logo from '../images/ONfitness-light.svg'
 function Header() {
   return (
     <header>
-      <img className="logo" src={Logo} alt="Logo" />
+      <Link to="/"><img className="logo" src={Logo} alt="Logo" /></Link>
       <nav>
         <ul>
           <li>
             <Link className="link" to='/'>Hem</Link>
           </li>
           <li>
-            <Link className="link default-link" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
+            <Link className="link default-link" to='/e-books-and-programs'>E-böcker och Program</Link>
           </li>
           <li>
-            <Link className="link default-link" to='/'>Online Coaching</Link>
+            <Link className="link default-link" to='/online-coaching'>Online Coaching</Link>
           </li>
           <li>
             <Link className="link default-link" to='/'>Boka gratis konsultation</Link>

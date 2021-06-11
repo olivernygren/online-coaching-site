@@ -8,12 +8,25 @@
   text-align: center;
   box-shadow: inset 0 -16px 0 0 var(--clr-main);
   width: fit-content;
-  margin: 8rem 0 8rem 4rem;
+  margin: 8rem auto 8rem auto;
+}
+
+.e-books-container, .programs-container {
+  margin: 20rem 0;
 }
 
 .e-books-container h2, .programs-container h2 {
   margin: 4rem 0 3rem 4rem;
   font-size: 2rem;
+}
+
+/* .programs-container h2 {
+  margin-top: 18rem;
+} */
+
+.personal-programs-container h2 {
+  font-size: 2rem;
+  margin: 0 auto 6rem auto;
 }
 
 .e-books, .programs {
@@ -25,6 +38,17 @@
   margin-bottom: 8rem;
 }
 
+.personal-programs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 0 4rem;
+  height: 18rem;
+  margin-bottom: 8rem;
+  align-content: center;
+  margin-top: 10rem;
+}
+
 .book, .program {
   /* background: rgb(73, 73, 73); */
   background: rgb(59,59,59);
@@ -34,6 +58,38 @@
   height: 100%;
   padding: 1rem;
   text-align: center;
+  transition: .35s ease-in-out;
+  cursor: pointer;
+}
+
+.personal-program {
+  background: rgb(59,59,59);
+  background: linear-gradient(324deg, rgba(65,65,65,1) 20%, rgba(88,88,88,1) 100%);
+  border-radius: 24px;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+  transition: .35s ease-in-out;
+}
+
+.personal-program-cover-img, .e-book-cover-img, .program-cover-img {
+  height: 12rem;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 0px 6px rgb(51, 51, 51);
+  border-radius: 4px;
+}
+
+.personal-program-2 {
+  transform: scale(1.12);
+}
+
+.personal-program-2:hover {
+  transform: scale(1.16);
+}
+
+.book:hover, .program:hover, .personal-program-1:hover, .personal-program-3:hover {
+  transform: scale(1.05);
 }
 
 .img-bg {
@@ -44,17 +100,17 @@
   margin: 2rem auto 0 auto;
 }
 
-.book-header-btns, .program-header-btns {
+.book-header-btns, .program-header-btns, .personal-program-header-btns {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.book-header-btns img, .program-header-btns img {
+.book-header-btns img, .program-header-btns img, .personal-program-header-btns img {
   height: 1.75rem;
 }
 
-.book-header-btns i, .program-header-btns i {
+.book-header-btns i, .program-header-btns i, .personal-program-header-btns i {
   background: rgb(67, 67, 67);
   padding: .8rem;
   border-radius: 50px;
@@ -63,13 +119,13 @@
   font-size: .9rem;
 }
 
-.book-header-btns i:hover, .program-header-btns i:hover {
+.book-header-btns i:hover, .program-header-btns i:hover, .personal-program-header-btns i:hover {
   transform: scale(1.08);
   color: var(--clr-main);
   background: rgb(92, 92, 92);
 }
 
-.programs-container .fa-dumbbell, .e-books-container .fa-book {
+.programs-container .fa-dumbbell, .e-books-container .fa-book, .personal-programs-container .fa-address-book {
   margin-left: 1rem;
   color: rgb(167, 167, 167);
 }
@@ -84,4 +140,45 @@
   font-weight: 500;
   text-transform: uppercase;
   border: none;
+  transition: .35s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+  transform: scale(1.05);
+  background: rgb(106, 106, 106);
+  color: var(--clr-main);
+}
+
+.add-to-cart-btn .fa-plus {
+  margin-left: .75rem;
+}
+
+.personal-programs-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  padding: 3rem 0 0 0;
+  position: relative;
+  text-align: center;
+}
+
+.personal-programs-container .background {
+  background: rgb(58, 58, 58);
+  border-radius: 50px;
+  height: 28rem;
+  padding-top: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+}
+
+.personal-programs {
+  width: 100%;
+}
+
+.e-books-container {
+  margin-top: 46rem;
 }
