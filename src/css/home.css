@@ -156,14 +156,14 @@
   margin-left: .75rem;
 }
 
-.fa-cart-plus {
+.home-ebooks-and-programs .fa-cart-plus {
   margin-left: 2rem;
   font-size: 1.25rem;
   cursor: pointer;
   transition: .35s ease-in-out;
 }
 
-.fa-cart-plus:hover {
+.home-ebooks-and-programs .fa-cart-plus:hover {
   transform: scale(1.1);
   color: var(--clr-main);
 }
