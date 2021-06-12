@@ -20,12 +20,12 @@ function Header() {
             <Link className="link default-link" to='/online-coaching'>Online Coaching</Link>
           </li>
           <li>
-            <Link className="link default-link" to='/'>Boka gratis konsultation</Link>
+            <Link className="link default-link" to='/consultation'>Boka gratis konsultation</Link>
           </li>
           <div className="services-dropdown">
             <button className="dropdown-btn">Mina Services <i className="fas fa-angle-down"></i> </button>
             <div className="dropdown-links">
-              <Link className="link dropdown-item" to='/'>Boka gratis konsultation</Link>
+              <Link className="link dropdown-item" to='/consultation'>Boka gratis konsultation</Link>
               <Link className="link dropdown-item" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
               <Link className="link dropdown-item" to='/online-coaching'>Online Coaching</Link>
             </div>

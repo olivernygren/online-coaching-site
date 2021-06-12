@@ -7,6 +7,7 @@ import Home from './Home'
 import Footer from './Footer'
 import EBooksAndPrograms from './EBooksAndPrograms'
 import OnlineCoaching from './OnlineCoaching'
+import Consultation from './Consultation'
 
 function Layout() {
   return (
@@ -18,6 +19,7 @@ function Layout() {
             <Route path='/login' component={Login} />
             <Route path='/e-books-and-programs' component={EBooksAndPrograms} />
             <Route path='/online-coaching' component={OnlineCoaching} />
+            <Route path='/consultation' component={Consultation} />
           </Switch>
         <Footer/>
       </Router>
