@@ -103,14 +103,14 @@ function OnlineCoaching() {
             </p>
           </div>
           <div className="facebook-group">
-            <h3>Privat facebook-grupp <i class="fab fa-facebook"></i><i class="fas fa-lock"></i> </h3>
+            <h3>Privat facebook-grupp <i className="fab fa-facebook"></i><i className="fas fa-lock"></i> </h3>
             <p>
               Direkt efter ditt köp kommer du få inbjudan till en privat facebook-grupp, endast för online-coaching klienter. Här kan du chatta med mig och alla andra
               coaching klienter om vad som helst.
             </p>
           </div>
           <div className="sustainability">
-            <h3>Alltid fokus på hållbarhet i längden! <i class="fas fa-check"></i> </h3>
+            <h3>Alltid fokus på hållbarhet i längden! <i className="fas fa-check"></i> </h3>
             <p>
               Oavsett vilket online-coaching-paket du väljer kommer fokus ligga på att du ska få hållbara resultat, något som håller i längden. Jag jobbar inte kortsiktigt.
               Kortsiktiga mål ger kortsiktiga resultat. Nästan alla som går "på en diet" lyckas gå ner i vikt. Men endast 5% lyckas hålla vikten nere. I princip alla ökar 

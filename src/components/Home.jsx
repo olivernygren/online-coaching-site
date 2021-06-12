@@ -106,7 +106,7 @@ function Home() {
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt quis, molestiae cupiditate illum sapiente reiciendis delectus sunt eius ex earum hic mollitia temporibus ab, officia minima est eos voluptatum!</p>
         </div>
         <div className="box box-3">
-          <h3>Hållbarhet <i class="fas fa-chart-line"></i> </h3>
+          <h3>Hållbarhet <i className="fas fa-chart-line"></i> </h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt quis, molestiae cupiditate illum sapiente reiciendis delectus sunt eius ex earum hic mollitia temporibus ab, officia minima est eos voluptatum!</p>
         </div>
       </div>

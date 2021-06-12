@@ -35,7 +35,7 @@ function Header() {
         <div className="header-icons">
           <i className="fas fa-shopping-cart"></i>
           <Link to='/login' className="log-in-btn">Logga in</Link>
-          {/* <i class="fas fa-user"></i> */}
+          {/* <i className="fas fa-user"></i> */}
         </div>
       </nav>
     </header>
