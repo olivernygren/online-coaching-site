@@ -3,6 +3,7 @@ import '../css/onlineCoaching.css'
 import '../css/main.css'
 import LogoIcon from '../images/ONfitness-icon.svg'
 import PlaceholderCover from '../images/covers/placeholder.png'
+import { Link } from 'react-router-dom'
 
 function OnlineCoaching() {
   return (
@@ -35,7 +36,7 @@ function OnlineCoaching() {
               <div className="img-bg"></div>
               <img className="online-coaching-cover-img" src={PlaceholderCover} alt="Kost- och Träningsprogram" />
               <h4>Kost- och Träningsprogram</h4>
-              <h5>1 899 kr / mån <small className="line-through">2 299 kr / mån</small> </h5>
+              <h5>1 799 kr / mån <small className="line-through">2 299 kr / mån</small> </h5>
               <button className="add-to-cart-btn">Lägg i varukorg <i className="fas fa-plus"></i> </button>
             </div>
 
@@ -66,9 +67,9 @@ function OnlineCoaching() {
             vilket paket du köpt, utifrån dina preferenser. Detta bör ta ca 3-7 arbetsdagar beroende på en rad olika faktorer, framför allt vilket 
             paket du köpt. Denna tid krävs för att bygga ett så personligt anpassat program som möjligt. <br /> <br /> Betalningen börjar den dag
             då du får ditt färdigbyggda, personligt anpassade program. Hädanefter kommer vi ha möten online var 7e eller 14e dag,
-            beroende på vad du vill, kan och behöver. Dräför bokas dessa möten in av dig på valfri ledig tid. Efter varje vecka kommer du i ett PM gradera hur det gått med träningpass, kost, 
+            beroende på vad du vill, kan och behöver. Därför bokas dessa möten in av dig på valfri ledig tid. Efter varje vecka kommer du i ett PM gradera hur det gått med träningspass, kost, 
             motivation, energi, sömn och en valfri kommentar. På så sätt kan vi enkelt upptäcka mönster som kräver förändring i programmet. <br /> <br />
-            Nu är det upp till dig att nå maximala resultat!
+            Nu är det upp till dig att fälja programmet och nå maximala resultat!
           </p>
           <div className="training">
             <h3>Träningsprogram <i className="fas fa-dumbbell"></i> </h3>
@@ -86,10 +87,11 @@ function OnlineCoaching() {
               <li> <b>Antal måltider</b> bestäms utifrån dina svar i formuläret.</li>
               <li> <b>Mängden kalorier</b> baseras på dina mål. Jag kommer noggrant räkna ut dina kaloribehov, något som vi kan/kommer justera beroende på hur din vikt och din fysik utvecklas, eller om dina mål skulle förändras.</li>
               <li> <b>Makros - Protein, Fett och Kolhydrater</b> i ditt kostschema baseras på dina mål, preferenser samt timme efter timme av de senaste 4 åren av mitt liv av research bland branschens bästa och mest pålitliga resurser.</li>
-              <li> <b>En grund med vitaminer och mineraler</b> kommer utgöra grunden av ditt kostschema i form av näringsrik och lättupptaglig mat. Beroende på dina preferenser byggs grunden av en handfull av dessa livsmedel. Här kommer jag lägga störst fokus för att se till att din hälsa sätts i första rummet.</li>
-              <li> <b>Kosttillskott</b> kommer baseras på dina mål, din budget och eventuella näringsbrister pga mat-preferenser</li>
+              <li> <b>En grund med vitaminer och mineraler</b> kommer utgöra grunden av ditt kostschema i form av näringsrik och lättupptaglig mat. Beroende på dina preferenser byggs grunden av en handfull av dessa livsmedel. Här kommer jag lägga störst fokus för att se till att din hälsa sätts i första rummet, oavsett dina mål.</li>
+              <li> <b>Kosttillskott</b> kommer baseras på dina mål, din budget och eventuella näringsbrister pga mat-preferenser.</li>
               <li> <b>Matsmältningen</b> blir också en prioritet som baseras på svaren i formuläret. Vi mår som magen mår. Därför är det viktigt att den mat och närning vi stoppar i oss kan absorberas och inte ger oss gas eller diarrésymptom.</li>
-              <li> <b>Olika dieter och allergier</b> kommer anpassas efter! Vegan, vegeterian, pescaterian, laktosintollerans, glutenintollerans, nötallergi eller liknande behöver inte stå i vägen för dina mål!</li>
+              <li> <b>Olika dieter och allergier</b> kommer anpassas efter! Vegan, vegeterian, pescaterian, laktosintollerans, glutenintollerans, nötallergi eller liknande behöver inte stå i vägen för dina mål! Liknande kommer du få specificera i formuläret så att jag kan anpassa ditt schema efter dessa.</li>
+              <li> <b>Vad du gillar och inte gillar</b> kommer avgöra hur du kan hålla dig till schemat. Att konstant behöva äta något man inte tycker om, eller alltid behöva utesluta ens favoritmat är inte hållbart i längden. Därför kommer jag noggrant anpassa ditt schema utefter dina preferenser.</li>
             </ul>
           </div>
           <div className="communication">
@@ -149,6 +151,42 @@ function OnlineCoaching() {
               <a href="#plans" className="choose-plan-btn">Välj plan <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="client-expectations">
+        <div className="content">
+          <h2>Vad förväntar jag mig av dig som klient?</h2>
+          <span>Av dig som online-coaching-klient förväntar jag mig endast EN grej</span>
+          <h3>Total ärlighet</h3>
+          <p>
+            Behöver du göra någon förändring i planen? <b>Meddela mig.</b> <br/> <br/>
+            Är du sugen på att testa något nytt? <b>Meddela mig.</b> <br/> <br/>
+            Får du inte de resultat du önskar? <b>Meddela mig.</b> <br/> <br/>
+            Har du tröttnat på maten i ditt schema? <b>Meddela mig.</b> <br/> <br/>
+            Har du tappat motivationen? <b>Meddela mig.</b> <br/> <br/>
+            Stoppade du i dig en hel påse chips och en liter glass igår kväll? <b>Meddela mig.</b> <br/> <br/>
+
+            Det enda jag förväntar mig och kräver av dig som klient är total ärlighet. Även om du begår misstag och inte håller dig till planen så är det inget som kan göras ogjort.
+            För att vi ska kunna jobba tillsammans och justera din plan efter dina resultat krävs det total transparens, oavsett om du hållt dig till planen eller inte. Om inte de förväntade
+            resultaten kommer så är det viktigt att jag vet exakt varför. Är det så att du fäljt planen till punkt och pricka och resultaten inte kommer, då är dags att ändra planen.
+          </p>
+        </div>
+      </div>
+
+      <div className="last-cta-section">
+        <div className="content">
+          <h2>Så, vad väntar du på?</h2>
+          <p>Låt oss arbeta tillsammans och se hur du kan överträffa dina mål med träning, kost och livsstil med ett av Sveriges mest prisvärda och personligt anpassade online-coaching planer!</p>
+          <a className="cta-link" href="#plans">Kom igång nu <i className="fas fa-arrow-right"></i> </a>
+        </div>
+      </div>
+
+      <div className="online-coaching-contact">
+        <div className="content">
+          <h2>Har du frågor kring online coaching?</h2>
+          <p>Det finns en chans att din fråga redan finns besvarad på min <Link to="/faq">FAQ-sida</Link> </p>
+          <p>Annars svarar jag gladerligen på dina frågor. Se hur du kan kontakta mig <Link to="/contact">här</Link> </p>
         </div>
       </div>
     </>

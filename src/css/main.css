@@ -9,16 +9,15 @@
   box-sizing: border-box;
 }
 
-/* body, html {
-  overflow-x: hidden;
-} */
+body, html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   font-family: 'Maven Pro', sans-serif;
   background: rgb(32,32,32);
   color: white;
-  scroll-behavior: smooth;
 }
 
 button {
