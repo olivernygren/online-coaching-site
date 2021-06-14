@@ -85,39 +85,34 @@ function Register() {
     setPasswordError('')
     setRepeatPasswordError('')
 
-    //front-end validation
+    // FRONT END VALIDATION:
 
     // name
     if (name.length < 2 || name.includes(1 || 2 || 3 || 4 || 5 || 6|| 7 || 8 || 9 || 0)) {
-      console.log('name:', name)
       setNameError('Ange ett giltigt namn')
       return
     }
 
     // email
     if (!email.includes('@' && '.')) {
-      console.log('email:', email)
       setEmailError('Ange en giltig email-adress')
       return
     }
 
     // age
     if (!validator.isNumeric(age)) {
-      console.log('age:', age)
       setAgeError('Ange din ålder i siffror')
       return
     }
 
     //height
     if (!validator.isNumeric(height)) {
-      console.log('height:', height)
       setHeightError('Ange din längd i siffror')
       return
     }
 
     // weight
     if (!validator.isNumeric(weight)) {
-      console.log('weight:', weight)
       setWeightError('Ange din vikt i siffror')
       return
     }

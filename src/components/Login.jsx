@@ -28,10 +28,13 @@ function Login() {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
 
+    console.log('clicked')
+
     setEmailError('')
     setPasswordError('')
 
     const formData = { email, password }
+    console.log(formData)
 
     //Email validation
     if (!email.includes('@' && '.')) {
@@ -48,10 +51,14 @@ function Login() {
     }
 
     try {
+      console.log('trycatch')
       const res = await fetch('/api/users/login', options)
+      console.log(res)
       const data = await res.json()
+      console.log(data)
 
       if (data.errors) {
+        console.log(data.errors)
         if (data.errors.email !== "") {
           setEmailError(data.errors.email)
         }
@@ -61,6 +68,7 @@ function Login() {
       }
 
       if (data.user) {
+        console.log(data.user)
         setLogInSuccessMsg("Inloggning lyckades. Du skickas nu vidare...");
 
         setTimeout(() => {
