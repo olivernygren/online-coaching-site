@@ -1,7 +1,22 @@
 import React, { useState } from 'react'
 import { useHistory } from "react-router-dom";
+import '../css/main.css'
+import '../css/login.css'
+import PasswordValidator from 'password-validator';
+import validator from 'validator';
 
 function Register() {
+
+  let schema = new PasswordValidator()
+
+  schema
+  .is().min(6) //minlength 6 char
+  .is().max(100) // maxlength 100 char
+  .has().uppercase() // must have uppercase letters
+  .has().lowercase() // must have  lowercase letters
+  .has().digits(1) // must have 1 digit
+  .has().not().spaces() // must not have spaces
+  .is().not().oneOf(['Passw0rd, Password123']) // cannot use these
 
   const history = useHistory()
 
@@ -16,13 +31,145 @@ function Register() {
   const [ageError, setAgeError] = useState("")
   const [height, setHeight] = useState(Number)
   const [heightError, setHeightError] = useState("")
-  const [reapeatPassword, setReapeatPassword] = useState("")
+  const [weight, setWeight] = useState(Number)
+  const [weightError, setWeightError] = useState("")
+  const [repeatPassword, setRepeatPassword] = useState("")
   const [repeatPasswordError, setRepeatPasswordError] = useState("")
 
   const [registerSuccessMsg, setRegisterSuccessMsg] = useState("");
 
   const handleShowLoginForm = () => {
     history.push('/login')
+  }
+
+  const handleNameChange = (e) => {
+    setName(e.target.value)
+  }
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value)
+  }
+
+  const handleGenderChange = (e) => {
+    setGender(e.target.value)
+  }
+
+  const handleAgeChange = (e) => {
+    setAge(e.target.value)
+  }
+
+  const handleHeightChange = (e) => {
+    setHeight(e.target.value)
+  }
+
+  const handleWeightChange = (e) => {
+    setWeight(e.target.value)
+  }
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value)
+  }
+
+  const handleRepeatPasswordChange = (e) => {
+    setRepeatPassword(e.target.value)
+  }
+
+  const handleRegisterSubmit = async (e) => {
+    e.preventDefault()
+
+    setNameError('')
+    setEmailError('')
+    setAgeError('')
+    setHeightError('')
+    setWeightError('')
+    setPasswordError('')
+    setRepeatPasswordError('')
+
+    //front-end validation
+
+    // name
+    if (name.length < 2 || name.includes(1 || 2 || 3 || 4 || 5 || 6|| 7 || 8 || 9 || 0)) {
+      console.log('name:', name)
+      setNameError('Ange ett giltigt namn')
+      return
+    }
+
+    // email
+    if (!email.includes('@' && '.')) {
+      console.log('email:', email)
+      setEmailError('Ange en giltig email-adress')
+      return
+    }
+
+    // age
+    if (!validator.isNumeric(age)) {
+      console.log('age:', age)
+      setAgeError('Ange din ålder i siffror')
+      return
+    }
+
+    //height
+    if (!validator.isNumeric(height)) {
+      console.log('height:', height)
+      setHeightError('Ange din längd i siffror')
+      return
+    }
+
+    // weight
+    if (!validator.isNumeric(weight)) {
+      console.log('weight:', weight)
+      setWeightError('Ange din vikt i siffror')
+      return
+    }
+
+    if (schema.validate(password) === false) {
+      if (password === "Passw0rd" || password === "Password123") {
+        setPasswordError('Ange ett starkare lösenord')
+        return
+      }
+      setPasswordError('Ange ett lösenord med; mellan 6-100 tecken, minst en siffra, minst en versal, minst en gemen och utan mellanslag')
+      return
+    }
+
+    if (!password === repeatPassword) {
+      setRepeatPasswordError('Lösenorden stämmer inte överens')
+    }
+
+    const formData = {
+      name, 
+      email,
+      gender,
+      age,
+      height,
+      weight,
+      password
+    }
+
+    const options = {
+      method: 'post',
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    }
+
+    try {
+      const res = await fetch('/api/users/register', options)
+      const data = await res.json()
+
+      if (data.errors) {
+        setEmailError(data.errors.email)
+        return
+      } else {
+        setRegisterSuccessMsg('Konto skapat! Du skickas nu vidare till logga-in-sidan...')
+
+        setTimeout(() => {
+          history.push('/login')
+        }, 2000)
+      }
+    } catch (err) {
+      console.error(err)
+    }
   }
   
   return (
@@ -41,50 +188,51 @@ function Register() {
         <form>
           <h2>Skapa konto</h2>
           <label htmlFor="name">Namn <small>(för- och efternamn)</small> </label>
-          <input type="text" name="name" required />
-          <span className="login-error"></span>
+          <input type="text" name="name" onChange={handleNameChange} required />
+          <span className="login-error">{nameError}</span>
 
           <label htmlFor="email">Email</label>
-          <input type="email" name="email" required />
-          <span className="login-error"></span>
+          <input type="email" name="email" onChange={handleEmailChange} required />
+          <span className="login-error">{emailError}</span>
 
           <div className="split-row">
             <div>
               <label htmlFor="gender">Kön</label>
-              <select name="gender" id="gender">
-                <option value="male">Man</option>
-                <option value="female">Kvinna</option>
+              <select name="gender" id="gender" onChange={handleGenderChange}>
+                <option value="Man">Man</option>
+                <option value="Kvinna">Kvinna</option>
               </select>
             </div>
             <div>
               <label htmlFor="age">Ålder</label>
-              <input type="number" name="age" required />
-              <span className="login-error"></span>
+              <input type="number" name="age" onChange={handleAgeChange} required />
+              <span className="login-error">{ageError}</span>
             </div>
           </div>
 
           <div className="split-row-2">
             <div>
               <label htmlFor="height">Längd <small>(cm)</small></label>
-              <input type="number" name="height" required />
-              <span className="login-error"></span>
+              <input type="number" name="height" onChange={handleHeightChange} required />
+              <span className="login-error">{heightError}</span>
             </div>
             <div>
               <label htmlFor="weight">Vikt <small>(kg)</small></label>
-              <input type="number" name="weight" required />
-              <span className="login-error"></span>
+              <input type="number" name="weight" onChange={handleWeightChange} required />
+              <span className="login-error">{weightError}</span>
             </div>
           </div>
 
           <label htmlFor="password">Lösenord</label>
-          <input type="password" name="password" required />
-          <span className="login-error"></span>
+          <input type="password" name="password" onChange={handlePasswordChange} required />
+          <span className="login-error">{passwordError}</span>
           
           <label htmlFor="password">Upprepa lösenord</label>
-          <input type="password" name="password" required />
-          <span className="login-error"></span>
+          <input type="password" name="password" onChange={handleRepeatPasswordChange} required />
+          <span className="login-error">{repeatPasswordError}</span>
 
-          <button className="create-account-btn" type="submit">Skapa konto <i className="fas fa-user"></i> </button>
+          <button className="create-account-btn" type="submit" onClick={handleRegisterSubmit}>Skapa konto <i className="fas fa-user"></i> </button>
+          <span className="login-success-msg">{registerSuccessMsg}</span>
         </form>
       </div>
     </div>
