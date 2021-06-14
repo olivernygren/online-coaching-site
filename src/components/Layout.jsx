@@ -8,6 +8,7 @@ import Footer from './Footer'
 import EBooksAndPrograms from './EBooksAndPrograms'
 import OnlineCoaching from './OnlineCoaching'
 import Consultation from './Consultation'
+import Register from './Register'
 
 function Layout() {
   return (
@@ -17,6 +18,7 @@ function Layout() {
           <Switch>    
             <Route exact path='/' component={Home} />
             <Route path='/login' component={Login} />
+            <Route path='/register' component={Register} />
             <Route path='/e-books-and-programs' component={EBooksAndPrograms} />
             <Route path='/online-coaching' component={OnlineCoaching} />
             <Route path='/consultation' component={Consultation} />
