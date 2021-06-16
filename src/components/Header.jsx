@@ -25,17 +25,16 @@ function Header() {
           <div className="services-dropdown">
             <button className="dropdown-btn">Mina Services <i className="fas fa-angle-down"></i> </button>
             <div className="dropdown-links">
-              <Link className="link dropdown-item" to='/consultation'>Boka gratis konsultation</Link>
-              <Link className="link dropdown-item" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
               <Link className="link dropdown-item" to='/online-coaching'>Online Coaching</Link>
+              <Link className="link dropdown-item" to="/personal-programs">Personliga Upplägg</Link>
+              <Link className="link dropdown-item" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
+              <Link className="link dropdown-item" to='/consultation'>Boka gratis konsultation</Link>
             </div>
           </div>
           <div className="header-divider"></div>
         </ul>
         <div className="header-icons">
           <i className="fas fa-shopping-cart"></i>
-          <Link to='/login' className="log-in-btn">Logga in</Link>
-          {/* <i className="fas fa-user"></i> */}
         </div>
       </nav>
     </header>

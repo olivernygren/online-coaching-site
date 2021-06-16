@@ -2,13 +2,14 @@ import React from 'react'
 import Header from './Header'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import '../css/main.css' 
-import Login from './Login'
+// import Login from './Login'
+// import Register from './Register'
 import Home from './Home'
 import Footer from './Footer'
 import EBooksAndPrograms from './EBooksAndPrograms'
 import OnlineCoaching from './OnlineCoaching'
 import Consultation from './Consultation'
-import Register from './Register'
+import PersonalPrograms from './PersonalPrograms'
 
 function Layout() {
   return (
@@ -17,10 +18,11 @@ function Layout() {
         <Header/>
           <Switch>    
             <Route exact path='/' component={Home} />
-            <Route path='/login' component={Login} />
-            <Route path='/register' component={Register} />
+            {/* <Route path='/login' component={Login} />
+            <Route path='/register' component={Register} /> */}
             <Route path='/e-books-and-programs' component={EBooksAndPrograms} />
             <Route path='/online-coaching' component={OnlineCoaching} />
+            <Route path='/personal-programs' component={PersonalPrograms} />
             <Route path='/consultation' component={Consultation} />
           </Switch>
         <Footer/>
