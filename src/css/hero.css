@@ -23,6 +23,9 @@
   padding: 1rem 2rem;
   border-radius: 12px;
   border: 2px solid var(--clr-main);
+  width: 28rem;
+  min-height: 25rem;
+  position: relative;
 }
 
 .hero-form .option {
@@ -58,6 +61,12 @@
   padding: .5rem;
   border-radius: 6px;
   border: none;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.hero-form .form-page-4 .option textarea:focus {
+  outline: none;
+  border: 2px solid var(--clr-main);
 }
 
 .hero-form span {
@@ -74,6 +83,20 @@
   font-family: 'Maven Pro', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
+  transition: .35s ease-in-out;
+}
+
+.form-page button:hover {
+  background: white;
+}
+
+.form-back-btn, .form-next-btn, .form-submit-btn {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.form-submit-btn, .form-next-btn {
+  right: 2rem;
 }
 
 .hero-form .form-back-btn {
@@ -85,11 +108,25 @@
   font-family: 'Maven Pro', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
+  transition: .35s ease-in-out;
 }
 
 .form-back-btn i {
   margin-right: .5rem;
 }
+
+.hero-form .form-submit-btn i {
+  margin-left: .75rem;
+}
+
+.form-page-6 label {
+  color: rgb(179, 179, 179);
+  font-size: .9rem;
+}
+
+
+
+
 
 .hero .text {
   width: 60%;

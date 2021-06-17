@@ -20,21 +20,25 @@ function Hero() {
   
   const handleShowSecond = () => {
     setShowFirst(false)
+    setShowThird(false)
     setShowSecond(true)
   }
 
   const handleShowThird = () => {
     setShowSecond(false)
+    setShowFourth(false)
     setShowThird(true)
   }
   
   const handleShowFourth = () => {
     setShowThird(false)
+    setShowFifth(false)
     setShowFourth(true)
   }
   
   const handleShowFifth = () => {
     setShowFourth(false)
+    setShowLast(false)
     setShowFifth(true)
   }
   
