@@ -14,6 +14,7 @@ function Hero() {
 
   const handleShowFirst = () => {
     setShowSecond(false)
+    setShowLast(false)
     setShowFirst(true)
   }
   
@@ -129,7 +130,7 @@ function Hero() {
               <input type="checkbox" name="morning-08-10" />
             </div>
             <div className="option second-option">
-              <label htmlFor="lunch-time">kl.13-16</label>
+              <label htmlFor="lunch-time">kl. 13-16</label>
               <input type="checkbox" name="lunch-time-13-16" />
             </div>
             <div className="option third-option">
