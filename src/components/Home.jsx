@@ -34,7 +34,8 @@ function Home() {
             <ul>
               <li> <b>+</b> Personligt anpassat kostschema.</li>
               <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
-              <li> <b>+</b> Direktkontakt med mig via Messenger.</li>
+              <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas på mobilen eller datorn.</li>
+              <li> <b>+</b> Direktkontakt med mig via Messenger för motivation, frågor eller ändringar av upplägget.</li>
               <li> <b>+</b> (Valfritt) online-möte med mig innan skapandet av programmet.</li>
               <li> <b>+</b> Ändringar görs löpande varje månad och/eller efter behov</li>
               <li> <b>+</b> Kontinuerlig uppföljning och avstämningar veckovis</li>
