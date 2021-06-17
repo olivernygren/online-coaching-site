@@ -26,6 +26,7 @@
   width: 28rem;
   min-height: 25rem;
   position: relative;
+  box-shadow: -20px -20px 0px rgb(65, 65, 65);
 }
 
 .hero-form .option {

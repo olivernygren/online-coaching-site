@@ -34,7 +34,9 @@ function Home() {
             <ul>
               <li> <b>+</b> Personligt anpassat kostschema.</li>
               <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
-              <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas på mobilen eller datorn.</li>
+              <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
+              <li> <b>+</b> Betalning sker smidigt och enkelt med e-faktura efter du får ditt upplägg, inga förskottsbetalningar!</li>
+              <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
               <li> <b>+</b> Direktkontakt med mig via Messenger för motivation, frågor eller ändringar av upplägget.</li>
               <li> <b>+</b> (Valfritt) online-möte med mig innan skapandet av programmet.</li>
               <li> <b>+</b> Ändringar görs löpande varje månad och/eller efter behov</li>
@@ -44,54 +46,60 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="home-online-coaching">
-        <div className="home-online-coaching-container" id="plans">
-          <div className="background">
-            <h2>Online Coaching</h2>
-            <div className="online-coaching-packages">
 
-              <div className="online-coaching-pkg online-coaching-pkg-1">
-                <div className="online-coaching-header-btns">
-                  <i className="fas fa-eye" title="Läs mer"></i>
-                  <img src={LogoIcon} alt="Logo" />
-                  <i className="fas fa-cart-plus" title="Lägg i varukorg"></i>
-                </div>
-                <div className="img-bg"></div>
-                <img className="online-coaching-cover-img" src={PlaceholderCover} alt="Kostschema" />
-                <h4>Kost</h4>
-                <h5>1 299 kr / mån</h5>
-                <button className="add-to-cart-btn">Lägg i varukorg <i className="fas fa-plus"></i> </button>
-              </div>
-              
-              <div className="online-coaching-pkg online-coaching-pkg-2">
-                <div className="online-coaching-header-btns">
-                  <i className="fas fa-eye" title="Läs mer"></i>
-                  <img src={LogoIcon} alt="Logo" />
-                  <i className="fas fa-cart-plus" title="Lägg i varukorg"></i>
-                </div>
-                <div className="img-bg"></div>
-                <img className="online-coaching-cover-img" src={PlaceholderCover} alt="Kost- och Träningsprogram" />
-                <h4>Kost- och Träningsprogram</h4>
-                <h5>1 799 kr / mån <small className="line-through">2 299 kr / mån</small> </h5>
-                <button className="add-to-cart-btn">Lägg i varukorg <i className="fas fa-plus"></i> </button>
-              </div>
+      <div className="home-online-coaching home-personal-programs">
+        <h2>Personliga Upplägg</h2>
 
-              <div className="online-coaching-pkg online-coaching-pkg-3">
-                <div className="online-coaching-header-btns">
-                  <i className="fas fa-eye" title="Läs mer"></i>
-                  <img src={LogoIcon} alt="Logo" />
-                  <i className="fas fa-cart-plus" title="Lägg i varukorg"></i>
-                </div>
-                <div className="img-bg"></div>
-                <img className="online-coaching-cover-img" src={PlaceholderCover} alt="Träningsprogram" />
-                <h4>Träningsprogram</h4>
-                <h5>999 kr / mån</h5>
-                <button className="add-to-cart-btn">Lägg i varukorg <i className="fas fa-plus"></i> </button>
-              </div>
+        <div className="program-list">
+          <Link to="/personal-programs">
+            <b>1</b> Komplett Kost- och Träningsupplägg
+          </Link>
+          <Link to="/personal-programs">
+            <b>2</b> Endast Kostschema
+          </Link>
+          <Link to="/personal-programs">
+            <b>3</b> Endast Träningsprogram
+          </Link>
+        </div>
+        
+        <div className="content">
+
+          <div className="card">
+            <div className="online-coaching-header-btns">
+              <i className="fas fa-eye" title="Läs mer"></i>
+              <img src={LogoIcon} alt="Logo" />
+              <i className="fas fa-arrow-right" title="Kontakta mig"></i>
             </div>
+            <img className="home-online-coaching-cover-img" src={PlaceholderCover} alt="Kost- och Träningsprogram" />
+            <h4>10 veckors Komplett Kost- och Träningsupplägg</h4>
+            <h5>999 kr <small className="line-through">1 599 kr</small> </h5>
+            <button className="get-started-btn">Kom igång <i className="fas fa-arrow-right"></i> </button>
+          </div>
+
+          <div className="info-text">
+            <h3>Vad ingår?</h3>
+            <p>Direkt efter köp kommer du få besvara ett antal frågor i ett formulär. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
+            <ul>
+              <li> <b>+</b> Personligt anpassat kostschema.</li>
+              <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
+              <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
+              <li> <b>+</b> Betalning sker smidigt och enkelt med e-faktura efter du får ditt upplägg, inga förskottsbetalningar!</li>
+              <li className="minus-top"> <b>-</b> <span className="line-through">Tillgång till en privat facebook-grupp med alla andra klienter.</span> </li>
+              <li> <b>-</b> <span className="line-through">Direktkontakt med mig via Messenger för motivation, frågor eller ändringar av upplägget.</span> </li>
+              <li> <b>-</b> <span className="line-through">(Valfritt) online-möte med mig innan skapandet av programmet.</span> </li>
+              <li> <b>-</b> <span className="line-through">Ändringar görs löpande varje månad och/eller efter behov</span> </li>
+              <li> <b>-</b> <span className="line-through">Kontinuerlig uppföljning och avstämningar veckovis</span> </li>
+            </ul>
+            <Link className="read-more-btn" to='/online-coaching'>Läs mer om personliga upplägg <i className="fas fa-arrow-right"></i> </Link>
           </div>
         </div>
-      </div> */}
+        <div className="alternate-programs">
+          <h3>- ELLER -</h3>
+          <h4>Behöver du endast ett kostchema eller träningsprogram?</h4>
+          <Link to="/personal-programs" className="read-more-btn-2">Läs mer här <i className="fas fa-arrow-right"></i> </Link>
+        </div>
+      </div>
+
 
       <div className="home-book-consultation">
         <p>Är du osäker på hur du kan ta din träning eller kost till optimal nivå?</p>

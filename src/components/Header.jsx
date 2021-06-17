@@ -17,6 +17,9 @@ function Header() {
             <Link className="link default-link" to='/e-books-and-programs'>E-böcker och Program</Link>
           </li>
           <li>
+            <Link className="link default-link" to='/personal-programs'>Personliga Upplägg</Link>
+          </li>
+          <li>
             <Link className="link default-link" to='/online-coaching'>Online Coaching</Link>
           </li>
           <li>
