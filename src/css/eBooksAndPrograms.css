@@ -8,25 +8,16 @@
   text-align: center;
   box-shadow: inset 0 -16px 0 0 var(--clr-main);
   width: fit-content;
-  margin: 8rem auto 8rem auto;
+  margin: 8rem auto 0 auto;
 }
 
 .e-books-container, .programs-container {
-  margin: 20rem 0;
+  margin-bottom: 20rem ;
 }
 
 .e-books-container h2, .programs-container h2 {
-  margin: 4rem 0 3rem 4rem;
+  margin: 0 0 3rem 4rem;
   font-size: 2rem;
-}
-
-/* .programs-container h2 {
-  margin-top: 18rem;
-} */
-
-.personal-programs-container h2 {
-  font-size: 2rem;
-  margin: 0 auto 6rem auto;
 }
 
 .e-books, .programs {
@@ -176,8 +167,4 @@
 
 .personal-programs {
   width: 100%;
-}
-
-.e-books-container {
-  margin-top: 46rem;
 }

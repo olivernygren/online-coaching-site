@@ -419,3 +419,21 @@
   color: white;
   font-weight: 600;
 }
+
+.online-coaching-page-top {
+  background: transparent;
+}
+
+.get-started-btn-2 {
+  width: 100%;
+  padding: .75rem 1rem;
+  background: rgb(92, 92, 92);
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: .35s ease-in-out;
+  text-decoration: none;
+  font-size: .9rem;
+  display: inline-block;
+}

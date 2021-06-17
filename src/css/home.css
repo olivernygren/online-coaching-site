@@ -125,6 +125,7 @@
   background: rgb(58, 58, 58);
   padding: 1.5rem;
   border-radius: 16px;
+  max-height: 32.25rem;
 }
 
 .home-online-coaching .info-text {
@@ -174,8 +175,8 @@
   display: flex;
   align-items: center;
   width: fit-content;
-  position: absolute;
-  bottom: 1.5rem;
+  /* position: absolute;
+  bottom: 1.5rem; */
 }
 
 .home-online-coaching .read-more-btn i {

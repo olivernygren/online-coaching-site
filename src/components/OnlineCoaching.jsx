@@ -9,49 +9,35 @@ function OnlineCoaching() {
   return (
     <>
       <h2 className="main-h2">Online Coaching</h2>
-      <div className="online-coaching-container" id="plans">
-        <div className="background">
-          <h2>Vilket paket passar dig bäst? <i className="fas fa-address-book"></i> </h2>
-          <div className="online-coaching">
+      <div className="home-online-coaching online-coaching-page-top" id="plans">
+        <div className="content">
+          <div className="card">
+            <div className="online-coaching-header-btns">
+              <i className="fas fa-eye" title="Läs mer"></i>
+              <img src={LogoIcon} alt="Logo" />
+              <i className="fas fa-arrow-down" title="Kontakta mig"></i>
+            </div>
+            <img className="home-online-coaching-cover-img" src={PlaceholderCover} alt="Kost- och Träningsprogram" />
+            <h4>Komplett Kost- och Träningsupplägg + Coaching</h4>
+            <h5>1 399 kr / mån <small className="line-through">1 999 kr / mån</small> </h5>
+            <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
+          </div>
 
-            <div className="online-coaching-pkg online-coaching-pkg-1">
-              <div className="online-coaching-header-btns">
-                <i className="fas fa-eye" title="Läs mer"></i>
-                <img src={LogoIcon} alt="Logo" />
-                <i className="fas fa-cart-plus" title="Lägg i varukorg"></i>
-              </div>
-              <div className="img-bg"></div>
-              <img className="online-coaching-cover-img" src={PlaceholderCover} alt="Kostschema" />
-              <h4>Kost</h4>
-              <h5>1 299 kr / mån</h5>
-              <button className="add-to-cart-btn">Lägg i varukorg <i className="fas fa-plus"></i> </button>
-            </div>
-            
-            <div className="online-coaching-pkg online-coaching-pkg-2">
-              <div className="online-coaching-header-btns">
-                <i className="fas fa-eye" title="Läs mer"></i>
-                <img src={LogoIcon} alt="Logo" />
-                <i className="fas fa-cart-plus" title="Lägg i varukorg"></i>
-              </div>
-              <div className="img-bg"></div>
-              <img className="online-coaching-cover-img" src={PlaceholderCover} alt="Kost- och Träningsprogram" />
-              <h4>Kost- och Träningsprogram</h4>
-              <h5>1 799 kr / mån <small className="line-through">2 299 kr / mån</small> </h5>
-              <button className="add-to-cart-btn">Lägg i varukorg <i className="fas fa-plus"></i> </button>
-            </div>
-
-            <div className="online-coaching-pkg online-coaching-pkg-3">
-              <div className="online-coaching-header-btns">
-                <i className="fas fa-eye" title="Läs mer"></i>
-                <img src={LogoIcon} alt="Logo" />
-                <i className="fas fa-cart-plus" title="Lägg i varukorg"></i>
-              </div>
-              <div className="img-bg"></div>
-              <img className="online-coaching-cover-img" src={PlaceholderCover} alt="Träningsprogram" />
-              <h4>Träningsprogram</h4>
-              <h5>999 kr / mån</h5>
-              <button className="add-to-cart-btn">Lägg i varukorg <i className="fas fa-plus"></i> </button>
-            </div>
+          <div className="info-text">
+            <h3>Vad ingår?</h3>
+            <p>Direkt efter beställning kommer du få besvara ett antal frågor i ett formulär. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
+            <ul>
+              <li> <b>+</b> Personligt anpassat kostschema.</li>
+              <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
+              <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
+              <li> <b>+</b> Betalning sker smidigt och enkelt med e-faktura efter du får ditt upplägg, inga förskottsbetalningar!</li>
+              <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
+              <li> <b>+</b> Direktkontakt med mig via Messenger för motivation, frågor eller ändringar av upplägget.</li>
+              <li> <b>+</b> (Valfritt) online-möte med mig innan skapandet av programmet.</li>
+              <li> <b>+</b> Ändringar görs löpande varje månad och/eller efter behov</li>
+              <li> <b>+</b> Kontinuerlig uppföljning och avstämningar veckovis</li>
+            </ul>
+            <a href="#get-started-form" className="read-more-btn">Kom igång nu <i className="fas fa-arrow-down"></i> </a>
           </div>
         </div>
       </div>
@@ -69,7 +55,7 @@ function OnlineCoaching() {
             då du får ditt färdigbyggda, personligt anpassade program. Hädanefter kommer vi ha möten online var 7e eller 14e dag,
             beroende på vad du vill, kan och behöver. Därför bokas dessa möten in av dig på valfri ledig tid. Efter varje vecka kommer du i ett PM gradera hur det gått med träningspass, kost, 
             motivation, energi, sömn och en valfri kommentar. På så sätt kan vi enkelt upptäcka mönster som kräver förändring i programmet. <br /> <br />
-            Nu är det upp till dig att fälja programmet och nå maximala resultat!
+            Nu är det upp till dig att följa programmet och nå maximala resultat!
           </p>
           <div className="training">
             <h3>Träningsprogram <i className="fas fa-dumbbell"></i> </h3>
@@ -97,7 +83,7 @@ function OnlineCoaching() {
           <div className="communication">
             <h3>Kommunikation med mig <i className="fas fa-comments"></i> </h3>
             <p>
-              Efter köp av online-coaching-paket kommer jag finnas tillänglig för att svara på frågor på diverse sociala medier eller på email. Som jag nämnt ovan
+              Efter beställning av online-coaching-paket kommer jag finnas tillänglig för att svara på frågor på diverse sociala medier eller på email. Som jag nämnt ovan
               kommer även online-möten bokas in av dig på lämplig tid, ca var 7e eller 14e dag, beroende på vad som passar dig bäst. Varje söndag kommer du också
               i ett PM gradera hur det gått med träningpass, kost, motivation, energi, sömn under veckan, plus en valfri kommentar.
             </p>
@@ -169,7 +155,7 @@ function OnlineCoaching() {
 
             Det enda jag förväntar mig och kräver av dig som klient är total ärlighet. Även om du begår misstag och inte håller dig till planen så är det inget som kan göras ogjort.
             För att vi ska kunna jobba tillsammans och justera din plan efter dina resultat krävs det total transparens, oavsett om du hållt dig till planen eller inte. Om inte de förväntade
-            resultaten kommer så är det viktigt att jag vet exakt varför. Är det så att du fäljt planen till punkt och pricka och resultaten inte kommer, då är dags att ändra planen.
+            resultaten kommer så är det viktigt att jag vet exakt varför. Är det så att du följt planen till punkt och pricka och resultaten inte kommer, då är dags att ändra planen.
           </p>
         </div>
       </div>

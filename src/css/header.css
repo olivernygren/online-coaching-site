@@ -106,15 +106,16 @@ nav li a {
 .services-dropdown {
   position: relative;
   display: none;
+  transition: .35s ease-in-out;
 }
 
 .dropdown-links {
   /* display: none; */
   position: absolute;
   top: 200%;
-  background: transparent;
+  background: black;
   z-index: 1;
-  padding-top: 1rem;
+  padding: .75rem;
   opacity: 0;
   transition: .35s ease-in-out;
   pointer-events: none;
@@ -131,11 +132,14 @@ nav li a {
 }
 
 .dropdown-item {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
+}
+
+.services-dropdown:hover {
+  background: black;
 }
 
 .services-dropdown:hover .dropdown-links {
-  /* display: block; */
   opacity: 1;
   top: 2rem;
   pointer-events: all;

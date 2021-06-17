@@ -30,7 +30,7 @@ function Home() {
 
           <div className="info-text">
             <h3>Vad ingår?</h3>
-            <p>Direkt efter köp kommer du få besvara ett antal frågor i ett formulär. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
+            <p>Direkt efter beställning kommer du få besvara ett antal frågor i ett formulär. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
             <ul>
               <li> <b>+</b> Personligt anpassat kostschema.</li>
               <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
@@ -78,7 +78,7 @@ function Home() {
 
           <div className="info-text">
             <h3>Vad ingår?</h3>
-            <p>Direkt efter köp kommer du få besvara ett antal frågor i ett formulär. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
+            <p>Direkt efter beställning kommer du få besvara ett antal frågor i ett formulär. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
             <ul>
               <li> <b>+</b> Personligt anpassat kostschema.</li>
               <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
