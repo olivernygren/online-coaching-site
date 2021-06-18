@@ -125,6 +125,7 @@ function PersonalPrograms() {
           <div className="training">
             <h3>Träningsprogram <i className="fas fa-dumbbell"></i> </h3>
             <p>Baserat på dina svar på frågorna i formuläret bygger jag ett träningsprogram som passar just dig!</p>
+            <p>Observera att träningsprogram ej ingår vid köp av endast kostschema!</p>
             <ul>
               <li> <b>Träningstyp</b> bestäms utifrån din budget, tid, skador och andra preferenser. Detta kan vara alltifrån bodybuilding till hemmaträning utan redskap.</li>
               <li> <b>Träningsvolym</b> och antal sets och reps bestäms utifrån din nivå och erfarenhet, dina mål och preferenser.</li>
@@ -134,6 +135,7 @@ function PersonalPrograms() {
           <div className="nutrition">
             <h3>Kostschema <i className="fas fa-utensils"></i> </h3>
             <p>Baserat på dina svar på frågorna i formuläret bygger jag ett kostschema som passar just dig!</p>
+            <p>Observera att kostschema ej ingår vid köp av endast träningsprogram!</p>
             <ul>
               <li> <b>Antal måltider</b> bestäms utifrån dina svar i formuläret.</li>
               <li> <b>Mängden kalorier</b> baseras på dina mål. Jag kommer noggrant räkna ut dina kaloribehov, något som vi kan/kommer justera beroende på hur din vikt och din fysik utvecklas, eller om dina mål skulle förändras.</li>

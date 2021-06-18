@@ -13,12 +13,11 @@ function Footer() {
           <p>Copyright <i className="far fa-copyright"></i> ONfitness AB 2021. Alla rättigheter reserverade </p>
         </div>
         <div className="column column-2">
-          <span>FAQ</span>
-          <span>Om Mig</span>
-          <span>Kontakta Mig</span>
-          <span>Köpvillkor</span>
-          <span>Integritetspolicy</span>
-          <span> <Link to="/login">Logga In</Link> </span>
+          <Link to="/faq">FAQ</Link>
+          <Link to="/about-me">Om Mig</Link>
+          <Link to="/contact">Kontakta Mig</Link>
+          <Link to="/terms-and-conditions">Köpvillkor</Link>
+          <Link to="/integrity-policy">Integritetspolicy</Link>
         </div>
         <div className="column column-3">
           <a href="/"> <i className="fab fa-instagram"></i> </a>

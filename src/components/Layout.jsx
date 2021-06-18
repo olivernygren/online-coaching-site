@@ -10,6 +10,11 @@ import EBooksAndPrograms from './EBooksAndPrograms'
 import OnlineCoaching from './OnlineCoaching'
 import Consultation from './Consultation'
 import PersonalPrograms from './PersonalPrograms'
+import Contact from './Contact'
+import FAQ from './FAQ'
+import IntegrityPolicy from './IntegrityPolicy'
+import TermsAndConditions from './TermsAndConditions'
+import AboutMe from './AboutMe'
 
 function Layout() {
   return (
@@ -24,6 +29,12 @@ function Layout() {
             <Route path='/online-coaching' component={OnlineCoaching} />
             <Route path='/personal-programs' component={PersonalPrograms} />
             <Route path='/consultation' component={Consultation} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/faq' component={FAQ} />
+            <Route path='/integrity-policy' component={IntegrityPolicy} />
+            <Route path='/terms-and-conditions' component={TermsAndConditions} />
+            <Route path='/about-me' component={AboutMe} />
+
           </Switch>
         <Footer/>
       </Router>
