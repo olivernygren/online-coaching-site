@@ -319,6 +319,10 @@
   padding-left: 3.5rem;
 }
 
+.cta-link i {
+  margin-left: .5rem;
+}
+
 
 
 
@@ -368,8 +372,8 @@
 
 
 .last-cta-section {
-  margin-bottom: 3rem;
-  padding: 0 4rem 4rem 4rem;
+  padding: 0 4rem 0 4rem;
+  text-align: center;
 }
 
 .last-cta-section .content {
@@ -385,6 +389,11 @@
   margin-bottom: 3rem;
   line-height: 1.25rem;
   letter-spacing: 1px;
+}
+
+.last-cta-section h3 {
+  margin: 0 auto;
+  max-width: 40ch;
 }
 
 
@@ -436,4 +445,24 @@
   text-decoration: none;
   font-size: .9rem;
   display: inline-block;
+  transform: scale(1);
+}
+
+.get-started-btn-2:hover {
+  background: var(--clr-main);
+  color: black;
+  transform: scale(1.1rem);
+}
+
+.get-started-btn-2 i {
+  margin-left: .5rem;
+}
+
+.oc-form {
+  margin: 5rem auto;
+  width: fit-content;
+}
+
+.choose-plan-btn .fa-arrow-down {
+  margin-left: .75rem;
 }

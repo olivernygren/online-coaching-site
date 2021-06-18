@@ -3,22 +3,46 @@
 }
 
 .whats-included-programs {
-  margin-top: 48rem;
+  margin-top: 58rem;
   text-align: left;
 }
 
 .last-cta-section-2 {
-  text-align: left;
+  text-align: center;
 }
 
 .last-cta-section-2 h2 {
   margin-bottom: 1.5rem;
 }
 
+.last-cta-section-2 p {
+  margin: 2rem auto;
+}
+
 .personal-programs-bg {
   margin-top: 15rem;
+  background: rgb(28, 28, 28);
+}
+
+.personal-programs-bg h2 {
+  text-align: center;
+  margin: 0 auto 12rem auto;
+  font-size: 1.75rem;
 }
 
 .personal-programs-page .main-h2 {
   margin: 0 auto;
 }
+
+.pp-form .form-page {
+  text-align: left;
+}
+
+.choose-plan-btn i {
+  margin-left: .75rem;
+}
+
+/* .personal-programs-page a i, .personal-programs-page button i {
+  margin-left: .5rem;
+} */
+

@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/main.css'
 import '../css/eBooksAndPrograms.css'
 import LogoIcon from '../images/ONfitness-icon.svg'
 import PlaceholderCover from '../images/covers/placeholder.png'
 
 function EBooksAndPrograms() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="e-books-and-programs">
       <h2 className="main-h2">E-böcker och Program</h2>
