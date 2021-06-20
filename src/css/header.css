@@ -67,11 +67,6 @@ nav li a {
   color: var(--clr-main)
 }
 
-.log-in-btn:hover {
-  background: var(--clr-main);
-  box-shadow: 7px 9px 0px rgb(21, 21, 21);
-}
-
 .fa-shopping-cart {
   cursor: pointer;
   transition: .35s ease-in-out;
@@ -90,18 +85,13 @@ nav li a {
 
 .services-dropdown {
   display: none;
-  transition: .35s ease-in-out;
-}
-
-.services-dropdown:hover {
-  background: black;
 }
 
 
 .services-dropdown .Collapsible {
   cursor: pointer;
   position: absolute;
-  right: 1.25rem;
+  right: 0rem;
   top: .25rem;
   z-index: 100;
 }
