@@ -1,0 +1,24 @@
+.faq-container .content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.Collapsible {
+  background: white;
+  color: rgb(34, 34, 34);
+  padding: 1rem 2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.Collapsible__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.Collapsible__trigger.is-open svg {
+  transform: rotate(180deg);
+}
