@@ -13,15 +13,16 @@
   margin-bottom: 6rem;
 }
 
-.Collapsible {
+.faq-container .Collapsible {
   background: white;
   color: rgb(34, 34, 34);
   padding: 1rem 1.5rem;
   margin: 1rem;
   cursor: pointer;
+  border-radius: 6px;
 }
 
-.Collapsible__trigger {
+.faq-container .Collapsible__trigger {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,7 +34,7 @@
   transform: rotate(180deg);
 }
 
-.Collapsible__contentInner {
+.faq-container .Collapsible__contentInner {
   letter-spacing: 1px;
   line-height: 1.25rem;
 }

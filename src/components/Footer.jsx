@@ -10,7 +10,7 @@ function Footer() {
         <div className="column column-1">
           {/* <h2 className="logo">ON<b>fitness</b> </h2> */}
           <img className="logo-icon" src={logoIcon} alt="Logo Icon" />
-          <p>Copyright <i className="far fa-copyright"></i> ONfitness AB 2021. Alla rättigheter reserverade </p>
+          <p>Copyright <i className="far fa-copyright"></i> ONfitness | 2021. Alla rättigheter reserverade. </p>
         </div>
         <div className="column column-2">
           <Link to="/faq">FAQ</Link>
