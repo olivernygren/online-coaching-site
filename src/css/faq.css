@@ -1,12 +1,22 @@
 .faq-container .content {
-  max-width: 1600px;
+  max-width: 800px;
   margin: 0 auto;
+}
+
+.faq-container .main-h2 {
+  margin-bottom: 0;
+}
+
+.faq-container > h4 {
+  text-align: center;
+  color: grey;
+  margin-bottom: 6rem;
 }
 
 .Collapsible {
   background: white;
   color: rgb(34, 34, 34);
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   margin: 1rem;
   cursor: pointer;
 }
@@ -21,4 +31,30 @@
 
 .Collapsible__trigger.is-open svg {
   transform: rotate(180deg);
+}
+
+.Collapsible__contentInner {
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+}
+
+.faq-container .contact-cta {
+  margin: 5rem 1rem 5rem 1rem;
+  text-align: center;
+}
+
+.faq-container .contact-cta h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.faq-container .contact-cta p {
+  margin-bottom: 2.5rem;
+}
+
+.faq-container .contact-cta a {
+  text-decoration: none;
+  color: var(--clr-main);
+  text-transform: uppercase;
+  font-weight: 500;
 }
