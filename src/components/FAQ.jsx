@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Collapsible from 'react-collapsible';
 import '../css/main.css'
 import '../css/faq.css'
@@ -6,6 +6,10 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link } from 'react-router-dom'
 
 function FAQ() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="faq-container">

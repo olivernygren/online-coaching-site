@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/main.css'
 import '../css/contact.css'
 import ContactIllustration from '../images/contact-illustration.svg'
 
 function Contact() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="contact-container">
       <h2 className="main-h2">Kontakta mig</h2>
