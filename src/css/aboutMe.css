@@ -1,0 +1,41 @@
+.about-me-container {
+  margin: 0 2rem;
+}
+
+.about-me-container .content {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 1600px;
+  height: fit-content;
+}
+
+.about-me-container .text, .about-me-container .image {
+  background: rgb(49, 49, 49);
+  /* height: 35rem; */
+  border-radius: 8px;
+}
+
+.about-me-container .text {
+  padding: 1rem 2.5rem;
+}
+
+.about-me-container .text h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.about-me-container .text h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 2.25rem 0;
+}
+
+.about-me-container .text p {
+  font-size: .9rem;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+}
