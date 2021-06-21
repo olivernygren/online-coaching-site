@@ -90,7 +90,7 @@ function Home() {
               <li> <b>-</b> <span className="line-through">Ändringar görs löpande varje månad och/eller efter behov</span> </li>
               <li> <b>-</b> <span className="line-through">Kontinuerlig uppföljning och avstämningar veckovis</span> </li>
             </ul>
-            <Link className="read-more-btn" to='/online-coaching'>Läs mer om personliga upplägg <i className="fas fa-arrow-right"></i> </Link>
+            <Link className="read-more-btn" to='/personal-programs'>Läs mer om personliga upplägg <i className="fas fa-arrow-right"></i> </Link>
           </div>
         </div>
         <div className="alternate-programs">

@@ -1,19 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import '../css/main.css'
 import '../css/header.css'
+import MenuIcon from '../images/menu-icon-2.svg'
+import Cross from '../images/cross.svg'
 import Logo from '../images/ONfitness-light.svg'
-import Collapsible from 'react-collapsible';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+// import Collapsible from 'react-collapsible';
+// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function Header() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleMenuClose = () => {
+    setIsMenuOpen(false)
+  }
+
+  const handleMenuOpen = () => {
+    setIsMenuOpen(true)
+  }
+
   return (
     <header>
       <Link to="/"><img className="logo" src={Logo} alt="Logo" /></Link>
-      <nav>
+      <nav className="desktop-nav">
         <ul>
           <li>
-            <Link className="link" to='/'>Hem</Link>
+            <Link className="link default-link" to='/'>Hem</Link>
           </li>
           <li>
             <Link className="link default-link" to='/e-books-and-programs'>E-böcker och Program</Link>
@@ -27,28 +40,40 @@ function Header() {
           <li>
             <Link className="link default-link" to='/consultation'>Boka gratis konsultation</Link>
           </li>
-          {/* <div className="services-dropdown">
-            <button className="dropdown-btn">Mina Services <i className="fas fa-angle-down"></i> </button>
-            <div className="dropdown-links">
-              <Link className="link dropdown-item" to='/online-coaching'>Online Coaching</Link>
-              <Link className="link dropdown-item" to="/personal-programs">Personliga Upplägg</Link>
-              <Link className="link dropdown-item" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
-              <Link className="link dropdown-item" to='/consultation'>Boka gratis konsultation</Link>
-            </div>
-          </div> */}
-          <div className="services-dropdown">
-            <Collapsible trigger={["MINA SERVICES", <ExpandMoreIcon/>]}>
-              <Link className="link dropdown-item" to='/online-coaching'>Online Coaching</Link>
-              <Link className="link dropdown-item" to="/personal-programs">Personliga Upplägg</Link>
-              <Link className="link dropdown-item" to='/e-books-and-programs'>E-böcker och färdiga program</Link>
-              <Link className="link dropdown-item" to='/consultation'>Boka gratis konsultation</Link>
-            </Collapsible>
-          </div>
           <div className="header-divider"></div>
         </ul>
         <div className="header-icons">
           <i className="fas fa-shopping-cart"></i>
         </div>
+      </nav>
+      <nav className="mobile-nav">
+        <div className="mobile-header-icons">
+          <div className="menu-icon-container" onClick={isMenuOpen ? handleMenuClose : handleMenuOpen}>
+            { isMenuOpen ? <img className="icon" src={Cross} alt="Close Menu" /> : <img className="icon" src={MenuIcon} alt="Menu" /> }
+          </div>
+          <i className="fas fa-shopping-cart icon"></i>
+        </div>
+        {isMenuOpen ? (
+          <div className="mobile-menu">
+            <ul>
+              <li>
+                <Link className="link default-link" to='/' onClick={handleMenuClose}>Hem</Link>
+              </li>
+              <li>
+                <Link className="link default-link" to='/e-books-and-programs' onClick={handleMenuClose}>E-böcker och Program</Link>
+              </li>
+              <li>
+                <Link className="link default-link" to='/personal-programs' onClick={handleMenuClose}>Personliga Upplägg</Link>
+              </li>
+              <li>
+                <Link className="link default-link" to='/online-coaching' onClick={handleMenuClose}>Online Coaching</Link>
+              </li>
+              <li>
+                <Link className="link default-link" to='/consultation' onClick={handleMenuClose}>Boka gratis konsultation</Link>
+              </li>
+            </ul>
+          </div>
+        ) : null}
       </nav>
     </header>
   )
