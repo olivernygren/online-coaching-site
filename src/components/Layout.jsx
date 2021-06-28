@@ -15,6 +15,9 @@ import FAQ from './FAQ'
 import IntegrityPolicy from './IntegrityPolicy'
 import TermsAndConditions from './TermsAndConditions'
 import AboutMe from './AboutMe'
+import Program1 from './products/Program1'
+import Program2 from './products/Program2'
+import EBook1 from './products/EBook1'
 
 function Layout() {
   return (
@@ -25,6 +28,9 @@ function Layout() {
             <Route exact path='/' component={Home} />
             {/* <Route path='/login' component={Login} />
             <Route path='/register' component={Register} /> */}
+            <Route exact path='/e-books-and-programs/program-1' component={Program1} />
+            <Route exact path='/e-books-and-programs/program-2' component={Program2} />
+            <Route exact path='/e-books-and-programs/e-book-1' component={EBook1} />
             <Route path='/e-books-and-programs' component={EBooksAndPrograms} />
             <Route path='/online-coaching' component={OnlineCoaching} />
             <Route path='/personal-programs' component={PersonalPrograms} />

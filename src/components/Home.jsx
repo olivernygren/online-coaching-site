@@ -114,8 +114,8 @@ function Home() {
             <h3>Program 1 <i className="fas fa-book"></i> </h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A est quam earum facere dolor reprehenderit, perferendis illo odio architecto delectus quia consequuntur voluptates ipsum, obcaecati amet expedita asperiores corrupti neque!</p>
             <div className="buttons">
-              <Link to="/" className="home-oc-link">Läs mer <i className="fas fa-arrow-right"></i> </Link>
-              <i className="fas fa-cart-plus"></i>
+              <Link to="/e-books-and-programs/program-1" className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
           <div className="image">
@@ -133,8 +133,8 @@ function Home() {
             <h3>Program 2 <i className="fas fa-book"></i> </h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A est quam earum facere dolor reprehenderit, perferendis illo odio architecto delectus quia consequuntur voluptates ipsum, obcaecati amet expedita asperiores corrupti neque!</p>
             <div className="buttons">
-              <Link to="/" className="home-oc-link">Läs mer <i className="fas fa-arrow-right"></i> </Link>
-              <i className="fas fa-cart-plus"></i>
+              <Link to="/e-books-and-programs/program-2" className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
         </div>
@@ -144,8 +144,8 @@ function Home() {
             <h3>E-bok 1 <i className="fas fa-book"></i> </h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A est quam earum facere dolor reprehenderit, perferendis illo odio architecto delectus quia consequuntur voluptates ipsum, obcaecati amet expedita asperiores corrupti neque!</p>
             <div className="buttons">
-              <Link to="/" className="home-oc-link">Läs mer <i className="fas fa-arrow-right"></i> </Link>
-              <i className="fas fa-cart-plus"></i>
+              <Link to="/e-books-and-programs/e-book-1" className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
           <div className="image">
@@ -163,8 +163,8 @@ function Home() {
             <h3>E-bok 2 <i className="fas fa-book"></i> </h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A est quam earum facere dolor reprehenderit, perferendis illo odio architecto delectus quia consequuntur voluptates ipsum, obcaecati amet expedita asperiores corrupti neque!</p>
             <div className="buttons">
-              <Link to="/" className="home-oc-link">Läs mer <i className="fas fa-arrow-right"></i> </Link>
-              <i className="fas fa-cart-plus"></i>
+              <Link to="/" className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
         </div>

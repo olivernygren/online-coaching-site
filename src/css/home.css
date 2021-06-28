@@ -13,7 +13,6 @@
 
 .home-oc-link:hover {
   background: var(--clr-main);
-  padding-left: 2.5rem;
 }
 
 .fa-globe {
@@ -309,6 +308,24 @@
   position: relative;
 }
 
+.home-ebooks-and-programs .fa-eye {
+  margin-left: .5rem;
+}
+
+.buy-now-link {
+  margin-left: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: .9rem;
+  transition: .35s ease-in-out;
+}
+
+.buy-now-link:hover {
+  color: var(--clr-main);
+}
+
 .blob-img {
   height: 15rem;
 }
@@ -363,18 +380,6 @@
 
 .fa-book {
   margin-left: .75rem;
-}
-
-.home-ebooks-and-programs .fa-cart-plus {
-  margin-left: 2rem;
-  font-size: 1.25rem;
-  cursor: pointer;
-  transition: .35s ease-in-out;
-}
-
-.home-ebooks-and-programs .fa-cart-plus:hover {
-  transform: scale(1.1);
-  color: var(--clr-main);
 }
 
 
