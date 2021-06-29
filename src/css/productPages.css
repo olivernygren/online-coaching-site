@@ -1,7 +1,11 @@
 .product-container .content .product {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 6rem 4rem;
+  margin-bottom: 8rem;
+}
+
+.product-container .content {
+  padding: 8rem 4rem 6rem 4rem;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -132,3 +136,21 @@
   color: rgb(150, 150, 150);
 }
 
+.related-products {
+  margin-bottom: 4rem;
+}
+
+.related-products h2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.related-product {
+  max-width: 20rem;
+}
+
+.cards-flex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}

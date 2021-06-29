@@ -75,7 +75,7 @@ function EBooksAndPrograms() {
       <div className="programs-container">
         <h2>Färdiga Kost- och Träningsprogram <i className="fas fa-dumbbell"></i> </h2>
         <div className="programs">
-        <div className="program program-1">
+          <div className="program program-1">
             <div className="program-header-btns">
               <i className="fas fa-eye" title="Läs mer"></i>
               <img src={LogoIcon} alt="Logo" />

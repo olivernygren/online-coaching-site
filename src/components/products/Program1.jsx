@@ -1,16 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Cover from '../../images/covers/traningsprogram.png'
 import '../../css/productPages.css'
 import '../../css/main.css'
+import LogoIcon from '../../images/ONfitness-icon.svg'
 import { products } from '../../database/products'
 
 function Program1() {
 
-  const i = 0;
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
+  
+  const i = 0;
   const productName = products[i].name
   const productPrice = products[i].price
   const productDesc = products[i].desc
+
+  const relatedProduct1Index = 1;
+  const relatedProduct1Name = products[relatedProduct1Index].name
+  const relatedProduct1Price = products[relatedProduct1Index].price
+  
+  const relatedProduct2Index = 2;
+  const relatedProduct2Name = products[relatedProduct2Index].name
+  const relatedProduct2Price = products[relatedProduct2Index].price
 
   return (
     <div className="product-container">
@@ -40,11 +53,36 @@ function Program1() {
           </div>
         </div>
         <div className="related-products">
-          <div className="related-product related-product-1">
-            
-          </div>
-          <div className="related-product related-product-2">
-
+          <h2>Liknande produkter</h2>
+          <div className="cards-flex">
+            <div className="related-product related-product-1">
+              <div className="program program-1">
+                <div className="program-header-btns">
+                  <i className="fas fa-eye" title="Läs mer"></i>
+                  <img src={LogoIcon} alt="Logo" />
+                  <i className="fas fa-arrow-right" title="Läs mer"></i>
+                </div>
+                <div className="img-bg"></div>
+                <img className="program-cover-img" src={Cover} alt="Program" />
+                <h4>{relatedProduct1Name}</h4>
+                <h5>{relatedProduct1Price} kr</h5>
+                <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
+              </div>
+            </div>
+            <div className="related-product related-product-2">
+              <div className="program program-2">
+                <div className="program-header-btns">
+                  <i className="fas fa-eye" title="Läs mer"></i>
+                  <img src={LogoIcon} alt="Logo" />
+                  <i className="fas fa-arrow-right" title="Läs mer"></i>
+                </div>
+                <div className="img-bg"></div>
+                <img className="program-cover-img" src={Cover} alt="Program" />
+                <h4>{relatedProduct2Name}</h4>
+                <h5>{relatedProduct2Price} kr</h5>
+                <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

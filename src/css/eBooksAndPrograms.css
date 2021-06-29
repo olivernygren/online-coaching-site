@@ -53,6 +53,17 @@
   cursor: pointer;
 }
 
+.program h4, .book h4 {
+  font-size: 1.1rem;
+  margin: .5rem 0 0 0;
+}
+
+.program h5, .book h5 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
 .personal-program {
   background: rgb(59,59,59);
   background: linear-gradient(324deg, rgba(65,65,65,1) 20%, rgba(88,88,88,1) 100%);
