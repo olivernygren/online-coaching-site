@@ -17,8 +17,12 @@ import TermsAndConditions from './TermsAndConditions'
 import AboutMe from './AboutMe'
 import Program1 from './products/Program1'
 import Program2 from './products/Program2'
+import Program3 from './products/Program3'
+import Program4 from './products/Program4'
 import EBook1 from './products/EBook1'
 import EBook2 from './products/EBook2'
+import EBook3 from './products/EBook3'
+import EBook4 from './products/EBook4'
 
 function Layout() {
   return (
@@ -31,8 +35,12 @@ function Layout() {
             <Route path='/register' component={Register} /> */}
             <Route exact path='/e-books-and-programs/program-1' component={Program1} />
             <Route exact path='/e-books-and-programs/program-2' component={Program2} />
+            <Route exact path='/e-books-and-programs/program-3' component={Program3} />
+            <Route exact path='/e-books-and-programs/program-4' component={Program4} />
             <Route exact path='/e-books-and-programs/e-book-1' component={EBook1} />
             <Route exact path='/e-books-and-programs/e-book-2' component={EBook2} />
+            <Route exact path='/e-books-and-programs/e-book-3' component={EBook3} />
+            <Route exact path='/e-books-and-programs/e-book-4' component={EBook4} />
             <Route path='/e-books-and-programs' component={EBooksAndPrograms} />
             <Route path='/online-coaching' component={OnlineCoaching} />
             <Route path='/personal-programs' component={PersonalPrograms} />

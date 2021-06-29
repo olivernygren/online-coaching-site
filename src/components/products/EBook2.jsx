@@ -13,17 +13,17 @@ function EBook2() {
     window.scrollTo(0, 0)
   }, [])
 
-  const i = 3;
+  const i = 5;
   const productName = products[i].name
   const productPrice = products[i].price
   const productDesc = products[i].desc
 
-  const relatedProduct1Index = 1;
+  const relatedProduct1Index = 4;
   const relatedProduct1Name = products[relatedProduct1Index].name
   const relatedProduct1Price = products[relatedProduct1Index].price
   const relatedProduct1Link = products[relatedProduct1Index].link
   
-  const relatedProduct2Index = 2;
+  const relatedProduct2Index = 6;
   const relatedProduct2Name = products[relatedProduct2Index].name
   const relatedProduct2Price = products[relatedProduct2Index].price
   const relatedProduct2Link = products[relatedProduct2Index].link

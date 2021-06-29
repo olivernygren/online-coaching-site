@@ -6,7 +6,7 @@ import LogoIcon from '../../images/ONfitness-icon.svg'
 import { products } from '../../database/products'
 import { useHistory } from 'react-router'
 
-function EBook1() {
+function Program3() {
 
   const history = useHistory()
 
@@ -14,17 +14,17 @@ function EBook1() {
     window.scrollTo(0, 0)
   }, [])
 
-  const i = 4;
+  const i = 2;
   const productName = products[i].name
   const productPrice = products[i].price
   const productDesc = products[i].desc
 
-  const relatedProduct1Index = 5;
+  const relatedProduct1Index = 1;
   const relatedProduct1Name = products[relatedProduct1Index].name
   const relatedProduct1Price = products[relatedProduct1Index].price
   const relatedProduct1Link = products[relatedProduct1Index].link
   
-  const relatedProduct2Index = 6;
+  const relatedProduct2Index = 3;
   const relatedProduct2Name = products[relatedProduct2Index].name
   const relatedProduct2Price = products[relatedProduct2Index].price
   const relatedProduct2Link = products[relatedProduct2Index].link
@@ -94,7 +94,7 @@ function EBook1() {
                 <img className="program-cover-img" src={Cover} alt="Program" />
                 <h4>{relatedProduct2Name}</h4>
                 <h5>{relatedProduct2Price} kr</h5>
-                <button className="add-to-cart-btn" onClick={redirectToRelatedProduct2}>Läs mer <i className="fas fa-arrow-right"></i> </button>
+                <button className="add-to-cart-btn"  onClick={redirectToRelatedProduct2}>Läs mer <i className="fas fa-arrow-right"></i> </button>
               </div>
             </div>
           </div>
@@ -104,4 +104,4 @@ function EBook1() {
   )
 }
 
-export default EBook1
+export default Program3
