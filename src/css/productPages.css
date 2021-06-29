@@ -1,0 +1,134 @@
+.product-container .content .product {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 6rem 4rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.product-container .content .image {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4rem;
+}
+
+.product-container .content .image img {
+  height: 36rem;
+  border-radius: 8px;
+}
+
+.product-title {
+  font-size: 2.25rem;
+  margin-top: 0;
+  box-shadow: inset 0 -12px 0 0 var(--clr-main);
+  width: fit-content;
+}
+
+.desc, .product-container .info span {
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: flex-end;
+  height: fit-content;
+}
+
+.product-container .price-container span {
+  margin-left: 1rem;
+  margin-bottom: 1.25rem;
+  color: rgb(150, 150, 150);
+}
+
+.product-container .price {
+  margin: 0 0 .25rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+  background: rgb(77, 77, 77);
+  padding: 1rem 2rem;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.price-container .price i {
+  font-size: 1.5rem;
+  margin-left: .75rem;
+  color: lightgrey;
+}
+
+.product-container .desc {
+  margin-top: 2rem;
+}
+
+.product-container .info ul {
+  padding-inline-start: 0;
+  list-style-type: none;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.product-container .info ul li {
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  margin: .75rem 0;
+}
+
+.product-container .info ul li b {
+  color: var(--clr-main);
+  margin-right: .5rem;
+}
+
+.product-container .buy-now-btn {
+  color: rgb(30, 30, 30);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  background: white;
+  padding: .75rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: .35s ease-in-out;
+  height: fit-content;
+  white-space: nowrap;
+}
+
+.product-container .buy-now-btn:hover {
+  background: var(--clr-main);
+  padding-left: 2.75rem;
+}
+
+.included-h3 {
+  margin-top: 2rem;
+}
+
+.agreement {
+  font-style: italic;
+  color: rgb(150, 150, 150);
+  margin-top: 2rem;
+  font-size: .85rem;
+}
+
+.agreement a {
+  color: rgb(150, 150, 150);
+}
+
+.payment-info {
+  font-style: italic;
+  color: rgb(150, 150, 150);
+  font-size: .85rem;
+  display: flex;
+  align-items: center;
+  margin-top: -.5rem;
+}
+
+.payment-info a {
+  text-decoration: none;
+}
+
+.payment-info a i {
+  font-size: 1.75rem;
+  margin-left: .5rem;
+  color: rgb(150, 150, 150);
+}
+

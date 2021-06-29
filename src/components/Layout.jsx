@@ -40,7 +40,6 @@ function Layout() {
             <Route path='/integrity-policy' component={IntegrityPolicy} />
             <Route path='/terms-and-conditions' component={TermsAndConditions} />
             <Route path='/about-me' component={AboutMe} />
-
           </Switch>
         <Footer/>
       </Router>
