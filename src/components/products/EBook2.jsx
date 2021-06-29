@@ -6,16 +6,14 @@ import LogoIcon from '../../images/ONfitness-icon.svg'
 import { products } from '../../database/products'
 import { useHistory } from 'react-router'
 
-function Program1() {
-
+function EBook2() {
   const history = useHistory()
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
-  
-  const i = 0;
+  const i = 3;
   const productName = products[i].name
   const productPrice = products[i].price
   const productDesc = products[i].desc
@@ -105,4 +103,4 @@ function Program1() {
   )
 }
 
-export default Program1
+export default EBook2

@@ -115,6 +115,7 @@
 
 .agreement a {
   color: rgb(150, 150, 150);
+  font-weight: 600;
 }
 
 .payment-info {
@@ -133,6 +134,7 @@
 .payment-info a i {
   font-size: 1.75rem;
   margin-left: .5rem;
+  margin-top: .1rem;
   color: rgb(150, 150, 150);
 }
 

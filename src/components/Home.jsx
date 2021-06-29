@@ -9,6 +9,7 @@ import PlaceholderCover from '../images/covers/placeholder.png'
 import LogoIcon from '../images/ONfitness-icon.svg'
 import { Link } from 'react-router-dom'
 
+
 function Home() {
   return (
     <>
