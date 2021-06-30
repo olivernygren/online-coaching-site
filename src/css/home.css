@@ -21,6 +21,7 @@
 
 .home-about-me-container .content .text {
   padding: 0 2rem;
+  width: 75%;
 }
 
 .home-about-me-container .content .text > h4 {
@@ -37,8 +38,9 @@
 
 .flip-card {
   background-color: transparent;
-  width: 28rem;
-  height: 32.5rem;
+  width: 33%;
+  max-width: 28rem;
+  height: auto;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -74,7 +76,8 @@
 }
 
 .flip-card-front img {
-  height: 32.5rem;
+  width: 100%;
+  max-width: 28rem;
   border-radius: 10px;
 }
 
