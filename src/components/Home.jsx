@@ -8,12 +8,67 @@ import Blob2 from '../images/blob-2.svg'
 import PlaceholderCover from '../images/covers/placeholder.png'
 import LogoIcon from '../images/ONfitness-icon.svg'
 import { Link } from 'react-router-dom'
-
+import { products } from '../database/products'
+import { useHistory } from 'react-router'
+// import AboutMe from './AboutMe'
+import Me from '../images/me-cropped.jpg'
 
 function Home() {
+
+  const history = useHistory()
+
+  const program1Index = 0
+  const program1Name = products[program1Index].name
+  const program1Price = products[program1Index].price
+  const program1Link = products[program1Index].link
+  const program1Desc = products[program1Index].desc
+
+  const program2Index = 1
+  const program2Name = products[program2Index].name
+  const program2Price = products[program2Index].price
+  const program2Link = products[program2Index].link
+  const program2Desc = products[program2Index].desc
+
+  const eBook1Index = 4
+  const eBook1Name = products[eBook1Index].name
+  const eBook1Price = products[eBook1Index].price
+  const eBook1Link = products[eBook1Index].link
+  const eBook1Desc = products[eBook1Index].desc
+
+  const eBook2Index = 5
+  const eBook2Name = products[eBook2Index].name
+  const eBook2Price = products[eBook2Index].price
+  const eBook2Link = products[eBook2Index].link
+  const eBook2Desc = products[eBook2Index].desc
+
   return (
     <>
       <Hero/>
+      {/* <AboutMe /> */}
+
+      <div className="about-me-container home-about-me-container">
+        <h2 className="main-h2">Vem är jag?</h2>
+        <div className="content">
+          <div className="image">
+            <img src={Me} alt="Bild på mig" />
+          </div>
+          <div className="text">
+            <h4> <b>Oliver Nygren</b>, Grundare, ONfitness</h4>
+            <p>
+              Mitt namn är Oliver Nygren och det är jag som är grundare av ONfitness. Jag är idag 20 år gammal och har tränat sedan 15 års ålder. Under dessa
+              fem år har jag levt totalt inkapslad i fitness-bubblan. Jag har spenderat timme efter timme, dag efter dag sedan dess på att lära mig allt som går 
+              inom kost och träning. Jag har spenderat ofattbart många timmar på att skriva både träningsprogram och kostscheman till mig själv sedan dess för att 
+              optimera mina resultat på gymmet. Efter all denna tid av planering och strukturering skulle jag säga att jag lärt mig vad som funkar och vad som inte funkar.
+              Och nu  vill jag hjälpa DIG! <br /> <br /> En dag i juni 2021 bestämde jag mig för att denna passion jag har för fitness är något större än bara en hobby. 
+              Jag vill kunna leva på att hjälpa människor inom kost och träning genom att lära ut allt jag lärt mig genom åren. Jag gick utanför min comfort-zone 
+              helt och hållet och startade upp ONfitness, en plattform där jag kan jag göra just detta. Jag driver företaget helt själv med allt vad det innebär.
+            </p>
+            <h3>Varför ska du lita på mig?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellat iure tempora blanditiis harum voluptatibus magnam animi exercitationem cupiditate voluptatum voluptate ipsum, quod ducimus ipsam illo sit in consequatur maxime inventore ipsa ratione ut. Non impedit, error, dicta ex cum odit necessitatibus eum neque ipsum vero, placeat veniam harum libero.</p>
+          </div>
+        </div>
+      </div>
+
       <div className="home-online-coaching">
         <h2>Online Coaching</h2>
         <div className="content">
@@ -112,10 +167,11 @@ function Home() {
         <h2>E-böcker och Färdiga Program</h2>
         <div className="content">
           <div className="text">
-            <h3>Program 1 <i className="fas fa-book"></i> </h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A est quam earum facere dolor reprehenderit, perferendis illo odio architecto delectus quia consequuntur voluptates ipsum, obcaecati amet expedita asperiores corrupti neque!</p>
+            <h3>{program1Name} <i className="fas fa-book"></i> </h3>
+            <p>{program1Desc}</p>
+            <span>{program1Price} kr</span>
             <div className="buttons">
-              <Link to="/e-books-and-programs/program-1" className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <Link to={program1Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
@@ -131,10 +187,11 @@ function Home() {
             <img className="home-cover-img" src={PlaceholderCover} alt="book" />
           </div>
           <div className="text">
-            <h3>Program 2 <i className="fas fa-book"></i> </h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A est quam earum facere dolor reprehenderit, perferendis illo odio architecto delectus quia consequuntur voluptates ipsum, obcaecati amet expedita asperiores corrupti neque!</p>
+            <h3>{program2Name} <i className="fas fa-book"></i> </h3>
+            <p>{program2Desc}</p>
+            <span>{program2Price} kr</span>
             <div className="buttons">
-              <Link to="/e-books-and-programs/program-2" className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <Link to={program2Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
@@ -142,10 +199,11 @@ function Home() {
 
         <div className="content">
           <div className="text">
-            <h3>E-bok 1 <i className="fas fa-book"></i> </h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A est quam earum facere dolor reprehenderit, perferendis illo odio architecto delectus quia consequuntur voluptates ipsum, obcaecati amet expedita asperiores corrupti neque!</p>
+            <h3>{eBook1Name} <i className="fas fa-book"></i> </h3>
+            <p>{eBook1Desc}</p>
+            <span>{eBook1Price} kr</span>
             <div className="buttons">
-              <Link to="/e-books-and-programs/e-book-1" className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <Link to={eBook1Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
@@ -161,14 +219,17 @@ function Home() {
             <img className="home-cover-img" src={PlaceholderCover} alt="book" />
           </div>
           <div className="text">
-            <h3>E-bok 2 <i className="fas fa-book"></i> </h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A est quam earum facere dolor reprehenderit, perferendis illo odio architecto delectus quia consequuntur voluptates ipsum, obcaecati amet expedita asperiores corrupti neque!</p>
+          <h3>{eBook2Name} <i className="fas fa-book"></i> </h3>
+            <p>{eBook2Desc}</p>
+            <span>{eBook2Price} kr</span>
             <div className="buttons">
-              <Link to="/" className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <Link to={eBook2Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
         </div>
+
+        <Link className="home-see-all-programs-link" to="/e-books-and-programs">Se alla e-böcker och program här <i className="fas fa-arrow-right"></i> </Link>
 
       </div>
 

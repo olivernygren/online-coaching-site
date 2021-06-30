@@ -1,4 +1,35 @@
 
+.home-about-me-container {
+  background: rgb(50, 50, 50);
+  transform: skewY(-4deg);
+  margin-top: -4rem;
+  padding: 8rem 4rem 4rem 4rem;
+}
+
+.home-about-me-container .content {
+  transform: skewY(4deg);
+}
+
+.home-about-me-container .content h2 {
+  margin-top: 0;
+}
+
+.home-about-me-container .main-h2 {
+  margin: 0 auto 6rem auto;
+  transform: skewY(4deg);
+}
+
+.home-about-me-container .content .text {
+  padding: 0 2rem;
+}
+
+.home-about-me-container .content .text > h4 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+
+
 
 .home-oc-link {
   color: black;
@@ -93,7 +124,7 @@
 .home-online-coaching {
   transform: skewY(-4deg);
   background: rgb(31, 31, 31);
-  margin-top: -6rem;
+  /* margin-top: -6rem; */
   padding: 4rem;
 }
 
@@ -103,7 +134,7 @@
   text-align: center;
   box-shadow: inset 0 -16px 0 0 var(--clr-main);
   width: fit-content;
-  margin: 2rem auto 4rem auto;
+  margin: 6rem auto 4rem auto;
 }
 
 .home-online-coaching .content {
@@ -198,6 +229,10 @@
 
 .home-personal-programs {
   margin-top: -8rem;
+}
+
+.home-personal-programs h2 {
+  margin-top: 2rem;
 }
 
 .alternate-programs {
@@ -365,8 +400,16 @@
   font-size: 1rem;
   letter-spacing: 1px;
   line-height: 1.25rem;
-  margin-bottom: 3rem;
   color: rgb(228, 228, 228);
+}
+
+.home-ebooks-and-programs span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.home-ebooks-and-programs .text .buttons {
+  margin-top: 2rem;
 }
 
 .home-ebooks-and-programs .content .text {
@@ -381,6 +424,18 @@
 .fa-book {
   margin-left: .75rem;
 }
+
+.home-see-all-programs-link {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-main);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 3rem;
+}
+
 
 
 
