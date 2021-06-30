@@ -14,6 +14,22 @@ function OnlineCoaching() {
   const [showFifth, setShowFifth] = useState(false)
   const [showLast, setShowLast] = useState(false)
 
+  const [showToTopBtn, setShowToTopBtn] = useState(false)
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+  }
+  
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 600) {
+        setShowToTopBtn(true)
+      } else if (window.pageYOffset < 600) {
+        setShowToTopBtn(false)
+      }
+    })
+  }, [])
+
   const handleShowFirst = () => {
     setShowSecond(false)
     setShowLast(false)
@@ -322,6 +338,10 @@ function OnlineCoaching() {
           <p>Det finns en chans att din fråga redan finns besvarad på min <Link to="/faq">FAQ-sida</Link> </p>
           <p>Annars svarar jag gladerligen på dina frågor. Se hur du kan kontakta mig <Link to="/contact">här</Link> </p>
         </div>
+      </div>
+
+      <div className="to-top-btn" style={{ opacity: showToTopBtn ? '1' : '0', pointerEvents: showToTopBtn ? 'all' : 'none' }}>
+        <button onClick={scrollToTop}><i className="fas fa-arrow-up"></i></button>
       </div>
     </>
   )

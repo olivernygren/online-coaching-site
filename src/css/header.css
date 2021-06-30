@@ -1,11 +1,10 @@
 header {
   /* background: transparent; */
-  padding: 1rem 4rem 0 4rem;
+  padding: 0 4rem 0 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 5rem;
-  max-width: 1600px;
   margin: 0 auto;
   position: fixed;
   z-index: 499;

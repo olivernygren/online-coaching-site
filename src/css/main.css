@@ -24,3 +24,29 @@ body {
 button {
   cursor: pointer;
 }
+
+.to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  transition: .25s ease-in-out;
+}
+
+.to-top-btn button {
+  padding: 1.6rem 1.7rem;
+  box-shadow: 4px 4px 10px rgb(32,32,32);
+  border-radius: 150px;
+  border: none;
+  background: rgb(49, 49, 49);
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.to-top-btn button i {
+  color: var(--clr-main);
+  font-size: 2rem;
+}
+
+.to-top-btn button:hover {
+  transform: scale(1.07);
+}

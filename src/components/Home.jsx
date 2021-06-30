@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Hero from './Hero'
 import '../css/main.css'
 import '../css/home.css'
@@ -13,9 +13,27 @@ import Logo from '../images/ONfitness-light.svg'
 
 function Home() {
 
+  const [showToTopBtn, setShowToTopBtn] = useState(false)
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 600) {
+        setShowToTopBtn(true)
+      } else if (window.pageYOffset < 600) {
+        setShowToTopBtn(false)
+      }
+    })
+  }, [])
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+
 
   const program1Index = 0
   const program1Name = products[program1Index].name
@@ -62,7 +80,7 @@ function Home() {
                   <li> <b>Favoritmuskelgrupp:</b> Axlar</li>
                   <li> <b>Längd:</b> 192 cm</li>
                   <li> <b>Vikt:</b> mellan 90-95 kg</li>
-                  <li> <b>Favvo-käk:</b> Monster Mash (ni som vet, ni vet)</li>
+                  <li> <b>Favoritkäk:</b> Monster Mash (ni som vet, ni vet)</li>
                 </ul>
               </div>
             </div>
@@ -264,6 +282,9 @@ function Home() {
         </div>
       </div>
 
+      <div className="to-top-btn" style={{ opacity: showToTopBtn ? '1' : '0', pointerEvents: showToTopBtn ? 'all' : 'none' }}>
+        <button onClick={scrollToTop}><i className="fas fa-arrow-up"></i></button>
+      </div>
 
     </>
   )

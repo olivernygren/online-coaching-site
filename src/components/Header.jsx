@@ -6,8 +6,6 @@ import MenuIcon from '../images/menu-icon-2.svg'
 import Cross from '../images/cross.svg'
 import Logo from '../images/ONfitness-light.svg'
 import { useEffect } from 'react';
-// import Collapsible from 'react-collapsible';
-// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function Header() {
 
