@@ -40,18 +40,13 @@ function Header() {
           <li>
             <Link className="link default-link" to='/consultation'>Boka gratis konsultation</Link>
           </li>
-          <div className="header-divider"></div>
         </ul>
-        <div className="header-icons">
-          <i className="fas fa-shopping-cart"></i>
-        </div>
       </nav>
       <nav className="mobile-nav">
         <div className="mobile-header-icons">
           <div className="menu-icon-container" onClick={isMenuOpen ? handleMenuClose : handleMenuOpen}>
             { isMenuOpen ? <img className="icon" src={Cross} alt="Close Menu" /> : <img className="icon" src={MenuIcon} alt="Menu" /> }
           </div>
-          <i className="fas fa-shopping-cart icon"></i>
         </div>
         {isMenuOpen ? (
           <div className="mobile-menu">
