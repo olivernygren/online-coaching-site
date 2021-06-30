@@ -26,7 +26,16 @@
 .home-about-me-container .content .text > h4 {
   margin-top: 0;
   font-size: 1.25rem;
+  display: flex;
+  align-items: center;
 }
+
+.home-about-me-container .content .text h4 > img {
+  height: 1.25rem;
+  margin-left: .75rem;
+}
+
+
 
 
 
@@ -406,6 +415,11 @@
 .home-ebooks-and-programs span {
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.home-ebooks-and-programs span > i {
+  margin-left: .5rem;
+  font-size: 1rem;
 }
 
 .home-ebooks-and-programs .text .buttons {

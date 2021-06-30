@@ -2,20 +2,16 @@ import React from 'react'
 import Hero from './Hero'
 import '../css/main.css'
 import '../css/home.css'
-// import '../css/onlineCoaching.css'
 import Blob from '../images/blob.svg'
 import Blob2 from '../images/blob-2.svg'
 import PlaceholderCover from '../images/covers/placeholder.png'
 import LogoIcon from '../images/ONfitness-icon.svg'
 import { Link } from 'react-router-dom'
 import { products } from '../database/products'
-import { useHistory } from 'react-router'
-// import AboutMe from './AboutMe'
-import Me from '../images/me-cropped.jpg'
+import Me from '../images/me-cropped-2.jpg'
+import Logo from '../images/ONfitness-light.svg'
 
 function Home() {
-
-  const history = useHistory()
 
   const program1Index = 0
   const program1Name = products[program1Index].name
@@ -44,8 +40,6 @@ function Home() {
   return (
     <>
       <Hero/>
-      {/* <AboutMe /> */}
-
       <div className="about-me-container home-about-me-container">
         <h2 className="main-h2">Vem är jag?</h2>
         <div className="content">
@@ -53,7 +47,8 @@ function Home() {
             <img src={Me} alt="Bild på mig" />
           </div>
           <div className="text">
-            <h4> <b>Oliver Nygren</b>, Grundare, ONfitness</h4>
+            <h4> <b>Oliver Nygren</b>, Grundare, <img src={Logo} alt="" /> </h4>
+            {/* <h4> <b>Oliver Nygren</b>, Grundare, ONfitness</h4> */}
             <p>
               Mitt namn är Oliver Nygren och det är jag som är grundare av ONfitness. Jag är idag 20 år gammal och har tränat sedan 15 års ålder. Under dessa
               fem år har jag levt totalt inkapslad i fitness-bubblan. Jag har spenderat timme efter timme, dag efter dag sedan dess på att lära mig allt som går 
@@ -169,7 +164,7 @@ function Home() {
           <div className="text">
             <h3>{program1Name} <i className="fas fa-book"></i> </h3>
             <p>{program1Desc}</p>
-            <span>{program1Price} kr</span>
+            <span>{program1Price} kr <i className="fas fa-tags"></i> </span>
             <div className="buttons">
               <Link to={program1Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
@@ -189,7 +184,7 @@ function Home() {
           <div className="text">
             <h3>{program2Name} <i className="fas fa-book"></i> </h3>
             <p>{program2Desc}</p>
-            <span>{program2Price} kr</span>
+            <span>{program2Price} kr <i className="fas fa-tags"></i> </span>
             <div className="buttons">
               <Link to={program2Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
@@ -201,7 +196,7 @@ function Home() {
           <div className="text">
             <h3>{eBook1Name} <i className="fas fa-book"></i> </h3>
             <p>{eBook1Desc}</p>
-            <span>{eBook1Price} kr</span>
+            <span>{eBook1Price} kr <i className="fas fa-tags"></i> </span>
             <div className="buttons">
               <Link to={eBook1Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
@@ -221,7 +216,7 @@ function Home() {
           <div className="text">
           <h3>{eBook2Name} <i className="fas fa-book"></i> </h3>
             <p>{eBook2Desc}</p>
-            <span>{eBook2Price} kr</span>
+            <span>{eBook2Price} kr <i className="fas fa-tags"></i> </span>
             <div className="buttons">
               <Link to={eBook2Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>

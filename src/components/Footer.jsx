@@ -18,12 +18,17 @@ function Footer() {
           <Link to="/contact">Kontakta Mig</Link>
           <Link to="/terms-and-conditions">Köpvillkor</Link>
           <Link to="/integrity-policy">Integritetspolicy</Link>
-          <a href="https://www.allabolag.se/010507MPKD/nygren-oliver">Allabolag</a>
+          <a href="https://www.allabolag.se/010507MPKD/nygren-oliver">Företaget på allabolag</a>
         </div>
         <div className="column column-3">
-          <a href="/"> <i className="fab fa-instagram"></i> </a>
-          <a href="/"> <i className="fab fa-facebook"></i> </a>
-          <a href="/"> <i className="fab fa-twitter"></i> </a>
+          <h3>Resurser <i className="fas fa-link"></i> </h3>
+          <a target="blank" href="https://stanefferding.com/products/vertical-diet-peak-performance-detailed-program-notes">- The Vetical Diet and Peak Performance 3.0 (E-bok)</a>
+          <a target="blank" href="https://youtu.be/BeOc7TRo9Os">- Stan Efferding Island Seminar (YouTube)</a>
+          <a target="blank" href="https://youtu.be/v2sgQbQVd7c">- Stan Efferding "How to Build Muscle Mass" (YouTube)</a>
+          <div className="social-icons">
+            <a href="/"> <i className="fab fa-instagram"></i> </a>
+            <a href="/"> <i className="fab fa-facebook"></i> </a>
+          </div>
         </div>
       </div>
     </footer>
