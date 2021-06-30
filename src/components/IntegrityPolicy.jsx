@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/intPolicy.css'
 
 function IntegrityPolicy() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="int-policy-container">
       <div className="content">
 
         <div className="heading">
           <h2>Integritetspolicy</h2>
-          <span>30 juni 2021</span>
+          <span>Senast uppdaterad: 30 juni 2021</span>
         </div>
 
         <h3>Behandling av personuppgifter på ONfitness</h3>

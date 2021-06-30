@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from './Hero'
 import '../css/main.css'
 import '../css/home.css'
@@ -12,6 +12,10 @@ import Me from '../images/me-cropped-2.jpg'
 import Logo from '../images/ONfitness-light.svg'
 
 function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const program1Index = 0
   const program1Name = products[program1Index].name

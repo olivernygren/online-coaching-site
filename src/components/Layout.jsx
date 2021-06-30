@@ -23,6 +23,7 @@ import EBook1 from './products/EBook1'
 import EBook2 from './products/EBook2'
 import EBook3 from './products/EBook3'
 import EBook4 from './products/EBook4'
+import Success from './Success'
 
 function Layout() {
   return (
@@ -50,6 +51,7 @@ function Layout() {
             <Route path='/integrity-policy' component={IntegrityPolicy} />
             <Route path='/terms-and-conditions' component={TermsAndConditions} />
             <Route path='/about-me' component={AboutMe} />
+            <Route path='/success' component={Success} />
           </Switch>
         <Footer/>
       </Router>

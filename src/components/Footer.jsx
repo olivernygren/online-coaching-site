@@ -18,7 +18,7 @@ function Footer() {
           <Link to="/contact">Kontakta Mig</Link>
           <Link to="/terms-and-conditions">Köpvillkor</Link>
           <Link to="/integrity-policy">Integritetspolicy</Link>
-          <a href="https://www.allabolag.se/010507MPKD/nygren-oliver">Företaget på allabolag</a>
+          <a href="https://www.allabolag.se/010507MPKD/nygren-oliver">Företagsinfo allabolag</a>
         </div>
         <div className="column column-3">
           <h3>Resurser <i className="fas fa-link"></i> </h3>
