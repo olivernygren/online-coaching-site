@@ -5,12 +5,14 @@ import '../css/header.css'
 import MenuIcon from '../images/menu-icon-2.svg'
 import Cross from '../images/cross.svg'
 import Logo from '../images/ONfitness-light.svg'
+import { useEffect } from 'react';
 // import Collapsible from 'react-collapsible';
 // import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isHeaderColored, setIsHeaderColored] = useState(false)
 
   const handleMenuClose = () => {
     setIsMenuOpen(false)
@@ -20,8 +22,18 @@ function Header() {
     setIsMenuOpen(true)
   }
 
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 120) {
+        setIsHeaderColored(true)
+      } else if (window.pageYOffset < 120) {
+        setIsHeaderColored(false)
+      }
+    })
+  }, [])
+
   return (
-    <header>
+    <header style={{ background: isHeaderColored ? 'rgb(40, 40, 40)' : 'transparent', boxShadow: isHeaderColored ? '0px 3px 10px rgb(30, 30, 30)' : 'none' }}>
       <Link to="/"><img className="logo" src={Logo} alt="Logo" /></Link>
       <nav className="desktop-nav">
         <ul>
