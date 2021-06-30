@@ -8,7 +8,7 @@ import PlaceholderCover from '../images/covers/placeholder.png'
 import LogoIcon from '../images/ONfitness-icon.svg'
 import { Link } from 'react-router-dom'
 import { products } from '../database/products'
-import Me from '../images/me-cropped-2.jpg'
+import Me from '../images/me-cropped-with-icon.png'
 import Logo from '../images/ONfitness-light.svg'
 
 function Home() {

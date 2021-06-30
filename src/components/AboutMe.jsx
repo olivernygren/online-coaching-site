@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import '../css/main.css'
 import '../css/aboutMe.css'
-import Me from '../images/me-cropped-2.jpg'
+import Me from '../images/me-cropped-with-icon.png'
 
 function AboutMe() {
 
