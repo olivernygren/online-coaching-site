@@ -13,8 +13,25 @@ function AboutMe() {
     <div className="about-me-container">
       <h2 className="main-h2">Om mig</h2>
       <div className="content">
-        <div className="image">
-          <img src={Me} alt="Bild på mig" />
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <img src={Me} alt="Bild på mig" />
+            </div>
+            <div className="flip-card-back">
+              <h3>Oliver Nygren</h3>
+              <h4>Självutbildad Online Coach <br /> och Tränings-entusiast</h4>
+              <ul>
+                <li> <b>Träningserfarenhet:</b> Sedan 2016</li>
+                <li> <b>Bosatt:</b> Kungsbacka</li>
+                <li> <b>Gym:</b> Iron Works, Kungsbacka</li>
+                <li> <b>Favoritmuskelgrupp:</b> Axlar</li>
+                <li> <b>Längd:</b> 192 cm</li>
+                <li> <b>Vikt:</b> mellan 90-95 kg</li>
+                <li> <b>Favoritkäk:</b> Monster Mash (ni som vet, ni vet)</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className="text">
           <h2>Vem är jag?</h2>

@@ -2,8 +2,16 @@
   margin: 5rem auto 3rem auto;
 }
 
+.personal-programs-page .main-h2 {
+  margin: 4rem auto 8rem auto;
+  font-size: 3rem;
+  text-align: center;
+  box-shadow: inset 0 -16px 0 0 var(--clr-main);
+  width: fit-content;
+}
+
 .whats-included-programs {
-  margin-top: 58rem;
+  margin-top: 48rem;
   text-align: left;
 }
 
@@ -28,10 +36,6 @@
   text-align: center;
   margin: 0 auto 12rem auto;
   font-size: 1.75rem;
-}
-
-.personal-programs-page .main-h2 {
-  margin: 0 auto;
 }
 
 .pp-form .form-page {

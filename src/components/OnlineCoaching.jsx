@@ -71,7 +71,7 @@ function OnlineCoaching() {
 
   return (
     <>
-      <h2 className="main-h2">Online Coaching</h2>
+      <h2 className="oc-main-h2">Online Coaching</h2>
       <div className="home-online-coaching online-coaching-page-top" id="plans">
         <div className="content">
           <div className="card">

@@ -14,6 +14,10 @@
   margin: 2rem 0;
 }
 
+.contact-container li {
+  margin: 0.5rem 0;
+}
+
 .contact-container .content .email i, .contact-container .content .ig-dm i {
   padding: 1rem;
   font-size: 2rem;
