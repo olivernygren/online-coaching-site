@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import '../css/main.css'
 import '../css/aboutMe.css'
+import Me from '../images/me-cropped.jpg'
 
 function AboutMe() {
 
@@ -13,7 +14,7 @@ function AboutMe() {
       <h2 className="main-h2">Om mig</h2>
       <div className="content">
         <div className="image">
-
+          <img src={Me} alt="Bild på mig" />
         </div>
         <div className="text">
           <h2>Vem är jag?</h2>
@@ -27,6 +28,7 @@ function AboutMe() {
             Jag vill kunna leva på att hjälpa människor inom kost och träning genom att lära ut allt jag lärt mig genom åren. Jag gick utanför min comfort-zone 
             helt och hållet och startade upp ONfitness, en plattform där jag kan jag göra just detta. Jag driver företaget helt själv med allt vad det innebär.
           </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, praesentium eveniet voluptates velit commodi iste, temporibus non nostrum similique, eum veritatis reiciendis obcaecati a alias rerum eius? Deserunt, doloremque alias.</p>
         </div>
       </div>
     </div>
