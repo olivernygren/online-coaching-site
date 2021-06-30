@@ -18,6 +18,7 @@ function Footer() {
           <Link to="/contact">Kontakta Mig</Link>
           <Link to="/terms-and-conditions">Köpvillkor</Link>
           <Link to="/integrity-policy">Integritetspolicy</Link>
+          <a href="https://www.allabolag.se/010507MPKD/nygren-oliver">Allabolag</a>
         </div>
         <div className="column column-3">
           <a href="/"> <i className="fab fa-instagram"></i> </a>
