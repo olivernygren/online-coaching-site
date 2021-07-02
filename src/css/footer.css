@@ -84,6 +84,7 @@ footer .column-3 .social-icons {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 footer .column-3 {
@@ -102,5 +103,40 @@ footer .column-3 h3 > i {
 footer .column-3 i {
   color: white;
   font-size: 1.75rem;
-  margin: 1rem 1.5rem 0 0;
+  margin: 0 1.5rem 0 0;
+}
+
+footer .payment-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 1.5rem; */
+  transform: scale(0.9);
+}
+
+footer .payment-icons img {
+  height: 1.75rem;
+  padding: .4rem .5rem;
+  margin: 0 .5rem;
+  background: white;
+  border-radius: 3px;
+  border: black 1px solid;
+}
+
+footer .payment-icons .gpay-icon {
+  padding: 0;
+}
+
+footer .payment-icons .amex-icon {
+  padding: 0;
+  background: none;
+  border: none;
+  height: 2.5rem;
+}
+
+footer .payment-icons .visa-icon {
+  padding: 0;
+  background: none;
+  border: none;
+  height: 1.7rem;
 }

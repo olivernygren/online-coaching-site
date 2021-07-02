@@ -224,7 +224,7 @@ function PersonalPrograms() {
         </div>
       </div>
 
-      <form className="hero-form oc-form" method="POST" action="https://formspree.io/f/mgerypyz" id="get-started-form">
+      <form className="hero-form oc-form" action="https://formspree.io/f/mgerypyz" method="POST" id="get-started-form">
         <div className={showInitial ? "form-page form-page-initial" : "hide"}>
           <h3>Vilket paket passar dig bäst?</h3>
           <span>Välj endast ett alternativ</span>

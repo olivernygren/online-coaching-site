@@ -2,6 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../css/footer.css'
 import logoIcon from '../images/ONfitness-icon.svg'
+import ApplePayIcon from '../images/payment-icons/apple-pay.png'
+import GPayIcon from '../images/payment-icons/g-pay.jpg'
+import MastercardIcon from '../images/payment-icons/mastercard.png'
+import VisaIcon from '../images/payment-icons/visa.png'
+import AmexIcon from '../images/payment-icons/amex.png'
 
 function Footer() {
   return (
@@ -28,6 +33,13 @@ function Footer() {
           <div className="social-icons">
             <a href="/"> <i className="fab fa-instagram"></i> </a>
             <a href="/"> <i className="fab fa-facebook"></i> </a>
+            <div className="payment-icons">
+              <img className="mc-icon" src={MastercardIcon} alt="Mastercard Icon" />
+              <img className="visa-icon" src={VisaIcon} alt="Visa Icon" />
+              <img className="amex-icon" src={AmexIcon} alt="Amex Icon" />
+              <img className="ap-icon" src={ApplePayIcon} alt="Apple Pay Icon" />
+              <img className="gpay-icon" src={GPayIcon} alt="Google Pay Icon" />
+            </div>
           </div>
         </div>
       </div>
