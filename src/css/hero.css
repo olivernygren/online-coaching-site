@@ -46,7 +46,7 @@
 }
 
 .hero-form .text-input-option input {
-  margin: .5rem 0 1rem 0;
+  margin: .5rem 0 0 0;
   padding: 0.5rem;
   border: none;
   border-radius: 4px;
@@ -92,13 +92,49 @@
   background: white;
 }
 
-.form-back-btn, .form-next-btn, .form-submit-btn {
+.form-back-btn, .form-next-btn, .form-submit-btn, .disabled-submit-btn {
   position: absolute;
   bottom: 1rem;
 }
 
-.form-submit-btn, .form-next-btn {
+.form-submit-btn, .form-next-btn, .disabled-submit-btn {
   right: 2rem;
+}
+
+.hero-form .consent-input input {
+  margin-right: .5rem;
+}
+
+.consent-input {
+  margin-bottom: 2rem;
+}
+
+.consent-input a {
+  color: white;
+  font-style: italic;
+}
+
+.error-text {
+  font-size: .85rem;
+  margin: .5rem 0;
+  color: red;
+}
+
+form .disabled-submit-btn {
+  cursor: not-allowed;
+  float: right;
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: var(--clr-main);
+  font-family: 'Maven Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .35s ease-in-out;
+}
+
+form .disabled-submit-btn:hover {
+  background: var(--clr-main);
 }
 
 .hero-form .form-back-btn {
