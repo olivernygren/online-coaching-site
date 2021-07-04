@@ -238,3 +238,27 @@ form .disabled-submit-btn:hover {
 .hide {
   display: none;
 }
+
+
+
+
+@media(max-width: 1200px) {
+  .hero .content {
+    flex-direction: column;
+  }
+
+  .hero-form .form-page {
+    margin-top: 3rem;
+  }
+
+  .hero .text {
+    width: 80%;
+    text-align: center;
+  }
+
+  .hero .text p {
+    width: auto;
+    max-width: 75ch;
+    margin: 1rem auto;
+  }
+}

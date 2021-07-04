@@ -13,7 +13,6 @@ function Footer() {
     <footer>
       <div className="content">
         <div className="column column-1">
-          {/* <h2 className="logo">ON<b>fitness</b> </h2> */}
           <img className="logo-icon" src={logoIcon} alt="Logo Icon" />
           <p>Copyright <i className="far fa-copyright"></i> ONfitness | 2021. Alla rättigheter reserverade. </p>
         </div>
@@ -31,8 +30,10 @@ function Footer() {
           <a target="blank" href="https://youtu.be/BeOc7TRo9Os">- Stan Efferding Island Seminar (YouTube)</a>
           <a target="blank" href="https://youtu.be/v2sgQbQVd7c">- Stan Efferding "How to Build Muscle Mass" (YouTube)</a>
           <div className="social-icons">
-            <a href="/"> <i className="fab fa-instagram"></i> </a>
-            <a href="/"> <i className="fab fa-facebook"></i> </a>
+            <div>
+              <a href="/"> <i className="fab fa-instagram"></i> </a>
+              <a href="/"> <i className="fab fa-facebook"></i> </a>
+            </div>
             <div className="payment-icons">
               <img className="mc-icon" src={MastercardIcon} alt="Mastercard Icon" />
               <img className="visa-icon" src={VisaIcon} alt="Visa Icon" />
