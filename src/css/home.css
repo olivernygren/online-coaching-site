@@ -811,6 +811,10 @@
     box-shadow: none;
   }
 
+  .home-online-coaching h2 {
+    font-size: 2.25rem;
+  }
+
   .home-ebooks-and-programs .content {
     flex-direction: column-reverse;
     align-items: center;
