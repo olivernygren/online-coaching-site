@@ -22,9 +22,9 @@ function Header() {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 120) {
+      if (window.pageYOffset > 75) {
         setIsHeaderColored(true)
-      } else if (window.pageYOffset < 120) {
+      } else if (window.pageYOffset < 75) {
         setIsHeaderColored(false)
       }
     })

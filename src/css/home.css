@@ -83,7 +83,7 @@
 
 /* Style the back side */
 .flip-card-back {
-  background-color: white;
+  background: white;
   color: rgb(31, 31, 31);
   transform: rotateY(180deg);
   border-radius: 10px;
@@ -274,7 +274,7 @@
   padding: 1rem 3rem;
   background: var(--clr-main);
   color: rgb(31, 31, 31);
-  border-radius: 10px;
+  border-radius: 50px;
   font-weight: 500;
   text-transform: uppercase;
   transition: .35s ease-in-out;
@@ -428,7 +428,7 @@
 
 .buy-now-link {
   margin-left: 1.5rem;
-  color: white;
+  color: var(--clr-main);
   text-transform: uppercase;
   font-weight: 500;
   text-decoration: none;
@@ -572,4 +572,298 @@
 
 .box-3 {
   grid-column: 3;
+}
+
+.me-mobile-img {
+  display: none;
+}
+
+.mobile-h4 {
+  display: none;
+}
+
+@media (max-width: 1060px) {
+  .program-list {
+    flex-direction: column;
+  }
+
+  .program-list a {
+    margin: 1rem 0;
+  }
+
+  .home-online-coaching .content {
+    margin-top: 3rem;
+  }
+
+  .home-online-coaching h2 {
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .home-ebooks-and-programs h2 {
+    margin: 2rem auto 1rem auto;
+  }
+
+  .home-personal-programs {
+    padding-bottom: 2rem;
+  }
+
+  .home-about-me-container {
+    padding-bottom: 1rem; 
+  }
+}
+
+@media (max-width: 1010px) {
+  .home-online-coaching .card {
+    max-height: 33.5rem;
+  }
+}
+
+@media (max-width: 1010px) {
+  .home-online-coaching .card {
+    max-height: 33.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .home-about-me-container {
+    padding: 6rem 2rem 1rem 2rem;
+  }
+}
+
+@media (max-width: 875px) {
+
+  .home-about-me-container {
+    padding: 6rem 2rem 1rem 2rem;
+  }
+
+  .home-about-me-container .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-about-me-container .content .text {
+    padding: 0;
+    margin: 0 auto;
+    width: auto;
+  } 
+
+  .home-about-me-container .flip-card {
+    display: none;
+  }
+
+  .me-mobile-img {
+    display: block;
+    max-width: 25rem;
+    border-radius: 8px;
+    margin: 2.5rem auto 0 auto;
+  }
+
+  .home-book-consultation h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .home-online-coaching .content {
+    flex-direction: column;
+  }
+
+  .home-online-coaching .card {
+    margin: 1rem auto 2rem auto;
+  }
+
+  .three-blocks .box {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .three-blocks {
+    display: flex;
+    flex-direction: column;
+    max-width: 75ch;
+    padding: 1.5rem;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 725px) {
+  .home-ebooks-and-programs h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-ebooks-and-programs .content, .home-ebooks-and-programs .content-reverse {
+    padding: 3rem 4rem;
+  }
+
+  .home-ebooks-and-programs .content .text {
+    padding-right: 2rem;
+  }
+
+  .home-ebooks-and-programs .content-reverse .text {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-ebooks-and-programs .content, .home-ebooks-and-programs .content-reverse {
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .home-ebooks-and-programs p {
+    display: none;
+  }
+
+  .blob-img {
+    display: none;
+  }
+
+  .home-cover-img {
+    position: initial;
+    transform: unset;
+  }
+
+  .home-ebooks-and-programs h3 {
+    margin-bottom: 1rem;
+  }
+
+  .home-book-consultation {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-ebooks-and-programs .content, .home-ebooks-and-programs .content-reverse {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-ebooks-and-programs .text .buttons {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .home-oc-link {
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: .9rem;
+  }
+
+  .home-ebooks-and-programs .content-reverse .text {
+    text-align: left;
+  }
+
+  .home-ebooks-and-programs .content-reverse .home-oc-link {
+    align-items: center;
+  }
+
+  .buy-now-link {
+    margin-left: 0rem;
+  }
+
+  .home-ebooks-and-programs h2 {
+    font-size: 2rem;
+    box-shadow: inset 0 -10px 0 0 var(--clr-main);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .home-online-coaching {
+    padding: 4rem 0;
+  }
+
+  .home-online-coaching .content {
+    background: transparent;
+    margin-bottom: 3rem;
+    margin-top: 0;
+  }
+
+  .home-personal-programs h2 {
+    font-size: 2.25rem;
+  }
+
+  .program-list a {
+    font-size: .95rem;
+  }
+
+  .home-online-coaching .info-text ul {
+    margin-bottom: 2rem;
+  }
+
+  .home-online-coaching .info-text p {
+    margin-bottom: 1.75rem;
+  }
+
+  .home-book-consultation h2, .home-book-consultation i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .home-ebooks-and-programs h2 {
+    box-shadow: none;
+  }
+
+  .home-ebooks-and-programs .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2rem;
+  } 
+  
+  .home-ebooks-and-programs .content-reverse {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+
+  .home-oc-link {
+    margin: 1rem auto;
+  }
+
+  .home-ebooks-and-programs h3 {
+    margin-top: 2rem;
+  }
+
+  .home-ebooks-and-programs .content-reverse .text {
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  .home-ebooks-and-programs .content .text {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .home-see-all-programs-link {
+    padding: 0 1rem;
+  }
+
+  .home-about-me-container .main-h2 {
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .home-about-me-container .content .text > h4 {
+    display: none;
+  }
+
+  .mobile-h4 {
+    display: block;
+  }
+
+  .mobile-h4 img {
+    height: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }

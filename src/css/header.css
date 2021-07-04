@@ -18,7 +18,7 @@ header .logo {
   height: 2.5rem;
   position: fixed;
   top: 1rem;
-  z-index: 500;
+  z-index: 100;
 }
 
 .desktop-nav {
@@ -111,7 +111,7 @@ header .logo {
 
 
 .menu-icon-container {
-  padding: .5rem;
+  padding: .5rem 0;
   cursor: pointer;
 }
 
@@ -120,7 +120,7 @@ header .logo {
   margin-right: 1rem;
   align-items: center;
   position: fixed;
-  right: 4rem;
+  right: 3rem;
   top: 1.5rem;
   z-index: 1000;
 }
@@ -152,5 +152,20 @@ header .logo {
 
   .desktop-nav {
     display: none;
+  }
+}
+
+@media (max-width: 525px) {
+  header {
+    padding: 0 2rem;
+  }
+
+  header .logo {
+    height: 2rem;
+    top: 1.5rem;
+  }
+
+  .mobile-header-icons {
+    right: 1rem;
   }
 }

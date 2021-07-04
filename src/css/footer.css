@@ -148,7 +148,7 @@ footer .payment-icons .visa-icon {
 @media(max-width: 1080px) {
   footer .content {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
     gap: 2rem;
     height: fit-content;
     padding: 1rem 2rem 0 2rem;
@@ -167,6 +167,7 @@ footer .payment-icons .visa-icon {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 1rem 0;
   }
 
   footer .column-2 a {
