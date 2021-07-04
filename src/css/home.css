@@ -851,6 +851,10 @@
     font-size: 2.25rem;
     margin-bottom: 3rem;
   }
+
+  .me-mobile-img {
+    width: 80vw;
+  }
 }
 
 @media (max-width: 430px) {
