@@ -28,6 +28,10 @@ function OnlineCoaching() {
     })
   }, [])
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <h2 className="oc-main-h2">Online Coaching</h2>
