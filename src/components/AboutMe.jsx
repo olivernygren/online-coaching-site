@@ -9,6 +9,10 @@ function AboutMe() {
     window.scrollTo(0, 0)
   }, [])
 
+  useEffect(() => {
+    document.title = 'ONfitness | Om Mig'
+  }, [])
+
   return (
     <div className="about-me-container">
       <h2 className="main-h2">Om mig</h2>

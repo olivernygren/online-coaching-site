@@ -7,6 +7,10 @@ function IntegrityPolicy() {
     window.scrollTo(0, 0)
   }, [])
 
+  useEffect(() => {
+    document.title = 'ONfitness | Integritetspolicy'
+  }, [])
+
   return (
     <div className="int-policy-container">
       <div className="content">

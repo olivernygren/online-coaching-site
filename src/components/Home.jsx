@@ -20,6 +20,10 @@ function Home() {
   }
 
   useEffect(() => {
+    document.title = 'ONfitness | Startsida'
+  }, [])
+
+  useEffect(() => {
     window.addEventListener('scroll', () => {
       if (window.pageYOffset > 600) {
         setShowToTopBtn(true)

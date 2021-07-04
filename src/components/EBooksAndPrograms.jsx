@@ -14,6 +14,10 @@ function EBooksAndPrograms() {
     window.scrollTo(0, 0)
   }, [])
 
+  useEffect(() => {
+    document.title = 'ONfitness | E-böcker & Färdiga Program'
+  }, [])
+
   const program1Index = 0
   const program1Name = products[program1Index].name
   const program1Price = products[program1Index].price

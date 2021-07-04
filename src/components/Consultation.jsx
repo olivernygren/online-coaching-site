@@ -9,6 +9,10 @@ function Consultation() {
     window.scrollTo(0, 0)
   }, [])
 
+  useEffect(() => {
+    document.title = 'ONfitness | Boka Gratis Konsultation'
+  }, [])
+
   return (
     <div className="consultation-root">
       <div className="consultation-container">

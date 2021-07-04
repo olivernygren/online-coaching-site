@@ -19,6 +19,10 @@ function Program2() {
   const productPrice = products[i].price
   const productDesc = products[i].desc
 
+  useEffect(() => {
+    document.title = 'ONfitness | ' + productName
+  }, [productName])
+
   const relatedProduct1Index = 0;
   const relatedProduct1Name = products[relatedProduct1Index].name
   const relatedProduct1Price = products[relatedProduct1Index].price

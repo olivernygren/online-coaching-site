@@ -11,6 +11,10 @@ function FAQ() {
     window.scrollTo(0, 0)
   }, [])
 
+  useEffect(() => {
+    document.title = 'ONfitness | FAQ'
+  }, [])
+
   return (
     <div className="faq-container">
       <h2 className="main-h2 faq-h2">FAQ</h2>

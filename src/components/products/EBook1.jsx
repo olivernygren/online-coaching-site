@@ -14,10 +14,15 @@ function EBook1() {
     window.scrollTo(0, 0)
   }, [])
 
+  
   const i = 4;
   const productName = products[i].name
   const productPrice = products[i].price
   const productDesc = products[i].desc
+  
+  useEffect(() => {
+    document.title = 'ONfitness | ' + productName
+  }, [productName])
 
   const relatedProduct1Index = 5;
   const relatedProduct1Name = products[relatedProduct1Index].name

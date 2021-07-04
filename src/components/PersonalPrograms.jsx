@@ -17,6 +17,10 @@ function PersonalPrograms() {
   }
 
   useEffect(() => {
+    document.title = 'ONfitness | Personliga Upplägg'
+  }, [])
+
+  useEffect(() => {
     window.addEventListener('scroll', () => {
       if (window.pageYOffset > 600) {
         setShowToTopBtn(true)

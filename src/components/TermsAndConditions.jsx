@@ -7,6 +7,10 @@ function TermsAndConditions() {
     window.scrollTo(0, 0)
   }, [])
 
+  useEffect(() => {
+    document.title = 'ONfitness | Köpvillkor'
+  }, [])
+
   return (
     <div className="terms-container">
       <div className="content">

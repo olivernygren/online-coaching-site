@@ -9,6 +9,10 @@ function Contact() {
     window.scrollTo(0, 0)
   }, [])
 
+  useEffect(() => {
+    document.title = 'ONfitness | Kontakta Mig'
+  }, [])
+
   return (
     <div className="contact-container">
       <h2 className="main-h2">Kontakta mig</h2>

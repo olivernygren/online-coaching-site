@@ -9,6 +9,10 @@ function Success() {
     window.scrollTo(0, 0)
   }, [])
 
+  useEffect(() => {
+    document.title = 'ONfitness | Tack för ditt köp!'
+  }, [])
+
   return (
     <div className="success-container">
       <div className="content">
