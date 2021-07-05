@@ -474,3 +474,48 @@
 .choose-plan-btn .fa-arrow-down {
   margin-left: .75rem;
 }
+
+@media (max-width: 835px) {
+  .client-expectations h2 {
+    font-size: 2rem;
+  }
+
+  .last-cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .information-section {
+    margin-bottom: 8rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .client-expectations h2 {
+    box-shadow: none;
+  }
+
+  .client-expectations {
+    padding: 0 2rem;
+  }
+
+  .client-expectations span {
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .information-section {
+    margin-bottom: 8rem;
+    padding-bottom: 2rem;
+  }
+
+  .oc-main-h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .home-online-coaching {
+    padding-bottom: 0;
+  }
+}
