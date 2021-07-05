@@ -815,18 +815,25 @@
     font-size: 2.25rem;
   }
 
-  .home-ebooks-and-programs .content {
-    flex-direction: column-reverse;
+  .home-ebooks-and-programs {
+    padding: 0 2rem;
+  }
+
+  .home-ebooks-and-programs .content, .home-ebooks-and-programs .content-reverse {
     align-items: center;
     text-align: center;
-    padding: 2rem 2rem;
+    padding: 3rem 2rem 2rem 2rem;
+    margin: 1rem 0;
+    background: rgb(51, 51, 51);
+    border-radius: 10px;
   } 
+
+  .home-ebooks-and-programs .content {
+    flex-direction: column-reverse;
+  }
   
   .home-ebooks-and-programs .content-reverse {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem 2rem;
   }
 
   .home-oc-link {
@@ -859,6 +866,10 @@
   .me-mobile-img {
     width: 80vw;
   }
+
+  .alternate-programs {
+    padding: 0 1rem;
+  }
 }
 
 @media (max-width: 430px) {
@@ -874,4 +885,19 @@
     height: 1.5rem;
     margin-bottom: 2rem;
   }
+}
+
+@media (max-width: 350px) {
+  .home-ebooks-and-programs {
+    padding: 0;
+  }
+
+  .home-ebooks-and-programs .content, .home-ebooks-and-programs .content-reverse {
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem 0;
+    background: none;
+    border-radius: 0;
+  } 
 }

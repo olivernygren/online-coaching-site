@@ -70,7 +70,7 @@ function Home() {
         <div className="content">
 
           <div className="text">
-            <h4> <b>Oliver Nygren, </b> Grundare, <img src={Logo} alt="ONfitness Logo" /> </h4>
+            <h4> <b>Oliver Nygren </b>, Grundare, <img src={Logo} alt="ONfitness Logo" /> </h4>
             <div className="mobile-h4">
               <b>Oliver Nygren</b>
               <p>Grundare</p>
