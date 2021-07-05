@@ -17,7 +17,7 @@ function Consultation() {
     <div className="consultation-root">
       <div className="consultation-container">
         <div className="content">
-          <h2>Boka gratis konsultation <i className="fas fa-video"></i> </h2>
+          <h2>Boka gratis konsultation<i className="fas fa-video"></i> </h2>
           <div className="text-body">
             <p>Är du osäker på hur du ska nå dina mål? En gratis konsultation är ett perfekt första steg på vägen dit. Helt gratis och utan risk för dig.</p>
             <p>

@@ -214,6 +214,10 @@
   .last-cta-section-2 h2 {
     font-size: 2rem;
   }
+
+  .oc-form {
+    margin: 0 auto 2rem auto;
+  }
 }
 
 @media (max-width: 460px) {

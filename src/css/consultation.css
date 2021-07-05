@@ -16,7 +16,7 @@
 }
 
 .consultation-container h2 i {
-  margin-left: 1rem;
+  margin-left: .75rem;
   font-size: 2.5rem;
 }
 
@@ -46,4 +46,42 @@
   color: rgb(39, 39, 39);
   background: white;
   padding-left: 3.5rem;
+}
+
+@media (max-width: 770px) {
+  .consultation-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .consultation-container h2 i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .consultation-container h2 {
+    font-size: 2rem;
+    box-shadow: inset 0 -10px 0 0 var(--clr-main);
+  }
+}
+
+@media (max-width: 600px) {
+  .consultation-container {
+    padding: 0 2rem 1rem 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .consultation-container h2 {
+    font-size: 2rem;
+    box-shadow: none;
+  }
+
+  .consultation-container h2 i {
+    font-size: 1.5rem;
+  }
+
+  .hero-form .form-page {
+    margin-top: 0;
+  }
 }
