@@ -187,6 +187,10 @@ footer .payment-icons .visa-icon {
     flex-direction: column;
     align-items: center;
   }
+
+  footer .logo-icon {
+    margin-bottom: 2rem;
+  }
 }
 
 @media(max-width: 430px) {

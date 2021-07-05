@@ -46,7 +46,189 @@
   margin-left: .75rem;
 }
 
-/* .personal-programs-page a i, .personal-programs-page button i {
-  margin-left: .5rem;
-} */
+@media (max-width: 1300px) {
+  .personal-programs-container .background {
+    left: 2rem;
+    right: 2rem;
+  }
+}
 
+@media (max-width: 950px) {
+  .personal-programs {
+    grid-gap: 2rem;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .information-section h2 {
+    box-shadow: none;
+    text-decoration: underline;
+    text-align: center
+  }
+
+  .information-section .levels {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .beginner, .intermediate, .advanced {
+    justify-items: center;
+    max-width: 75ch;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .personal-programs-container .background {
+    background: none;
+    position: static;
+    margin: 0 auto;
+    height: fit-content;
+  }
+
+  .whats-included-programs {
+    margin-top: 0rem;
+  }
+
+  .personal-programs-page .main-h2 {
+    margin-bottom: 2rem;
+  }
+
+  .personal-programs {
+    height: fit-content;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .personal-programs-bg h2 {
+    margin-bottom: 0;
+  }
+
+  .personal-program-2 {
+    transform: scale(1);
+  }
+
+  /* .personal-program {
+    height: fit-content;
+  } */
+
+  .personal-programs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .personal-program-3 {
+    justify-self: center;
+    grid-area: 2 / 1 / 3 / 3;
+    width: 50%;
+    /* width: 20rem; */
+  }
+
+  .online-coaching-contact h2 {
+    box-shadow: none;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 680px) {
+  .whats-included h2 {
+    font-size: 2rem;
+  }
+
+  .whats-included {
+    padding: 0 2rem 4rem 2rem;
+  }
+
+  .information-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .information-section {
+    padding-bottom: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .oc-form {
+    margin: 2rem auto;
+  }
+
+  .online-coaching-contact h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .personal-programs {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .personal-program-3 {
+    grid-area: 3 / 1 / 4 / 2;
+    width: 100%;
+  }
+
+  .beginner, .intermediate, .advanced {
+    height: fit-content;
+  }
+
+  .online-coaching-contact {
+    padding: 0rem 2rem;
+  }
+
+  .personal-programs-page {
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .whats-included h2 {
+    font-size: 2rem;
+    box-shadow: none;
+    text-decoration: underline;
+  }
+
+  .last-cta-section {
+    padding: 0 2rem;
+  }
+
+  .information-section {
+    padding: 0 2rem 8rem 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .personal-programs-page .main-h2 {
+    font-size: 2.25rem;
+    box-shadow: inset 0 -12px 0 0 var(--clr-main);
+  }
+
+  .personal-programs-bg h2 {
+    padding: 0 2rem;
+  }
+
+  .last-cta-section-2 h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .whats-included h3 {
+    font-size: 1.5rem;
+  }
+
+  .online-coaching-contact .content {
+    background: none;
+    padding: 0;
+    margin: 2rem auto;
+  }
+
+  .beginner, .intermediate, .advanced {
+    padding: 1.5rem 1rem;
+    height: fit-content;
+  }
+
+  .information-section h5 {
+    margin-bottom: 2rem;
+  }
+}
