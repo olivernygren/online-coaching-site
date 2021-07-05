@@ -807,9 +807,6 @@
 }
 
 @media (max-width: 515px) {
-  .home-ebooks-and-programs h2 {
-    box-shadow: none;
-  }
 
   .home-online-coaching h2 {
     font-size: 2.25rem;
@@ -884,6 +881,12 @@
   .mobile-h4 img {
     height: 1.5rem;
     margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .home-ebooks-and-programs h2 {
+    box-shadow: none;
   }
 }
 

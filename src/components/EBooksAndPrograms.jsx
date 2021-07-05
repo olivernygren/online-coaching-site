@@ -115,7 +115,7 @@ function EBooksAndPrograms() {
             <div className="img-bg"></div>
             <img className="e-book-cover-img" src={PlaceholderCover} alt="E-bok" />
             <h4>{eBook1Name}</h4>
-            <h5>{eBook1Price} kr</h5>
+            <h5>{eBook1Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 
@@ -141,7 +141,7 @@ function EBooksAndPrograms() {
             <div className="img-bg"></div>
             <img className="e-book-cover-img" src={PlaceholderCover} alt="E-bok" />
             <h4>{eBook3Name}</h4>
-            <h5>{eBook3Price} kr</h5>
+            <h5>{eBook3Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 
@@ -154,7 +154,7 @@ function EBooksAndPrograms() {
             <div className="img-bg"></div>
             <img className="e-book-cover-img" src={PlaceholderCover} alt="E-bok" />
             <h4>{eBook4Name}</h4>
-            <h5>{eBook4Price} kr</h5>
+            <h5>{eBook4Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 
@@ -172,7 +172,7 @@ function EBooksAndPrograms() {
             <div className="img-bg"></div>
             <img className="program-cover-img" src={PlaceholderCover} alt="Program" />
             <h4>{program1Name}</h4>
-            <h5>{program1Price} kr</h5>
+            <h5>{program1Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 
@@ -185,7 +185,7 @@ function EBooksAndPrograms() {
             <div className="img-bg"></div>
             <img className="program-cover-img" src={PlaceholderCover} alt="Program" />
             <h4>{program2Name}</h4>
-            <h5>{program2Price} kr</h5>
+            <h5>{program2Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 
@@ -198,7 +198,7 @@ function EBooksAndPrograms() {
             <div className="img-bg"></div>
             <img className="program-cover-img" src={PlaceholderCover} alt="Program" />
             <h4>{program3Name}</h4>
-            <h5>{program3Price} kr</h5>
+            <h5>{program3Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 
@@ -211,7 +211,7 @@ function EBooksAndPrograms() {
             <div className="img-bg"></div>
             <img className="program-cover-img" src={PlaceholderCover} alt="Program" />
             <h4>{program4Name}</h4>
-            <h5>{program4Price} kr</h5>
+            <h5>{program4Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
         </div>

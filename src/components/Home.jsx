@@ -210,7 +210,7 @@ function Home() {
       </div>
 
       <div className="home-ebooks-and-programs">
-        <h2>E-böcker och Färdiga Program</h2>
+        <h2>E-böcker och Program</h2>
         <div className="content">
           <div className="text">
             <h3>{program1Name} <i className="fas fa-book"></i> </h3>
