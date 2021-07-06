@@ -21,7 +21,6 @@
 
 .home-about-me-container .content .text {
   padding: 0 2rem;
-  width: 75%;
 }
 
 .home-about-me-container .content .text > h4 {
@@ -223,7 +222,7 @@
 .home-online-coaching .content {
   transform: skewY(4deg);
   display: flex;
-  margin: 4rem auto 7rem auto;
+  margin: 4rem auto 12rem auto;
   max-width: 1600px;
   background: rgb(44, 44, 44);
   border-radius: 20px;
@@ -316,7 +315,7 @@
 }
 
 .home-personal-programs h2 {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .alternate-programs {
@@ -375,6 +374,14 @@
 
 .program-list a:hover {
   text-decoration: underline;
+}
+
+.home-personal-programs {
+  background: rgb(38, 38, 38); 
+}
+
+.home-personal-programs .content {
+  margin-bottom: 6rem;
 }
 
 
@@ -784,8 +791,12 @@
 
   .home-online-coaching .content {
     background: transparent;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
     margin-top: 0;
+  }
+
+  .home-personal-programs .content {
+    margin-bottom: 3rem;
   }
 
   .home-personal-programs h2 {
@@ -868,7 +879,8 @@
   }
 
   .alternate-programs {
-    padding: 0 1rem;
+    padding: 0 1rem 7rem 1rem;
+    margin-bottom: 0rem;
   }
 }
 
