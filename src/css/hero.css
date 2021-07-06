@@ -309,7 +309,11 @@ form .disabled-submit-btn:hover {
   }
 
   .hero .content {
-    padding: 10rem .5rem 10rem .5rem;
+    padding: 12rem .5rem 10rem .5rem;
+  }
+
+  .hero .buttons {
+    margin-bottom: 2rem;
   }
 
   .break-row {
