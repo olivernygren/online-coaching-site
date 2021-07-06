@@ -33,3 +33,21 @@
   color: white;
   font-weight: 600;
 }
+
+@media (max-width: 690px) {
+  .int-policy-container .heading {
+    flex-direction: column;
+  }
+
+  .int-policy-container span {
+    margin-top: 1rem;
+  }
+
+  .int-policy-container .content {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+
+}

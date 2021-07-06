@@ -44,3 +44,17 @@
   margin-top: .25rem;
   margin-left: .4rem;
 }
+
+@media (max-width: 560px) {
+  .terms-container .heading {
+    flex-direction: column;
+  }
+
+  .terms-container span {
+    margin-top: 1rem;
+  }
+
+  .terms-container .content {
+    padding: 0 1rem;
+  }
+}
