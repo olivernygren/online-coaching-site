@@ -60,3 +60,36 @@
   list-style-type: disc;
   padding: 0;
 }
+
+@media (max-width: 800px) {
+  .contact-container .content img {
+    width: 85%;
+    margin: 3rem auto 5rem auto;
+  }
+
+  .contact-container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .contact-container .content .email, .contact-container .content .ig-dm {
+    margin: 1rem 0;
+  }
+
+  .contact-container .content > h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-container .main-h2 {
+    font-size: 2.25rem;
+    box-shadow: inset 0 -12px 0 0 var(--clr-main);
+  }
+}
