@@ -46,6 +46,11 @@
   margin-left: .75rem;
 }
 
+.personal-program h5 i {
+  margin-left: 0.5rem;
+  font-size: .9rem;
+}
+
 @media (max-width: 1300px) {
   .personal-programs-container .background {
     left: 2rem;
@@ -163,12 +168,15 @@
 
 @media (max-width: 600px) {
   .personal-programs {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .personal-program {
     height: fit-content;
+    width: 100%;
+    margin: .5rem auto;
   }
 
   .personal-program-3 {
@@ -199,6 +207,10 @@
   .information-section {
     padding: 0 2rem 2rem 2rem;
   }
+
+  .personal-program:hover {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 500px) {
@@ -213,6 +225,7 @@
 
   .last-cta-section-2 h2 {
     font-size: 2rem;
+    margin-top: 0;
   }
 
   .oc-form {
@@ -227,7 +240,7 @@
 
   .online-coaching-contact .content {
     background: none;
-    padding: 0;
+    padding: 2rem 0;
     margin: 2rem auto;
   }
 
@@ -238,5 +251,18 @@
 
   .information-section h5 {
     margin-bottom: 2rem;
+  }
+
+  .personal-program h4 {
+    font-size: 1.25rem;
+  }
+  
+  .personal-program h5 {
+    font-size: 1rem;
+  }
+
+  .personal-program h5 i {
+    margin-left: 0.3rem;
+    font-size: .9rem;
   }
 }

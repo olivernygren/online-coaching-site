@@ -59,3 +59,9 @@
   text-transform: uppercase;
   font-weight: 500;
 }
+
+@media (max-width: 500px) {
+  .faq-container .main-h2 {
+    margin-top: 8rem;
+  }
+}

@@ -50,7 +50,7 @@ function PersonalPrograms() {
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program1} alt="Kostschema" />
             <h4>8 veckors Kostschema</h4>
-            <h5>899 kr</h5>
+            <h5>899 kr <i className="fas fa-tags"></i> </h5>
             <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
           
@@ -63,7 +63,7 @@ function PersonalPrograms() {
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program2} alt="Kost- och Träningsprogram" />
             <h4>10 veckors Komplett Kost- och Träningsprogram</h4>
-            <h5>1 199 kr <small className="line-through">1 870 kr</small> </h5>
+            <h5>1 199 kr <i className="fas fa-tags"></i> <small className="line-through">1 870 kr</small> </h5>
             <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
 
@@ -76,7 +76,7 @@ function PersonalPrograms() {
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program3} alt="Träningsprogram" />
             <h4>8 veckors Träningsprogram</h4>
-            <h5>599 kr</h5>
+            <h5>599 kr <i className="fas fa-tags"></i> </h5>
             <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
         </div>

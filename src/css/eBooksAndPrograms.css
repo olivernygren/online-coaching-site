@@ -79,7 +79,7 @@
 
 .personal-program {
   background: rgb(59,59,59);
-  background: linear-gradient(324deg, rgba(65,65,65,1) 20%, rgba(88,88,88,1) 100%);
+  background: linear-gradient(324deg, rgba(55,55,55,1) 20%, rgba(75,75,75,1) 100%);
   border-radius: 24px;
   height: 100%;
   padding: 1rem;
@@ -176,7 +176,7 @@
 }
 
 .personal-programs-container .background {
-  background: rgb(58, 58, 58);
+  background: rgb(48, 48, 48);
   border-radius: 50px;
   height: 28rem;
   padding-top: 3rem;

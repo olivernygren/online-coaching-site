@@ -798,8 +798,9 @@
 
   .home-online-coaching .content {
     background: transparent;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     margin-top: 0;
+    padding-bottom: 4rem;
   }
 
   .home-personal-programs .content {
@@ -873,7 +874,7 @@
   }
 
   .home-see-all-programs-link {
-    padding: 0 1rem;
+    padding: 0 1rem 3rem 1rem;
   }
 
   .home-about-me-container .main-h2 {
@@ -902,7 +903,16 @@
 
   .mobile-h4 img {
     height: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-form {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .last-cta-section h2 {
+    margin-top: 6rem;
   }
 }
 
