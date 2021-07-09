@@ -594,6 +594,22 @@
   display: none;
 }
 
+
+
+
+@media (max-width: 1300px) {
+  .home-about-me-container .flip-card {
+    display: none;
+  }
+
+  .me-mobile-img {
+    display: block;
+    max-height: 22rem;
+    border-radius: 8px;
+    margin: 2.5rem auto 0 auto;
+  }
+}
+
 @media (max-width: 1060px) {
   .program-list {
     flex-direction: column;
@@ -658,16 +674,7 @@
     width: auto;
   } 
 
-  .home-about-me-container .flip-card {
-    display: none;
-  }
 
-  .me-mobile-img {
-    display: block;
-    max-width: 25rem;
-    border-radius: 8px;
-    margin: 2.5rem auto 0 auto;
-  }
 
   .home-book-consultation h2 {
     font-size: 2.25rem;
@@ -874,9 +881,9 @@
     margin-bottom: 3rem;
   }
 
-  .me-mobile-img {
+  /* .me-mobile-img {
     width: 80vw;
-  }
+  } */
 
   .alternate-programs {
     padding: 0 1rem 7rem 1rem;
