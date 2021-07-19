@@ -59,11 +59,13 @@ function Program1() {
             <p className="desc">{productDesc}</p>
             <h3 className="included-h3">Detta ingår:</h3>
             <ul>
-              <li> <b>+</b> Personligt anpassat kostschema.</li>
-              <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
-              <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
-              <li> <b>+</b> Betalning sker smidigt och enkelt med e-faktura efter du får ditt upplägg, inga förskottsbetalningar!</li>
-              <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
+              <li> <b>+</b> Noga genomtänkt träningsprogram med fokus på ofta bortglömda muskelgrupper</li>
+              <li> <b>+</b> Träningsprogram inkluderar övningar, sets, reps, vila och noteringar</li>
+              <li> <b>+</b> Förklaringar av viktiga begrepp och guide till hur du läser av programmet</li>
+              <li> <b>+</b> ÖVNINGSBANKEN - Utförliga försklaringar till varje övning i programmet</li>
+              <li> <b>+</b> Allt du behöver veta kring hur du ska träna och tänka kring träning som nybörjare</li>
+              <li> <b>+</b> Kortare introduktion till hur ska äta för att både bygga muskler och tappa fett</li>
+              <li> <b>+</b> Guide till hur du kan gå vidare och fortsätta utvecklas efter programmet</li>
             </ul>
             <a className="buy-now-btn" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
