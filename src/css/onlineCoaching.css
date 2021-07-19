@@ -30,6 +30,10 @@
   margin-top: 10rem;
 }
 
+.online-coaching-page-top .content {
+  margin-bottom: 4rem;
+}
+
 .online-coaching-pkg {
   background: rgb(59,59,59);
   background: linear-gradient(324deg, rgba(65,65,65,1) 20%, rgba(88,88,88,1) 100%);
