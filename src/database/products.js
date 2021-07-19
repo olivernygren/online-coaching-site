@@ -1,10 +1,10 @@
 export const products = [
   {
-    name: 'Träningsprogram 1',
-    price: 199,
-    desc: 'Detta träningsprogrammet har en beskrivning som visas här. Jag tycker du ska köpa detta programmet då det är väldigt bra och kommer ge dig bra reusltat',
+    name: 'Ultimata Nybörjarprogrammet',
+    price: 179,
+    desc: 'Ultimata Nybörjarprogrammet är programmet för dig som vill komma ihång på gymmet. Du får ett genomtänkt träningsprogram baserat på vad de flesta nybörjare behöver. Du får även en introduktion till hur du ska träna, äta och återhämta dig för maximal tillväxt.',
     id: 1001,
-    link: '/e-books-and-programs/program-1'
+    link: '/e-books-and-programs/ultimata-nyborjarprogrammet'
   },
   {
     name: 'Träningsprogram 2',

@@ -49,7 +49,7 @@ function EBook1() {
       <div className="content">
         <div className="product">
           <div className="image">
-            <img src={Cover} alt={productName} />
+            <img src={Cover} alt={productName} /> {/*https://www.npmjs.com/package/react-responsive-carousel*/}
           </div>
           <div className="info">
             <h2 className="product-title">{productName}</h2>

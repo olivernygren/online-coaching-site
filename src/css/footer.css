@@ -89,6 +89,7 @@ footer .column-3 .social-icons {
 
 footer .column-3 {
   text-align: left;
+  align-self: flex-end;
 }
 
 footer .column-3 h3 {

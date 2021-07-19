@@ -24,6 +24,7 @@ import EBook2 from './products/EBook2'
 import EBook3 from './products/EBook3'
 import EBook4 from './products/EBook4'
 import Success from './Success'
+import { products } from '../database/products'
 
 function Layout() {
   return (
@@ -34,14 +35,14 @@ function Layout() {
             <Route exact path='/' component={Home} />
             {/* <Route path='/login' component={Login} />
             <Route path='/register' component={Register} /> */}
-            <Route exact path='/e-books-and-programs/program-1' component={Program1} />
-            <Route exact path='/e-books-and-programs/program-2' component={Program2} />
-            <Route exact path='/e-books-and-programs/program-3' component={Program3} />
-            <Route exact path='/e-books-and-programs/program-4' component={Program4} />
-            <Route exact path='/e-books-and-programs/e-book-1' component={EBook1} />
-            <Route exact path='/e-books-and-programs/e-book-2' component={EBook2} />
-            <Route exact path='/e-books-and-programs/e-book-3' component={EBook3} />
-            <Route exact path='/e-books-and-programs/e-book-4' component={EBook4} />
+            <Route exact path={products[0].link} component={Program1} />
+            <Route exact path={products[1].link} component={Program2} />
+            <Route exact path={products[2].link} component={Program3} />
+            <Route exact path={products[3].link} component={Program4} />
+            <Route exact path={products[4].link} component={EBook1} />
+            <Route exact path={products[5].link} component={EBook2} />
+            <Route exact path={products[6].link} component={EBook3} />
+            <Route exact path={products[7].link} component={EBook4} />
             <Route path='/e-books-and-programs' component={EBooksAndPrograms} />
             <Route path='/online-coaching' component={OnlineCoaching} />
             <Route path='/personal-programs' component={PersonalPrograms} />
