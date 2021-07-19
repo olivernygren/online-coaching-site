@@ -2,7 +2,7 @@ export const products = [
   {
     name: 'Ultimata Nybörjarprogrammet',
     price: 179,
-    desc: 'Ultimata Nybörjarprogrammet är programmet för dig som vill komma ihång på gymmet. Du får ett genomtänkt träningsprogram baserat på vad de flesta nybörjare behöver. Du får även en introduktion till hur du ska träna, äta och återhämta dig för maximal tillväxt.',
+    desc: 'Det ultimata träningsprogrammet för dig som är ny på gymmet eller har svårt att veta hur du ska komma igång! Du får ett genomtänkt träningsprogram baserat på vad de flesta nybörjare behöver. Du får även en introduktion till hur du ska träna, äta och återhämta dig för maximal tillväxt.',
     id: 1001,
     link: '/e-books-and-programs/ultimata-nyborjarprogrammet'
   },

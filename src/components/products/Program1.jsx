@@ -66,8 +66,9 @@ function Program1() {
               <li> <b>+</b> Allt du behöver veta kring hur du ska träna och tänka kring träning som nybörjare</li>
               <li> <b>+</b> Kortare introduktion till hur ska äta för att både bygga muskler och tappa fett</li>
               <li> <b>+</b> Guide till hur du kan gå vidare och fortsätta utvecklas efter programmet</li>
+              <li> <b>+</b> 31 sidor fulla av information och utan onödiga utfyllnader!</li>
             </ul>
-            <a className="buy-now-btn" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
+            <a className="buy-now-btn" href="https://buy.stripe.com/3cs28N4Iec5peSA4gg" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
             <p className="payment-info">Betalningen sköts snabbt, smidigt och säkert med <a href="https://stripe.com/"> <i className="fab fa-stripe"></i> </a></p>
           </div>

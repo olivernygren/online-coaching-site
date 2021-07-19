@@ -222,7 +222,7 @@
 .home-online-coaching .content {
   transform: skewY(4deg);
   display: flex;
-  margin: 4rem auto 12rem auto;
+  margin: 4rem auto 4rem auto;
   max-width: 1600px;
   background: rgb(44, 44, 44);
   border-radius: 20px;
