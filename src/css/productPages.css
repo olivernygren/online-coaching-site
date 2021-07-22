@@ -222,3 +222,19 @@
     padding: 8rem 1.5rem 6rem 1.5rem;
   }
 }
+
+@media (max-width: 400px) {
+  .product-container .price {
+    font-size: 1.5rem;
+  }
+
+  .price-container .price i {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .product-container .price {
+    padding: .75rem 1.5rem;
+  }
+}
