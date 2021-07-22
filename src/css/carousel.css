@@ -266,6 +266,10 @@
   pointer-events: none;
 }
 
+.carousel img {
+  object-fit: contain;
+}
+
 @media (min-width: 960px) {
   .carousel .control-dots {
     bottom: 0;
