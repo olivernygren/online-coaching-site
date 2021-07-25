@@ -37,8 +37,15 @@ function AboutMe() {
               Jag vill kunna leva på att hjälpa människor inom kost och träning genom att lära ut allt jag lärt mig genom åren. Jag gick utanför min comfort-zone 
               helt och hållet och startade upp ONfitness, en plattform där jag kan jag göra just detta. Jag driver företaget helt själv med allt vad det innebär.
             </p>
-            <h3>Varför ska du lita på mig?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellat iure tempora blanditiis harum voluptatibus magnam animi exercitationem cupiditate voluptatum voluptate ipsum, quod ducimus ipsam illo sit in consequatur maxime inventore ipsa ratione ut. Non impedit, error, dicta ex cum odit necessitatibus eum neque ipsum vero, placeat veniam harum libero.</p>
+            <h3>Varför ska du välja mig?</h3>
+            <p>
+              Varför ska du då välja mig, en 20-åring utan PT-utbildning? Jag ser alldeles för ofta hur coacher säljer allt för generiska program för enorma summor.
+              Dessa program är ofta ett så kallat "kopiera och klistra in" program. Oavsett klientens förutsättningar och preferenser skickar de iväg sitt generiska
+              program och samlar in pengarna. i hopp om att klienten inte vet bättre. Jag brinner för att hjälpa folk utefter deras förutsättningar och preferenser.
+              Jag påstår inte att jag är expert eller bättre än någon annan. Men, jag tar inga genvägar. Jag kommer göra allt jag kan för att du som klient ska få 
+              långsiktigt hållbara resultat genom att gå in på en nivå av detaljer som är ovanlig i denna bransch. Med 5 års erfarenhet och timme efter timme av 
+              research kring ämnet, anser jag att du bör välja mig om du vill maximera dina resultat.
+            </p>
           </div>
 
           <div className="flip-card">

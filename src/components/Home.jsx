@@ -3,7 +3,7 @@ import Hero from './Hero'
 import '../css/main.css'
 import '../css/home.css'
 import Blob from '../images/blob.svg'
-import Blob2 from '../images/blob-2.svg'
+// import Blob2 from '../images/blob-2.svg'
 import PlaceholderCover from '../images/covers/placeholder.png'
 import LogoIcon from '../images/ONfitness-icon.svg'
 import { Link } from 'react-router-dom'
@@ -11,8 +11,11 @@ import { products } from '../database/products'
 import Me from '../images/me-cropped-with-icon.png'
 import MeAlt from '../images/me-cropped-2.jpg'
 import Logo from '../images/ONfitness-light.svg'
+import { useHistory } from 'react-router'
 
 function Home() {
+
+  const history = useHistory()
 
   const [showToTopBtn, setShowToTopBtn] = useState(false)
 
@@ -44,11 +47,11 @@ function Home() {
   const program1Link = products[program1Index].link
   const program1Desc = products[program1Index].desc
 
-  const program2Index = 1
-  const program2Name = products[program2Index].name
-  const program2Price = products[program2Index].price
-  const program2Link = products[program2Index].link
-  const program2Desc = products[program2Index].desc
+  // const program2Index = 1
+  // const program2Name = products[program2Index].name
+  // const program2Price = products[program2Index].price
+  // const program2Link = products[program2Index].link
+  // const program2Desc = products[program2Index].desc
 
   const eBook1Index = 4
   const eBook1Name = products[eBook1Index].name
@@ -56,11 +59,21 @@ function Home() {
   const eBook1Link = products[eBook1Index].link
   const eBook1Desc = products[eBook1Index].desc
 
-  const eBook2Index = 5
-  const eBook2Name = products[eBook2Index].name
-  const eBook2Price = products[eBook2Index].price
-  const eBook2Link = products[eBook2Index].link
-  const eBook2Desc = products[eBook2Index].desc
+  // const eBook2Index = 5
+  // const eBook2Name = products[eBook2Index].name
+  // const eBook2Price = products[eBook2Index].price
+  // const eBook2Link = products[eBook2Index].link
+  // const eBook2Desc = products[eBook2Index].desc
+
+  const redirectToPersonalPrograms = (e) => {
+    e.preventDefault()
+    history.push('/personal-programs')
+  }
+
+  const redirectToOnlineCoaching = (e) => {
+    e.preventDefault()
+    history.push('/online-coaching')
+  }
 
   return (
     <>
@@ -85,8 +98,15 @@ function Home() {
               Jag vill kunna leva på att hjälpa människor inom kost och träning genom att lära ut allt jag lärt mig genom åren. Jag gick utanför min comfort-zone 
               helt och hållet och startade upp ONfitness, en plattform där jag kan jag göra just detta. Jag driver företaget helt själv med allt vad det innebär.
             </p>
-            <h3>Varför ska du lita på mig?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellat iure tempora blanditiis harum voluptatibus magnam animi exercitationem cupiditate voluptatum voluptate ipsum, quod ducimus ipsam illo sit in consequatur maxime inventore ipsa ratione ut. Non impedit, error, dicta ex cum odit necessitatibus eum neque ipsum vero, placeat veniam harum libero.</p>
+            <h3>Varför ska du välja mig?</h3>
+            <p>
+              Varför ska du då välja mig, en 20-åring utan PT-utbildning? Jag ser alldeles för ofta hur coacher säljer allt för generiska program för enorma summor.
+              Dessa program är ofta ett så kallat "kopiera och klistra in" program. Oavsett klientens förutsättningar och preferenser skickar de iväg sitt generiska
+              program och samlar in pengarna. i hopp om att klienten inte vet bättre. Jag brinner för att hjälpa folk utefter deras förutsättningar och preferenser.
+              Jag påstår inte att jag är expert eller bättre än någon annan. Men, jag tar inga genvägar. Jag kommer göra allt jag kan för att du som klient ska få 
+              långsiktigt hållbara resultat genom att gå in på en nivå av detaljer som är ovanlig i denna bransch. Med 5 års erfarenhet och timme efter timme av 
+              research kring ämnet, anser jag att du bör välja mig om du vill maximera dina resultat.
+            </p>
           </div>
 
           <div className="flip-card">
@@ -96,7 +116,7 @@ function Home() {
               </div>
               <div className="flip-card-back">
                 <h3>Oliver Nygren</h3>
-                <h4>Självutbildad Online Coach <br /> och Tränings-entusiast</h4>
+                <h4>Självutbildad Online Coach <br /> med en passion för träning</h4>
                 <ul>
                   <li> <b>Träningserfarenhet:</b> Sedan 2016</li>
                   <li> <b>Bosatt:</b> Kungsbacka</li>
@@ -120,14 +140,14 @@ function Home() {
         <div className="content">
           <div className="card">
             <div className="online-coaching-header-btns">
-              <i className="fas fa-eye" title="Läs mer"></i>
+              <i className="fas fa-eye" title="Läs mer" onClick={redirectToOnlineCoaching}></i>
               <img src={LogoIcon} alt="Logo" />
-              <i className="fas fa-arrow-right" title="Kontakta mig"></i>
+              <i className="fas fa-arrow-right" title="Kontakta mig" onClick={redirectToOnlineCoaching}></i>
             </div>
             <img className="home-online-coaching-cover-img" src={PlaceholderCover} alt="Kost- och Träningsprogram" />
             <h4>Komplett Kost- och Träningsupplägg + Coaching</h4>
-            <h5>1 399 kr / mån <small className="line-through">1 999 kr / mån</small> </h5>
-            <button className="get-started-btn">Kom igång <i className="fas fa-arrow-right"></i> </button>
+            <h5>1 099 kr / mån <small className="line-through">1 799 kr / mån</small> </h5>
+            <button className="get-started-btn" onClick={redirectToOnlineCoaching}>Kom igång <i className="fas fa-arrow-right"></i> </button>
           </div>
 
           <div className="info-text">
@@ -140,9 +160,10 @@ function Home() {
               <li> <b>+</b> Betalning sker smidigt och enkelt med e-faktura efter du får ditt upplägg, inga förskottsbetalningar!</li>
               <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
               <li> <b>+</b> Direktkontakt med mig via Messenger för motivation, frågor eller ändringar av upplägget.</li>
-              <li> <b>+</b> (Valfritt) online-möte med mig innan skapandet av programmet.</li>
-              <li> <b>+</b> Ändringar görs löpande varje månad och/eller efter behov</li>
+              <li> <b>+</b> (Valfritt) kortare online-möte med mig innan skapandet av programmet.</li>
+              <li> <b>+</b> Ändringar görs löpande efter behov</li>
               <li> <b>+</b> Kontinuerlig uppföljning och avstämningar veckovis</li>
+              <li> <b>+</b> Kan avslutas när du vill!</li>
             </ul>
             <Link className="read-more-btn" to='/online-coaching'>Läs mer <i className="fas fa-arrow-right"></i> </Link>
           </div>
@@ -168,14 +189,14 @@ function Home() {
 
           <div className="card">
             <div className="online-coaching-header-btns">
-              <i className="fas fa-eye" title="Läs mer"></i>
+              <i className="fas fa-eye" title="Läs mer" onClick={redirectToPersonalPrograms}></i>
               <img src={LogoIcon} alt="Logo" />
-              <i className="fas fa-arrow-right" title="Kontakta mig"></i>
+              <i className="fas fa-arrow-right" title="Kontakta mig" onClick={redirectToPersonalPrograms}></i>
             </div>
             <img className="home-online-coaching-cover-img" src={PlaceholderCover} alt="Kost- och Träningsprogram" />
             <h4>10 veckors Komplett Kost- och Träningsupplägg</h4>
             <h5>999 kr <small className="line-through">1 599 kr</small> </h5>
-            <button className="get-started-btn">Kom igång <i className="fas fa-arrow-right"></i> </button>
+            <button className="get-started-btn" onClick={redirectToPersonalPrograms}>Kom igång <i className="fas fa-arrow-right"></i> </button>
           </div>
 
           <div className="info-text">
@@ -185,11 +206,10 @@ function Home() {
               <li> <b>+</b> Personligt anpassat kostschema.</li>
               <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
               <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
-              <li> <b>+</b> Betalning sker smidigt och enkelt med e-faktura efter du får ditt upplägg, inga förskottsbetalningar!</li>
               <li className="minus-top"> <b>-</b> <span className="line-through">Tillgång till en privat facebook-grupp med alla andra klienter.</span> </li>
               <li> <b>-</b> <span className="line-through">Direktkontakt med mig via Messenger för motivation, frågor eller ändringar av upplägget.</span> </li>
-              <li> <b>-</b> <span className="line-through">(Valfritt) online-möte med mig innan skapandet av programmet.</span> </li>
-              <li> <b>-</b> <span className="line-through">Ändringar görs löpande varje månad och/eller efter behov</span> </li>
+              <li> <b>-</b> <span className="line-through">(Valfritt) kortare online-möte med mig innan skapandet av programmet.</span> </li>
+              <li> <b>-</b> <span className="line-through">Ändringar görs löpande efter behov</span> </li>
               <li> <b>-</b> <span className="line-through">Kontinuerlig uppföljning och avstämningar veckovis</span> </li>
             </ul>
             <Link className="read-more-btn" to='/personal-programs'>Läs mer <i className="fas fa-arrow-right"></i> </Link>
@@ -227,7 +247,8 @@ function Home() {
           </div>
         </div>
 
-        <div className="content-reverse">
+        {/* ================Träningsprogram================ 2 */}
+        {/* <div className="content-reverse">
           <div className="image">
             <img className="blob-img" src={Blob2} alt="blob" />
             <img className="home-cover-img" src={PlaceholderCover} alt="book" />
@@ -241,9 +262,14 @@ function Home() {
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="content">
+        {/* Byt sedan tbx till class=content och byt plats på image och text */}
+        <div className="content-reverse">
+          <div className="image">
+            <img className="blob-img" src={Blob} alt="blob" />
+            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
+          </div>
           <div className="text">
             <h3>{eBook1Name} <i className="fas fa-book"></i> </h3>
             <p>{eBook1Desc}</p>
@@ -253,13 +279,10 @@ function Home() {
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
-          <div className="image">
-            <img className="blob-img" src={Blob} alt="blob" />
-            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
-          </div>
         </div>
 
-        <div className="content-reverse">
+        {/* E-bok 2================================ */}
+        {/* <div className="content-reverse">
           <div className="image">
             <img className="blob-img" src={Blob2} alt="blob" />
             <img className="home-cover-img" src={PlaceholderCover} alt="book" />
@@ -273,7 +296,7 @@ function Home() {
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <Link className="home-see-all-programs-link" to="/e-books-and-programs">Se alla e-böcker och program här <i className="fas fa-arrow-right"></i> </Link>
 
@@ -282,15 +305,21 @@ function Home() {
       <div className="three-blocks">
         <div className="box box-1">
           <h3>Träning <i className="fas fa-dumbbell"></i> </h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt quis, molestiae cupiditate illum sapiente reiciendis delectus sunt eius ex earum hic mollitia temporibus ab, officia minima est eos voluptatum!</p>
+          <p>
+            Att träna innebär olika saker för alla. För vissa är det att gå till gymmet, för andra är det att gå en promenad. Oavsett så måste träningen vara rolig för att vi ska kunna hålla oss till planen och nå våra långsiktiga mål.
+          </p>
         </div>
         <div className="box box-2">
           <h3>Kost <i className="fas fa-utensils"></i> </h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt quis, molestiae cupiditate illum sapiente reiciendis delectus sunt eius ex earum hic mollitia temporibus ab, officia minima est eos voluptatum!</p>
+          <p>
+            Många så kallade coacher nöjer sig med att rekommendera ett visst split av protein, kolhydrater och fett. Alla kan lära sig om dessa tre. Jag kommer gå in på yttersta detalj kring vitaminer och mineraler för att sätta din hälsa i första rummet!
+          </p>
         </div>
         <div className="box box-3">
-          <h3>Hållbarhet <i className="fas fa-chart-line"></i> </h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt quis, molestiae cupiditate illum sapiente reiciendis delectus sunt eius ex earum hic mollitia temporibus ab, officia minima est eos voluptatum!</p>
+          <h3>Långsiktighet <i className="fas fa-chart-line"></i> </h3>
+          <p>
+            Hållbarhet och långsiktighet är alltid nr. 1 när det kommer till fitness. Det finns så många som hoppar av och på en "diet", som går ner och sedan upp i vikt igen. Jag utgår alltid från dina preferenser och förutsättningar när jag bygger ditt upplägg.
+          </p>
         </div>
       </div>
 

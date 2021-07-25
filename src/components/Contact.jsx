@@ -30,6 +30,7 @@ function Contact() {
           <h3>DMa mig om:</h3>
           <ul>
             <li>Frågor kring kost och träning</li>
+            <li>Enkla frågor kring coaching eller upplägg</li>
           </ul>
         </div>
         <div className="contact-info">
@@ -39,7 +40,7 @@ function Contact() {
           </div>
           <div className="ig-dm">
             <i className="fab fa-instagram"></i>
-            <a href="/">Instagram DM</a>
+            <a href="https://www.instagram.com/onfitness.se/">Instagram DM</a>
           </div>
         </div>
         <img src={ContactIllustration} alt="hej" />

@@ -28,11 +28,11 @@ export const products = [
     link: '/e-books-and-programs/program-4'
   },
   {
-    name: 'E-bok 1',
-    price: 399,
-    desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
+    name: 'Guide till Bulk (E-bok)',
+    price: 359,
+    desc: 'Den ultimata guiden för dig som vill bygga muskelmassa. Vi tar en djupdykning i allt som angår kost, träning, tillskott och sömn för att maximera dina resultat.',
     id: 2001,
-    link: '/e-books-and-programs/e-book-1'
+    link: '/e-books-and-programs/guide-till-bulk-e-bok'
   },
   {
     name: 'E-bok 2',

@@ -11,11 +11,11 @@ function Hero() {
       <div className="content">
         <div className="text">
           <h4>Oliver Nygren - Online Coach / Tränings-entusiast</h4>
-          <h1>Är du redo att uppnå stora träningsresultat?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugit repellat! Omnis dolorum distinctio maxime debitis ratione suscipit ad similique officiis, necessitatibus excepturi.</p>
+          <h1>Är du redo att uppnå fantastiska träningsresultat?</h1>
+          <p>Att uppnå fantastiska träningsresultat är lätt, men inte enkelt. Vare sig du är atlet eller en vanlig Svensson med några extra kilon runt magen så hjälper jag dig att lägga upp en smart, genomtänkt och enkel plan, baserat på dina preferenser!</p>
           <div className="buttons">
             <Link to="/online-coaching" className="primary">Online Coaching</Link>
-            <Link to="/consultation" className="secondary">Boka Gratis Konsultation <i className="fas fa-arrow-right"></i> </Link>
+            <Link to="/e-books-and-programs" className="secondary">E-böcker och Färdiga Program <i className="fas fa-arrow-right"></i> </Link>
           </div>
         </div>
         <form className="hero-form" action="https://formspree.io/f/moqylppn" method="POST">

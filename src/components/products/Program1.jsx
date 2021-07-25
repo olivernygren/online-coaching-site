@@ -23,25 +23,25 @@ function Program1() {
     document.title = 'ONfitness | ' + productName
   }, [productName])
 
-  const relatedProduct1Index = 1;
+  const relatedProduct1Index = 4;
   const relatedProduct1Name = products[relatedProduct1Index].name
   const relatedProduct1Price = products[relatedProduct1Index].price
   const relatedProduct1Link = products[relatedProduct1Index].link
   
-  const relatedProduct2Index = 2;
-  const relatedProduct2Name = products[relatedProduct2Index].name
-  const relatedProduct2Price = products[relatedProduct2Index].price
-  const relatedProduct2Link = products[relatedProduct2Index].link
+  // const relatedProduct2Index = 2;
+  // const relatedProduct2Name = products[relatedProduct2Index].name
+  // const relatedProduct2Price = products[relatedProduct2Index].price
+  // const relatedProduct2Link = products[relatedProduct2Index].link
 
   const redirectToRelatedProduct1 = (e) => {
     e.preventDefault()
     history.push(relatedProduct1Link)
   }
 
-  const redirectToRelatedProduct2 = (e) => {
-    e.preventDefault()
-    history.push(relatedProduct2Link)
-  }
+  // const redirectToRelatedProduct2 = (e) => {
+  //   e.preventDefault()
+  //   history.push(relatedProduct2Link)
+  // }
 
   return (
     <div className="product-container">
@@ -62,7 +62,7 @@ function Program1() {
               <li> <b>+</b> Noga genomtänkt träningsprogram med fokus på ofta bortglömda muskelgrupper</li>
               <li> <b>+</b> Träningsprogram inkluderar övningar, sets, reps, vila och noteringar</li>
               <li> <b>+</b> Förklaringar av viktiga begrepp och guide till hur du läser av programmet</li>
-              <li> <b>+</b> ÖVNINGSBANKEN - Utförliga försklaringar till varje övning i programmet</li>
+              <li> <b>+</b> ÖVNINGSBANKEN - Utförliga förklaringar till varje övning i programmet</li>
               <li> <b>+</b> Allt du behöver veta kring hur du ska träna och tänka kring träning som nybörjare</li>
               <li> <b>+</b> Kortare introduktion till hur ska äta för att både bygga muskler och tappa fett</li>
               <li> <b>+</b> Guide till hur du kan gå vidare och fortsätta utvecklas efter programmet</li>
@@ -76,6 +76,20 @@ function Program1() {
         <div className="related-products">
           <h2>Liknande produkter</h2>
           <div className="cards-flex">
+            {/* <div className="related-product related-product-1" onClick={redirectToRelatedProduct1}>
+              <div className="program program-1">
+                <div className="program-header-btns">
+                  <i className="fas fa-eye" title="Läs mer"></i>
+                  <img src={LogoIcon} alt="Logo" />
+                  <i className="fas fa-arrow-right" title="Läs mer"></i>
+                </div>
+                <div className="img-bg"></div>
+                <img className="program-cover-img" src={Cover} alt="Program" />
+                <h4>{relatedProduct1Name}</h4>
+                <h5>{relatedProduct1Price} kr</h5>
+                <button className="add-to-cart-btn" onClick={redirectToRelatedProduct1}>Läs mer <i className="fas fa-arrow-right"></i> </button>
+              </div>
+            </div> */}
             <div className="related-product related-product-1" onClick={redirectToRelatedProduct1}>
               <div className="program program-1">
                 <div className="program-header-btns">
@@ -90,7 +104,7 @@ function Program1() {
                 <button className="add-to-cart-btn" onClick={redirectToRelatedProduct1}>Läs mer <i className="fas fa-arrow-right"></i> </button>
               </div>
             </div>
-            <div className="related-product related-product-2" onClick={redirectToRelatedProduct2}>
+            {/* <div className="related-product related-product-2" onClick={redirectToRelatedProduct2}>
               <div className="program program-2">
                 <div className="program-header-btns">
                   <i className="fas fa-eye" title="Läs mer"></i>
@@ -103,7 +117,7 @@ function Program1() {
                 <h5>{relatedProduct2Price} kr</h5>
                 <button className="add-to-cart-btn" onClick={redirectToRelatedProduct2}>Läs mer <i className="fas fa-arrow-right"></i> </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
