@@ -50,7 +50,7 @@ function OnlineCoaching() {
             <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
 
-          <div className="info-text">
+          <div className="info-text oc-info-text">
             <h3 id="read-more">Vad ingår?</h3>
             <p>Direkt efter beställning kommer du få besvara ett antal frågor i ett formulär. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
             <ul>

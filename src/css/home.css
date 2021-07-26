@@ -247,6 +247,15 @@
   letter-spacing: 1px;
   line-height: 1.25rem;
   position: relative;
+  padding-bottom: 5rem;
+}
+
+.home-online-coaching .oc-info-text {
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  position: relative;
+  padding-bottom: 0;
 }
 
 .home-online-coaching .info-text p {

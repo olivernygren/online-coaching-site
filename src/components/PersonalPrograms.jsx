@@ -56,9 +56,9 @@ function PersonalPrograms() {
 
           <div className="personal-program personal-program-1">
             <div className="personal-program-header-btns">
-              <i className="fas fa-eye" title="Läs mer"></i>
+              <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
               <img src={LogoIcon} alt="Logo" />
-              <i className="fas fa-arrow-down" title="Kom igång"></i>
+              <a className="oc-card-small-link" href="#get-started-form" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program1} alt="Kostschema" />
@@ -69,9 +69,9 @@ function PersonalPrograms() {
           
           <div className="personal-program personal-program-2">
             <div className="personal-program-header-btns">
-              <i className="fas fa-eye" title="Läs mer"></i>
+              <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
               <img src={LogoIcon} alt="Logo" />
-              <i className="fas fa-arrow-down" title="Kom igång"></i>
+              <a className="oc-card-small-link" href="#get-started-form" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program2} alt="Kost- och Träningsprogram" />
@@ -82,9 +82,9 @@ function PersonalPrograms() {
 
           <div className="personal-program personal-program-3">
             <div className="personal-program-header-btns">
-              <i className="fas fa-eye" title="Läs mer"></i>
+              <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
               <img src={LogoIcon} alt="Logo" />
-              <i className="fas fa-arrow-down" title="Kom igång"></i>
+              <a className="oc-card-small-link" href="#get-started-form" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program3} alt="Träningsprogram" />
@@ -97,7 +97,7 @@ function PersonalPrograms() {
 
       <div className="whats-included whats-included-programs">
         <div className="content">
-          <h2>Vad ingår i Personligt Upplägg?</h2>
+          <h2 id="read-more">Vad ingår i Personligt Upplägg?</h2>
           <p>
             Direkt efter beställning av valfritt uppläggs-paket får du skickat till dig ett motsvarande svarsformulär. Här svarar du på
             de frågor som finns och fyller i den information jag frågar efter. När jag fått tillbaka ifyllt formulär med
