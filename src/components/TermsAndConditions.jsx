@@ -29,7 +29,7 @@ function TermsAndConditions() {
         <p>Ångerrätt på personliga upplägg och online coaching gäller fram tills att jag börjar jobba på upplägget. Efter jobbet med uppläggen har påbörjats finns alltså ingen ångerrätt då ett jobb har utförts. Kontakta mig via email snarast om du skulle ångra ditt köp av dessa två tjänster!</p>
 
         <h3>Garantier och service</h3>
-        <p>Du är garanterad att få dina nedladdningsbara e-böcker eller färdiga program inom 12 timmar. Skulle du mot förmodan inte fått något inom denna tidsram, kontakta mig via email snarast!</p>
+        <p>Du är garanterad att få dina nedladdningsbara e-böcker eller färdiga program inom 24 timmar. I nuläget sker leverans av digitala produkter manuellt av mig själv, därav den potentialla fördröjningen. Skulle du mot förmodan inte fått något inom denna tidsram, kontakta mig via email snarast!</p>
         <p>Tidsramen för online coaching upplägg och endast personliga upplägg specifieras på respektive sida. Skulle jag behöva mer tid med ditt upplägg än vad som angetts så kontaktar jag dig omgående.</p>
       
         <h3>Integritetspolicy</h3>

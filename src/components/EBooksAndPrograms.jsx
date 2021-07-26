@@ -18,45 +18,45 @@ function EBooksAndPrograms() {
     document.title = 'ONfitness | E-böcker & Färdiga Program'
   }, [])
 
-  const program1Index = 0
-  const program1Name = products[program1Index].name
-  const program1Price = products[program1Index].price
-  const program1Link = products[program1Index].link
+  const program1 = products.findIndex((product) => product.id === 1001)
+  const program1Name = products[program1].name
+  const program1Price = products[program1].price
+  const program1Link = products[program1].link
 
-  // const program2Index = 1
-  // const program2Name = products[program2Index].name
-  // const program2Price = products[program2Index].price
-  // const program2Link = products[program2Index].link
+  // const program2 = products.findIndex((product) => product.id === 1002)
+  // const program2Name = products[program2].name
+  // const program2Price = products[program2].price
+  // const program2Link = products[program2].link
   
-  // const program3Index = 2
-  // const program3Name = products[program3Index].name
-  // const program3Price = products[program3Index].price
-  // const program3Link = products[program3Index].link
+  // const program3 = products.findIndex((product) => product.id === 1003)
+  // const program3Name = products[program3].name
+  // const program3Price = products[program3].price
+  // const program3Link = products[program3].link
   
-  // const program4Index = 3
-  // const program4Name = products[program4Index].name
-  // const program4Price = products[program4Index].price
-  // const program4Link = products[program4Index].link
+  // const program4 = products.findIndex((product) => product.id === 1004)
+  // const program4Name = products[program4].name
+  // const program4Price = products[program4].price
+  // const program4Link = products[program4].link
 
-  const eBook1Index = 4
-  const eBook1Name = products[eBook1Index].name
-  const eBook1Price = products[eBook1Index].price
-  const eBook1Link = products[eBook1Index].link
+  const eBook1 = products.findIndex((product) => product.id === 2001)
+  const eBook1Name = products[eBook1].name
+  const eBook1Price = products[eBook1].price
+  const eBook1Link = products[eBook1].link
 
-  // const eBook2Index = 5
-  // const eBook2Name = products[eBook2Index].name
-  // const eBook2Price = products[eBook2Index].price
-  // const eBook2Link = products[eBook2Index].link
+  // const eBook2 = products.findIndex((product) => product.id === 2002)
+  // const eBook2Name = products[eBook2].name
+  // const eBook2Price = products[eBook2].price
+  // const eBook2Link = products[eBook2].link
   
-  // const eBook3Index = 6
-  // const eBook3Name = products[eBook3Index].name
-  // const eBook3Price = products[eBook3Index].price
-  // const eBook3Link = products[eBook3Index].link
+  // const eBook3 = products.findIndex((product) => product.id === 2003)
+  // const eBook3Name = products[eBook3].name
+  // const eBook3Price = products[eBook3].price
+  // const eBook3Link = products[eBook3].link
   
-  // const eBook4Index = 7
-  // const eBook4Name = products[eBook4Index].name
-  // const eBook4Price = products[eBook4Index].price
-  // const eBook4Link = products[eBook4Index].link
+  // const eBook4 = products.findIndex((product) => product.id === 2004)
+  // const eBook4Name = products[eBook4].name
+  // const eBook4Price = products[eBook4].price
+  // const eBook4Link = products[eBook4].link
 
   const redirectToEBook1 = (e) => {
     e.preventDefault()

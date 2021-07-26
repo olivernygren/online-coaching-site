@@ -54,5 +54,20 @@ export const products = [
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2004,
     link: '/e-books-and-programs/e-book-4'
+  },
+  {
+    name: 'Kostschema, 8 veckor',
+    price: 899,
+    id: 3001
+  },
+  {
+    name: 'Träningsprogram, 8 veckor',
+    price: 599,
+    id: 3002
+  },
+  {
+    name: 'Komplett Kost- & Träningsupplägg, 10 veckor',
+    price: "1 199",
+    id: 3003
   }
 ]

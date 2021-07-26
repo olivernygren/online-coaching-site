@@ -39,18 +39,19 @@ function OnlineCoaching() {
         <div className="content">
           <div className="card">
             <div className="online-coaching-header-btns">
-              <i className="fas fa-eye" title="Läs mer"></i>
+              <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
               <img src={LogoIcon} alt="Logo" />
-              <i className="fas fa-arrow-down" title="Kontakta mig"></i>
+              <a className="oc-card-small-link" href="#get-started-form" title="Kom igång"><i className="fas fa-arrow-down"/></a>
+              {/* <i href="#get-started-form" className="fas fa-arrow-down" title="Kom igång"></i> */}
             </div>
             <img className="home-online-coaching-cover-img" src={PlaceholderCover} alt="Kost- och Träningsprogram" />
             <h4>Komplett Kost- och Träningsupplägg + Coaching</h4>
-            <h5>1 399 kr / mån <small className="line-through">1 999 kr / mån</small> </h5>
+            <h5>999 kr / mån <small className="line-through">1 599 kr / mån</small> </h5>
             <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
 
           <div className="info-text">
-            <h3>Vad ingår?</h3>
+            <h3 id="read-more">Vad ingår?</h3>
             <p>Direkt efter beställning kommer du få besvara ett antal frågor i ett formulär. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
             <ul>
               <li> <b>+</b> Personligt anpassat kostschema.</li>
@@ -78,10 +79,12 @@ function OnlineCoaching() {
             den information jag behöver så börjar jag bygga ditt träningsprogram, kostschema eller båda, beroende på
             vilket paket du köpt, utifrån dina preferenser. Detta bör ta ca 3-7 arbetsdagar beroende på en rad olika faktorer, framför allt vilket 
             paket du köpt. Denna tid krävs för att bygga ett så personligt anpassat program som möjligt. <br /> <br /> Betalningen börjar den dag
-            då du får ditt färdigbyggda, personligt anpassade program. Hädanefter kommer vi ha möten online var 7e eller 14e dag,
-            beroende på vad du vill, kan och behöver. Därför bokas dessa möten in av dig på valfri ledig tid. Efter varje vecka kommer du i ett PM gradera hur det gått med träningspass, kost, 
-            motivation, energi, sömn och en valfri kommentar. På så sätt kan vi enkelt upptäcka mönster som kräver förändring i programmet. <br /> <br />
-            Nu är det upp till dig att följa programmet och nå maximala resultat!
+            då du får ditt färdigbyggda, personligt anpassade program. Du betalar alltså för aktuell månad, vilket innebär att du enkelt kan säga upp 
+            din coaching när du vill utan att behöva betala extra! Hädanefter kommer vi ha check-ins (uppdateringar) varje vecka för utvärdering av veckan
+            och att eventuellt göra förändringar i upplägget. Detta sker genom att du i ett PM graderar hur det gått med träningspass, kost, 
+            motivation, energi, sömn och en valfri kommentar, utifrån en enkel mall som du får. På så sätt kan vi enkelt upptäcka mönster som kräver förändring i programmet. <br /> <br />
+            Nu är det upp till dig att följa programmet och nå maximala resultat! <br /> <br />
+            <small>OBS! Ej tävlingscoaching!</small>
           </p>
           <div className="training">
             <h3>Träningsprogram <i className="fas fa-dumbbell"></i> </h3>
@@ -109,16 +112,15 @@ function OnlineCoaching() {
           <div className="communication">
             <h3>Kommunikation med mig <i className="fas fa-comments"></i> </h3>
             <p>
-              Efter beställning av online-coaching-paket kommer jag finnas tillänglig för att svara på frågor på diverse sociala medier eller på email. Som jag nämnt ovan
-              kommer även online-möten bokas in av dig på lämplig tid, ca var 7e eller 14e dag, beroende på vad som passar dig bäst. Varje söndag kommer du också
-              i ett PM gradera hur det gått med träningpass, kost, motivation, energi, sömn under veckan, plus en valfri kommentar.
+              Efter beställning av online-coaching-paket kommer jag finnas tillänglig för att svara på frågor på privat Instagram DM eller på email. Önskar du online-möte för en mer djupgående
+              diskussion kring upplägget eller veckoutvärderingen så går det säkert att lösa! Som nämnt ovan kommer det ske check-ins varje vecka för utvärdering av veckan.
             </p>
           </div>
           <div className="facebook-group">
             <h3>Privat facebook-grupp <i className="fab fa-facebook"></i><i className="fas fa-lock"></i> </h3>
             <p>
               Direkt efter ditt köp kommer du få inbjudan till en privat facebook-grupp, endast för online-coaching klienter. Här kan du chatta med mig och alla andra
-              coaching klienter om vad som helst.
+              coachingklienter om vad som helst.
             </p>
           </div>
           <div className="sustainability">
@@ -130,7 +132,7 @@ function OnlineCoaching() {
               att skapa hållbara rutiner och en livsstil som du kan ha med dig livet ut, oavsett hur länge vi jobbar tillsammans.
             </p>
           </div>
-          <a className="cta-link" href="#plans">Kom igång nu <i className="fas fa-arrow-down"></i> </a>
+          <a className="cta-link" href="#get-started-form">Kom igång nu <i className="fas fa-arrow-down"></i> </a>
         </div>
       </div>
 
@@ -142,25 +144,42 @@ function OnlineCoaching() {
               <div className="number">1</div>
               <h3>För nybörjare</h3>
               <h5>Oerfaren eller precis kommit igång</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
-              <a href="#plans" className="choose-plan-btn">Kom igång <i className="fas fa-arrow-down"></i> </a>
+              <p>
+                De flesta nybörjare anser att de har för lite kunskap i början för att komma igång på riktigt. Detta blir ett hinder för många som antingen slutar att gå 
+                till gymmet eller inte når närheten av sin fulla potential. De första 3 åren på gymmet är de absolut viktigaste, din potential för att bygga muskler är så 
+                mycket större per år än vad den är senare. <br /> <br /> Att själv bygga ett bra träningsprogram är en nybörjares största utmaning. Jag ser ofta hur de fokuserar för mycket 
+                på vissa muskelgrupper och vilar för lite eller för mycket. Att lägga upp ett träningsprogram med rätt split och övningar kräver noga planering utifrån ett
+                flertal olika faktorer.<br /> <br /> Jag hjälper dig att bygga ett noga genomtänkt träningsprogram som ska passa ditt dagliga liv och hjälpa dig nå dina mål.
+                Jag hjälper dig också bygga upp ett kostschema av näringsrika livsmedel som möter ditt personliga intag för att nå dina mål.
+              </p>              
+              <a href="#get-started-form" className="choose-plan-btn">Kom igång <i className="fas fa-arrow-down"></i> </a>
             </div>
             <div className="intermediate">
               <div className="number">2</div>
               <h3>För dig med en del efrarenhet</h3>
               <h5>Tränat i ett par år</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
-              <a href="#plans" className="choose-plan-btn">Kom igång <i className="fas fa-arrow-down"></i> </a>
+              <p>
+                För dig som tränat i ett par år finns det stor risk att du känner att du kunde nått högre med din träning, att du inte nått din fulla potential under dessa år.
+                Många jag känner har kört gym och kost lite på halvfart utan att få några resultat. Vill du bygga seriös muskelmassa är det självklart inte för sent! <br /> <br /> Jag kan 
+                hjälpa dig att maximera resultaten på gymmet med ett personlig anpassat träningsprogram utifrån dina behov och mål, ett program som har fokus på långsiktighet 
+                så att du inte fortsätter hoppa av och på. <br /> <br /> Jag hjälper dig också bygga ett kostschema fullt av mat som DU gillar, som kommer hjälpa dig nå dina mål och optimera
+                prestation i gymmet. <br /> <br /> Jag kommer också hjälpa dig med återhämtningen, sömn och att skapa dagliga rutiner för att nå dina mål. Om detta låter intressant är det bara
+                att komma igång!          
+              </p>              
+              <a href="#get-started-form" className="choose-plan-btn">Kom igång <i className="fas fa-arrow-down"></i> </a>
             </div>
             <div className="advanced">
               <div className="number">3</div>
               <h3>För den avancerade</h3>
               <h5>Tränat i många år</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
-              <a href="#plans" className="choose-plan-btn">Kom igång <i className="fas fa-arrow-down"></i> </a>
+              <p>
+                Du som tränat i många år och anser dig vara "avancerad" undrar säkert hur du kan ta hjälp av mig, en ung kille med "endast" 5 års erfarenhet. Det jag kan erbjuda dig 
+                är någon att hålla dig själv ansvarig för. <br /> <br /> Jag kommer hjälpa dig maximera din prestation i gymmet genom att bygga upp ett genomtänkt kostschema fullt av de näringsämnen
+                som kommer ta din gymprestation till nya höjder. Planen jag bygger har alltid långsiktighet som första fokus som gör att du alltid kan hålla dig planen, vilket hinder
+                som än må stå i din väg.  <br /> <br /> Som avancerad har du med största sannolikhet format egna rutiner och ditt eget sätt att göra saker och ting. Ett nytt perspektiv inom både träningen,
+                kosten och återhämtningen kan vara exakt vad du behöver för att bryta dig ur din nuvarande platå!
+              </p>              
+              <a href="#get-started-form" className="choose-plan-btn">Kom igång <i className="fas fa-arrow-down"></i> </a>
             </div>
           </div>
         </div>
@@ -186,7 +205,7 @@ function OnlineCoaching() {
         </div>
       </div>
 
-      <div className="last-cta-section">
+      <div className="last-cta-section" id="get-started-form">
         <div className="content">
           <h2>KOM IGÅNG MED ONLINE COACHING HÄR</h2>
           <p>Låt oss arbeta tillsammans och se hur du kan överträffa dina mål med träning, kost och livsstil med ett av Sveriges mest prisvärda och personligt anpassade online-coaching planer!</p>
@@ -195,7 +214,7 @@ function OnlineCoaching() {
         </div>
       </div>
 
-      <form className="hero-form oc-form" method="POST" action="https://formspree.io/f/xyyljnop" id="get-started-form">
+      <form className="hero-form oc-form" method="POST" action="https://formspree.io/f/xyyljnop">
         <Form/>
       </form>
 

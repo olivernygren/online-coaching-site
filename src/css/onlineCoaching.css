@@ -72,6 +72,10 @@
   margin: 2rem auto 0 auto;
 }
 
+.oc-card-small-link {
+  color: white;
+}
+
 .online-coaching-header-btns {
   display: flex;
   justify-content: space-between;

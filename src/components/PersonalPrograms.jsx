@@ -7,6 +7,7 @@ import '../css/main.css'
 import '../css/personalPrograms.css'
 import { Link } from 'react-router-dom'
 import ModifiedForm from './ModifiedForm'
+import { products } from '../database/products'
 
 function PersonalPrograms() {
 
@@ -34,6 +35,18 @@ function PersonalPrograms() {
     window.scrollTo(0, 0)
   }, [])
 
+  const program1 = products.findIndex((product) => product.id === 3001)
+  const program1Name = products[program1].name
+  const program1Price = products[program1].price
+
+  const program2 = products.findIndex((product) => product.id === 3002)
+  const program2Name = products[program2].name
+  const program2Price = products[program2].price
+
+  const program3 = products.findIndex((product) => product.id === 3003)
+  const program3Name = products[program3].name
+  const program3Price = products[program3].price
+
   return (
     <div className="personal-programs-container personal-programs-page" id="plans">
       <h2 className="main-h2">Personliga Upplägg</h2>
@@ -49,8 +62,8 @@ function PersonalPrograms() {
             </div>
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program1} alt="Kostschema" />
-            <h4>8 veckors Kostschema</h4>
-            <h5>899 kr <i className="fas fa-tags"></i> </h5>
+            <h4>{program1Name}</h4>
+            <h5>{program1Price} kr <i className="fas fa-tags"></i> </h5>
             <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
           
@@ -62,8 +75,8 @@ function PersonalPrograms() {
             </div>
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program2} alt="Kost- och Träningsprogram" />
-            <h4>10 veckors Komplett Kost- och Träningsprogram</h4>
-            <h5>1 199 kr <i className="fas fa-tags"></i> <small className="line-through">1 870 kr</small> </h5>
+            <h4>{program3Name}</h4>
+            <h5>{program3Price} kr <i className="fas fa-tags"></i> <small className="line-through">1 999 kr</small> </h5>
             <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
 
@@ -75,8 +88,8 @@ function PersonalPrograms() {
             </div>
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program3} alt="Träningsprogram" />
-            <h4>8 veckors Träningsprogram</h4>
-            <h5>599 kr <i className="fas fa-tags"></i> </h5>
+            <h4>{program2Name}</h4>
+            <h5>{program2Price} kr <i className="fas fa-tags"></i> </h5>
             <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
         </div>
@@ -90,9 +103,10 @@ function PersonalPrograms() {
             de frågor som finns och fyller i den information jag frågar efter. När jag fått tillbaka ifyllt formulär med
             den information jag behöver så börjar jag bygga ditt träningsprogram, kostschema eller båda, beroende på
             vilket paket du köpt, utifrån dina preferenser. Detta bör ta ca 2-5 arbetsdagar beroende på en rad olika faktorer, framför allt vilket 
-            paket du köpt. Denna tid krävs för att bygga ett så personligt anpassat program som möjligt. <br /> <br /> Betalningen sker i form av en 
-            e-faktura som du betalar enkelt i mobilen. Du betalar alltså ingenting innan du får ditt personliga upplägg, helt riskfritt för dig som kund! <br /> <br />
-            Nu är det upp till dig att följa programmet och nå maximala resultat!
+            paket du köpt. Denna tid krävs för att bygga ett så personligt anpassat program som möjligt. <br /> <br /> Betalningen sker efter jag mottagit 
+            ditt ifyllda formulär. Efter betalningen börjar jag bygga ditt upplägg. <br /> <br />
+            Nu är det upp till dig att följa programmet och nå maximala resultat! <br /> <br />
+            <small>OBS! Ej tävlingsupplägg!</small>
           </p>
           <div className="training">
             <h3>Träningsprogram <i className="fas fa-dumbbell"></i> </h3>
@@ -148,31 +162,48 @@ function PersonalPrograms() {
               <div className="number">1</div>
               <h3>För nybörjare</h3>
               <h5>Oerfaren eller precis kommit igång</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
+              <p>
+                De flesta nybörjare anser att de har för lite kunskap i början för att komma igång på riktigt. Detta blir ett hinder för många som antingen slutar att gå 
+                till gymmet eller inte når närheten av sin fulla potential. De första 3 åren på gymmet är de absolut viktigaste, din potential för att bygga muskler är så 
+                mycket större per år än vad den är senare. <br /> <br /> Att själv bygga ett bra träningsprogram är en nybörjares största utmaning. Jag ser ofta hur de fokuserar för mycket 
+                på vissa muskelgrupper och vilar för lite eller för mycket. Att lägga upp ett träningsprogram med rätt split och övningar kräver noga planering utifrån ett
+                flertal olika faktorer.<br /> <br /> Jag hjälper dig att bygga ett noga genomtänkt träningsprogram som ska passa ditt dagliga liv och hjälpa dig nå dina mål.
+                Jag hjälper dig också bygga upp ett kostschema av näringsrika livsmedel som möter ditt personliga intag för att nå dina mål.
+              </p>
               <a href="#plans" className="choose-plan-btn">Välj plan <i className="fas fa-arrow-up"></i> </a>
             </div>
             <div className="intermediate">
               <div className="number">2</div>
               <h3>För dig med en del efrarenhet</h3>
               <h5>Tränat i ett par år</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
+              <p>
+                För dig som tränat i ett par år finns det stor risk att du känner att du kunde nått högre med din träning, att du inte nått din fulla potential under dessa år.
+                Många jag känner har kört gym och kost lite på halvfart utan att få några resultat. Vill du bygga seriös muskelmassa är det självklart inte för sent! <br /> <br /> Jag kan 
+                hjälpa dig att maximera resultaten på gymmet med ett personlig anpassat träningsprogram utifrån dina behov och mål, ett program som har fokus på långsiktighet 
+                så att du inte fortsätter hoppa av och på. <br /> <br /> Jag hjälper dig också bygga ett kostschema fullt av mat som DU gillar, som kommer hjälpa dig nå dina mål och optimera
+                prestation i gymmet. <br /> <br /> Jag kommer också hjälpa dig med återhämtningen, sömn och att skapa dagliga rutiner för att nå dina mål. Om detta låter intressant är det bara
+                att komma igång!          
+              </p>
               <a href="#plans" className="choose-plan-btn">Välj plan <i className="fas fa-arrow-up"></i> </a>
             </div>
             <div className="advanced">
               <div className="number">3</div>
               <h3>För den avancerade</h3>
               <h5>Tränat i många år</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam explicabo non officia in reiciendis dolorum nobis minus ratione aut dolore quis itaque cupiditate, modi ullam. Vitae voluptas commodi cupiditate ducimus?</p>
+              <p>
+                Du som tränat i många år och anser dig vara "avancerad" undrar säkert hur du kan ta hjälp av mig, en ung kille med "endast" 5 års erfarenhet. Det jag kan erbjuda dig 
+                är någon att hålla dig själv ansvarig för. <br /> <br /> Jag kommer hjälpa dig maximera din prestation i gymmet genom att bygga upp ett genomtänkt kostschema fullt av de näringsämnen
+                som kommer ta din gymprestation till nya höjder. Planen jag bygger har alltid långsiktighet som första fokus som gör att du alltid kan hålla dig planen, vilket hinder
+                som än må stå i din väg.  <br /> <br /> Som avancerad har du med största sannolikhet format egna rutiner och ditt eget sätt att göra saker och ting. Ett nytt perspektiv inom både träningen,
+                kosten och återhämtningen kan vara exakt vad du behöver för att bryta dig ur din nuvarande platå!
+              </p>
               <a href="#plans" className="choose-plan-btn">Välj plan <i className="fas fa-arrow-up"></i> </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="last-cta-section last-cta-section-2">
+      <div className="last-cta-section last-cta-section-2" id="get-started-form">
         <div className="content">
           <h2>KOM IGÅNG MED DITT UPPLÄGG HÄR</h2>
           <p>Låt oss arbeta tillsammans och se hur du kan överträffa dina mål med träning, kost och livsstil med ett av Sveriges mest prisvärda och personligt anpassade kost- och träningsupplägg!</p>
@@ -181,7 +212,7 @@ function PersonalPrograms() {
         </div>
       </div>
 
-      <form className="hero-form oc-form" action="https://formspree.io/f/mgerypyz" method="POST" id="get-started-form">
+      <form className="hero-form oc-form" action="https://formspree.io/f/mgerypyz" method="POST">
         <ModifiedForm/>
       </form>
 

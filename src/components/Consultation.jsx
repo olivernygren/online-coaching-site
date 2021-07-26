@@ -21,10 +21,11 @@ function Consultation() {
           <div className="text-body">
             <p>Är du osäker på hur du ska nå dina mål? En gratis konsultation är ett perfekt första steg på vägen dit. Helt gratis och utan risk för dig.</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus alias voluptate impedit laudantium est facere ducimus incidunt obcaecati adipisci voluptatum consectetur aliquid nobis ut doloribus, consequatur rerum ea quam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut deserunt totam iste numquam voluptatibus dignissimos consectetur aut, quaerat rerum adipisci iure, exercitationem officiis laudantium enim ullam, reprehenderit id officia.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut deserunt totam iste numquam voluptatibus dignissimos consectetur aut, quaerat rerum adipisci iure, exercitationem officiis laudantium enim ullam, reprehenderit id officia.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut deserunt totam iste numquam voluptatibus dignissimos consectetur aut, quaerat rerum adipisci iure, exercitationem officiis laudantium enim ullam, reprehenderit id officia.
+              Att veta hur du ska ta nästa steg är ofta svårt. Om det hade varit lätt hade du redan gjort det, eller hur? Ofta behövs någon som kan se på dig
+              med andra ögon än dina egna. Att se saker från ett nytt perspektiv ökar dina chanser att utvecklas. <br /> <br />
+              Jag erbjuder konsultationer helt gratis. Här hjälper jag dig ta nästa steg i din utveckling, utan kostnad. Jag brinner för att hjälpa människor
+              med deras fitness-äventyr oavsett om de vill bli kroppsbyggare eller vill leva ett mer hälsosamt liv. Tveka inte om att fylla i formuläret nedan 
+              så hör jag av mig så snabbt jag kan för att boka in ett möte. Som sagt, helt kostnadsfritt och riskfritt för dig!
             </p>
           </div>
           <h3>Innan du bokar konsultationen behöver jag lite basic info om dig. Vänligen fyll i och skicka formuläret nedan</h3>
