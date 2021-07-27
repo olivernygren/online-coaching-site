@@ -64,4 +64,8 @@
   .faq-container .main-h2 {
     margin-top: 8rem;
   }
+
+  .faq-container .Collapsible__trigger {
+    font-size: 1.1rem;
+  }
 }
