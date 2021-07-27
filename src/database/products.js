@@ -4,7 +4,8 @@ export const products = [
     price: 179,
     desc: 'Det ultimata träningsprogrammet för dig som är ny på gymmet eller har svårt att veta hur du ska komma igång! Du får ett genomtänkt träningsprogram baserat på vad de flesta nybörjare behöver. Du får även en introduktion till hur du ska träna, äta och återhämta dig för maximal tillväxt.',
     id: 1001,
-    link: '/e-books-and-programs/ultimata-nyborjarprogrammet'
+    link: '/e-books-and-programs/ultimata-nyborjarprogrammet',
+    paymentLink: 'https://buy.stripe.com/3cs28N4Iec5peSA4gg'
   },
   {
     name: 'Träningsprogram 2',
@@ -32,7 +33,8 @@ export const products = [
     price: 359,
     desc: 'Den ultimata guiden för dig som vill bygga muskelmassa. Vi tar en djupdykning i allt som angår kost, träning, tillskott och sömn för att maximera dina resultat.',
     id: 2001,
-    link: '/e-books-and-programs/guide-till-bulk-e-bok'
+    link: '/e-books-and-programs/guide-till-bulk-e-bok',
+    paymentLink: 'https://buy.stripe.com/00gaFj8Yu9Xh25O289'
   },
   {
     name: 'E-bok 2',

@@ -20,10 +20,11 @@ function EBook1() {
   }, [])
 
   
-  const i = 4;
-  const productName = products[i].name
-  const productPrice = products[i].price
-  const productDesc = products[i].desc
+  const product = products.findIndex((product) => product.id === 2001);
+  const productName = products[product].name
+  const productPrice = products[product].price
+  const productDesc = products[product].desc
+  const productPaymentLink = products[product].paymentLink
   
   useEffect(() => {
     document.title = 'ONfitness | ' + productName
@@ -83,7 +84,7 @@ function EBook1() {
               <li> <b>+</b> Betalning sker smidigt och enkelt med e-faktura efter du får ditt upplägg, inga förskottsbetalningar!</li>
               <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
             </ul>
-            <a className="buy-now-btn" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
+            <a className="buy-now-btn" href={productPaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
             <p className="payment-info">Betalningen sköts snabbt, smidigt och säkert med <a href="https://stripe.com/"> <i className="fab fa-stripe"></i> </a></p>
           </div>

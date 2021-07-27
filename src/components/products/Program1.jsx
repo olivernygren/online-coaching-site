@@ -14,10 +14,11 @@ function Program1() {
     window.scrollTo(0, 0)
   }, [])
 
-  const i = 0;
-  const productName = products[i].name
-  const productPrice = products[i].price
-  const productDesc = products[i].desc
+  const product = products.findIndex((product) => product.id === 1001);
+  const productName = products[product].name
+  const productPrice = products[product].price
+  const productDesc = products[product].desc
+  const productPaymentLink = products[product].paymentLink
 
   useEffect(() => {
     document.title = 'ONfitness | ' + productName
@@ -68,7 +69,7 @@ function Program1() {
               <li> <b>+</b> Guide till hur du kan gå vidare och fortsätta utvecklas efter programmet</li>
               <li> <b>+</b> 31 sidor fulla av information och utan onödiga utfyllnader!</li>
             </ul>
-            <a className="buy-now-btn" href="https://buy.stripe.com/3cs28N4Iec5peSA4gg" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
+            <a className="buy-now-btn" href={productPaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
             <p className="payment-info">Betalningen sköts snabbt, smidigt och säkert med <a href="https://stripe.com/"> <i className="fab fa-stripe"></i> </a></p>
           </div>

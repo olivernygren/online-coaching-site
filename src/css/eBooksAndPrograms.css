@@ -196,7 +196,7 @@
 @media (max-width: 1100px) {
   .e-books, .programs {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     height: fit-content;
     margin-bottom: 2rem;
   }
@@ -215,7 +215,7 @@
 @media (max-width: 600px) {
   .e-books, .programs {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto;
   }
 
   .e-books-and-programs .main-h2 {
@@ -227,6 +227,7 @@
   .e-books-container h2, .programs-container h2 {
     margin: 0 auto 3rem auto;
     text-align: center;
+    padding: 0 1rem;
   }
 }
 
@@ -266,5 +267,6 @@
   .e-books-and-programs .main-h2 {
     box-shadow: none;
     text-decoration: underline;
+    padding: 0 1rem;
   }
 }

@@ -41,11 +41,12 @@ function Home() {
     window.scrollTo(0, 0)
   }, [])
 
-  const program1Index = 0
-  const program1Name = products[program1Index].name
-  const program1Price = products[program1Index].price
-  const program1Link = products[program1Index].link
-  const program1Desc = products[program1Index].desc
+  const program1 = products.findIndex((product) => product.id === 1001)
+  const program1Name = products[program1].name
+  const program1Price = products[program1].price
+  const program1Link = products[program1].link
+  const program1Desc = products[program1].desc
+  const program1PaymentLink = products[program1].paymentLink
 
   // const program2Index = 1
   // const program2Name = products[program2Index].name
@@ -53,11 +54,12 @@ function Home() {
   // const program2Link = products[program2Index].link
   // const program2Desc = products[program2Index].desc
 
-  const eBook1Index = 4
-  const eBook1Name = products[eBook1Index].name
-  const eBook1Price = products[eBook1Index].price
-  const eBook1Link = products[eBook1Index].link
-  const eBook1Desc = products[eBook1Index].desc
+  const eBook1 = products.findIndex((product) => product.id === 2001)
+  const eBook1Name = products[eBook1].name
+  const eBook1Price = products[eBook1].price
+  const eBook1Link = products[eBook1].link
+  const eBook1Desc = products[eBook1].desc
+  const eBook1PaymentLink = products[eBook1].paymentLink
 
   // const eBook2Index = 5
   // const eBook2Name = products[eBook2Index].name
@@ -238,7 +240,7 @@ function Home() {
             <span>{program1Price} kr <i className="fas fa-tags"></i> </span>
             <div className="buttons">
               <Link to={program1Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
-              <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
+              <a className="buy-now-link" href={program1PaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
           <div className="image">
@@ -276,7 +278,7 @@ function Home() {
             <span>{eBook1Price} kr <i className="fas fa-tags"></i> </span>
             <div className="buttons">
               <Link to={eBook1Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
-              <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
+              <a className="buy-now-link" href={eBook1PaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
         </div>
