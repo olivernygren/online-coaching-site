@@ -247,7 +247,6 @@
   letter-spacing: 1px;
   line-height: 1.25rem;
   position: relative;
-  padding-bottom: 5rem;
 }
 
 .home-online-coaching .oc-info-text {
@@ -835,6 +834,12 @@
 
   .home-book-consultation h2, .home-book-consultation i {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .home-online-coaching .info-text {
+    padding-bottom: 5rem;
   }
 }
 
