@@ -21,7 +21,7 @@ function Success() {
           <i className="fas fa-check-circle"></i>
           <h2>Tack för att du handlat av oss!</h2>
           <p>Du har nu fått en orderbekräftelse till mailen du angav i betalningen.</p>
-          <p>Har du köpt ett färdigt program eller e-bok så finns nu en bifogad pdf-fil skickad till mailen du angav i betalningen.</p>
+          <p>Har du köpt ett färdigt program eller e-bok så finns den bifogad som pdf-fil till mailen du angav i betalningen inom 24 timmar.</p>
           <h3>Har du frågor angående ditt köp?</h3>
           <p>Skicka iväg ett mail till mig <a className="mail-link" href="mailto:oliver@onfitness.se">här</a> så svarar jag så snabbt jag kan!</p>
           <div className="policies">
