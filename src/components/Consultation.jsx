@@ -25,7 +25,7 @@ function Consultation() {
               med andra ögon än dina egna. Att se saker från ett nytt perspektiv ökar dina chanser att utvecklas. <br /> <br />
               Jag erbjuder konsultationer helt gratis. Här hjälper jag dig ta nästa steg i din utveckling, utan kostnad. Jag brinner för att hjälpa människor
               med deras fitness-äventyr oavsett om de vill bli kroppsbyggare eller vill leva ett mer hälsosamt liv. Tveka inte om att fylla i formuläret nedan 
-              så hör jag av mig så snabbt jag kan för att boka in ett möte. Som sagt, helt kostnadsfritt och riskfritt för dig!
+              så hör jag av mig så snabbt jag kan för att boka in ett möte. <br /> <br /> Observera att konsultationen inte är bindande! Som sagt, helt kostnadsfritt och riskfritt för dig!
             </p>
           </div>
           <h3>Innan du bokar konsultationen behöver jag lite basic info om dig. Vänligen fyll i och skicka formuläret nedan</h3>

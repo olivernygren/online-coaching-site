@@ -203,7 +203,7 @@ function PersonalPrograms() {
         </div>
       </div>
 
-      <div className="last-cta-section last-cta-section-2" id="get-started-form">
+      {/* <div className="last-cta-section last-cta-section-2" id="get-started-form">
         <div className="content">
           <h2>KOM IGÅNG MED DITT UPPLÄGG HÄR</h2>
           <p>Låt oss arbeta tillsammans och se hur du kan överträffa dina mål med träning, kost och livsstil med ett av Sveriges mest prisvärda och personligt anpassade kost- och träningsupplägg!</p>
@@ -214,7 +214,49 @@ function PersonalPrograms() {
 
       <form className="hero-form oc-form" action="https://formspree.io/f/mgerypyz" method="POST">
         <ModifiedForm/>
-      </form>
+      </form> */}
+
+      <h2 className="main-h2 order-main-h2">BESTÄLL DITT UPPLÄGG HÄR</h2>
+      <div className="personal-programs order-programs-container">
+        <div className="personal-program personal-program-1 secondary-program">
+          <div className="personal-program-header-btns">
+            <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
+            <img src={LogoIcon} alt="Logo" />
+            <a className="oc-card-small-link" href="#get-started-form" title="Beställ"><i className="fas fa-external-link-alt"></i></a>
+          </div>
+          <div className="img-bg"></div>
+          <img className="personal-program-cover-img" src={Program1} alt="Kostschema" />
+          <h4>{program1Name}</h4>
+          <h5>{program1Price} kr <i className="fas fa-tags"></i> </h5>
+          <a href="#get-started-form" className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
+        </div>
+
+        <div className="personal-program personal-program-2 main-program">
+          <div className="personal-program-header-btns">
+            <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
+            <img src={LogoIcon} alt="Logo" />
+            <a className="oc-card-small-link" href="#get-started-form" title="Beställ"><i className="fas fa-external-link-alt"></i></a>
+          </div>
+          <div className="img-bg"></div>
+          <img className="personal-program-cover-img" src={Program2} alt="Kost- och Träningsprogram" />
+          <h4>{program3Name}</h4>
+          <h5>{program3Price} kr <i className="fas fa-tags"></i> <small className="line-through">1 999 kr</small> </h5>
+          <a href="#get-started-form" className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
+        </div>
+
+        <div className="personal-program personal-program-3 secondary-program">
+          <div className="personal-program-header-btns">
+            <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
+            <img src={LogoIcon} alt="Logo" />
+            <a className="oc-card-small-link" href="#get-started-form" title="Beställ"><i className="fas fa-external-link-alt"></i></a>
+          </div>
+          <div className="img-bg"></div>
+          <img className="personal-program-cover-img" src={Program3} alt="Träningsprogram" />
+          <h4>{program2Name}</h4>
+          <h5>{program2Price} kr <i className="fas fa-tags"></i> </h5>
+          <a href="#get-started-form" className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
+        </div>
+      </div>
 
       <div className="online-coaching-contact">
         <div className="content">

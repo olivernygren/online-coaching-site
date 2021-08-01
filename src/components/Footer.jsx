@@ -26,8 +26,8 @@ function Footer() {
         </div>
         <div className="column column-3">
           <h3>Resurser <i className="fas fa-link"></i> </h3>
-          <a target="blank" href="https://stanefferding.com/products/vertical-diet-peak-performance-detailed-program-notes">- The Vetical Diet and Peak Performance 3.0 (E-bok)</a>
-          <a target="blank" href="https://youtu.be/BeOc7TRo9Os">- Stan Efferding Island Seminar (YouTube)</a>
+          <a target="blank" href="https://stanefferding.com/products/vertical-diet-peak-performance-detailed-program-notes">- The Vertical Diet and Peak Performance 3.0 (E-bok)</a>
+          <a target="blank" href="https://youtu.be/BeOc7TRo9Os">- Stan Efferding Iceland Seminar (YouTube)</a>
           <a target="blank" href="https://youtu.be/v2sgQbQVd7c">- Stan Efferding "How to Build Muscle Mass" (YouTube)</a>
           <div className="social-icons">
             <div>
