@@ -15,6 +15,14 @@
   text-align: left;
 }
 
+.personal-program {
+  position: relative;
+}
+
+.personal-program h5 {
+  margin-bottom: 4rem;
+}
+
 .last-cta-section-2 {
   text-align: center;
 }
@@ -62,7 +70,7 @@
 }
 
 .order-programs-container .main-program {
-  border: 2px solid var(--clr-main);
+  /* border: 2px solid var(--clr-main); */
   border: 2px solid white;
 }
 
@@ -213,7 +221,7 @@
   }
 
   .whats-included {
-    padding: 0 2rem 4rem 2rem;
+    padding: 0 2rem 1rem 2rem;
   }
 
   .information-section h2 {

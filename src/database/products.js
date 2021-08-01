@@ -60,16 +60,19 @@ export const products = [
   {
     name: 'Kostschema, 8 veckor',
     price: 899,
-    id: 3001
+    id: 3001,
+    paymentLink: 'https://buy.stripe.com/5kA00F1w27P98uccMP'
   },
   {
     name: 'Träningsprogram, 8 veckor',
     price: 599,
-    id: 3002
+    id: 3002,
+    paymentLink: 'https://buy.stripe.com/7sIbJn1w27P98ucbIM'
   },
   {
     name: 'Komplett Kost- & Träningsupplägg, 10 veckor',
     price: "1 199",
-    id: 3003
+    id: 3003,
+    paymentLink: 'https://buy.stripe.com/14k5kZb6C4CX11K146'
   }
 ]

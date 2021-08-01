@@ -264,6 +264,7 @@
 
 .home-online-coaching .info-text h3 {
   font-size: 1.75rem;
+  margin-top: 2rem;
 }
 
 .home-online-coaching .info-text ul {
@@ -809,7 +810,7 @@
     background: transparent;
     margin-bottom: 2rem;
     margin-top: 0;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
   }
 
   .home-personal-programs .content {

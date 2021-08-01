@@ -31,7 +31,8 @@
 }
 
 .online-coaching-page-top .content {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
 }
 
 .online-coaching-pkg {
@@ -41,7 +42,7 @@
   height: 100%;
   padding: 1rem;
   text-align: center;
-  transition: .35s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 .online-coaching-cover-img {
@@ -450,7 +451,8 @@
 }
 
 .get-started-btn-2 {
-  width: 100%;
+  /* width: 100%; */
+  cursor: pointer;
   padding: .75rem 1rem;
   background: rgb(92, 92, 92);
   color: white;
@@ -462,6 +464,10 @@
   font-size: .9rem;
   display: inline-block;
   transform: scale(1);
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
 }
 
 .get-started-btn-2:hover {

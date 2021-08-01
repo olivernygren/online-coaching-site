@@ -6,7 +6,7 @@ import Program3 from '../images/covers/traningsprogram.png'
 import '../css/main.css'
 import '../css/personalPrograms.css'
 import { Link } from 'react-router-dom'
-import ModifiedForm from './ModifiedForm'
+// import ModifiedForm from './ModifiedForm'
 import { products } from '../database/products'
 
 function PersonalPrograms() {
@@ -38,14 +38,17 @@ function PersonalPrograms() {
   const program1 = products.findIndex((product) => product.id === 3001)
   const program1Name = products[program1].name
   const program1Price = products[program1].price
+  const program1PaymentLink = products[program1].paymentLink
 
   const program2 = products.findIndex((product) => product.id === 3002)
   const program2Name = products[program2].name
   const program2Price = products[program2].price
+  const program2PaymentLink = products[program2].paymentLink
 
   const program3 = products.findIndex((product) => product.id === 3003)
   const program3Name = products[program3].name
   const program3Price = products[program3].price
+  const program3PaymentLink = products[program3].paymentLink
 
   return (
     <div className="personal-programs-container personal-programs-page" id="plans">
@@ -58,39 +61,39 @@ function PersonalPrograms() {
             <div className="personal-program-header-btns">
               <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
               <img src={LogoIcon} alt="Logo" />
-              <a className="oc-card-small-link" href="#get-started-form" title="Kom igång"><i className="fas fa-arrow-down"/></a>
+              <a className="oc-card-small-link" href="#order-program" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program1} alt="Kostschema" />
             <h4>{program1Name}</h4>
             <h5>{program1Price} kr <i className="fas fa-tags"></i> </h5>
-            <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
+            <a href="#order-program" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
           
           <div className="personal-program personal-program-2">
             <div className="personal-program-header-btns">
               <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
               <img src={LogoIcon} alt="Logo" />
-              <a className="oc-card-small-link" href="#get-started-form" title="Kom igång"><i className="fas fa-arrow-down"/></a>
+              <a className="oc-card-small-link" href="#order-program" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program2} alt="Kost- och Träningsprogram" />
             <h4>{program3Name}</h4>
             <h5>{program3Price} kr <i className="fas fa-tags"></i> <small className="line-through">1 999 kr</small> </h5>
-            <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
+            <a href="#order-program" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
 
           <div className="personal-program personal-program-3">
             <div className="personal-program-header-btns">
               <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
               <img src={LogoIcon} alt="Logo" />
-              <a className="oc-card-small-link" href="#get-started-form" title="Kom igång"><i className="fas fa-arrow-down"/></a>
+              <a className="oc-card-small-link" href="#order-program" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={Program3} alt="Träningsprogram" />
             <h4>{program2Name}</h4>
             <h5>{program2Price} kr <i className="fas fa-tags"></i> </h5>
-            <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
+            <a href="#order-program" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
         </div>
       </div>
@@ -99,12 +102,11 @@ function PersonalPrograms() {
         <div className="content">
           <h2 id="read-more">Vad ingår i Personligt Upplägg?</h2>
           <p>
-            Direkt efter beställning av valfritt uppläggs-paket får du skickat till dig ett motsvarande svarsformulär. Här svarar du på
+            Direkt efter beställning och köp av valfritt uppläggs-paket får du inom 24h ett motsvarande svarsformulär. Här svarar du på
             de frågor som finns och fyller i den information jag frågar efter. När jag fått tillbaka ifyllt formulär med
             den information jag behöver så börjar jag bygga ditt träningsprogram, kostschema eller båda, beroende på
             vilket paket du köpt, utifrån dina preferenser. Detta bör ta ca 2-5 arbetsdagar beroende på en rad olika faktorer, framför allt vilket 
-            paket du köpt. Denna tid krävs för att bygga ett så personligt anpassat program som möjligt. <br /> <br /> Betalningen sker efter jag mottagit 
-            ditt ifyllda formulär. Efter betalningen börjar jag bygga ditt upplägg. <br /> <br />
+            paket du köpt. Denna tid krävs för att bygga ett så personligt anpassat program som möjligt. <br /> <br />
             Nu är det upp till dig att följa programmet och nå maximala resultat! <br /> <br />
             <small>OBS! Ej tävlingsupplägg!</small>
           </p>
@@ -216,45 +218,45 @@ function PersonalPrograms() {
         <ModifiedForm/>
       </form> */}
 
-      <h2 className="main-h2 order-main-h2">BESTÄLL DITT UPPLÄGG HÄR</h2>
+      <h2 className="main-h2 order-main-h2" id="order-program">BESTÄLL DITT UPPLÄGG HÄR</h2>
       <div className="personal-programs order-programs-container">
         <div className="personal-program personal-program-1 secondary-program">
           <div className="personal-program-header-btns">
             <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
             <img src={LogoIcon} alt="Logo" />
-            <a className="oc-card-small-link" href="#get-started-form" title="Beställ"><i className="fas fa-external-link-alt"></i></a>
+            <a className="oc-card-small-link" href={program1PaymentLink} title="Till betalning"><i className="fas fa-external-link-alt"></i></a>
           </div>
           <div className="img-bg"></div>
           <img className="personal-program-cover-img" src={Program1} alt="Kostschema" />
           <h4>{program1Name}</h4>
           <h5>{program1Price} kr <i className="fas fa-tags"></i> </h5>
-          <a href="#get-started-form" className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
+          <a href={program1PaymentLink} className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
         </div>
 
         <div className="personal-program personal-program-2 main-program">
           <div className="personal-program-header-btns">
             <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
             <img src={LogoIcon} alt="Logo" />
-            <a className="oc-card-small-link" href="#get-started-form" title="Beställ"><i className="fas fa-external-link-alt"></i></a>
+            <a className="oc-card-small-link" href={program3PaymentLink} title="Till betalning"><i className="fas fa-external-link-alt"></i></a>
           </div>
           <div className="img-bg"></div>
           <img className="personal-program-cover-img" src={Program2} alt="Kost- och Träningsprogram" />
           <h4>{program3Name}</h4>
           <h5>{program3Price} kr <i className="fas fa-tags"></i> <small className="line-through">1 999 kr</small> </h5>
-          <a href="#get-started-form" className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
+          <a href={program3PaymentLink} className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
         </div>
 
         <div className="personal-program personal-program-3 secondary-program">
           <div className="personal-program-header-btns">
             <a className="oc-card-small-link" href="#read-more" title="Läs Mer"><i className="fas fa-eye"/></a>
             <img src={LogoIcon} alt="Logo" />
-            <a className="oc-card-small-link" href="#get-started-form" title="Beställ"><i className="fas fa-external-link-alt"></i></a>
+            <a className="oc-card-small-link" href={program2PaymentLink} title="Till betalning"><i className="fas fa-external-link-alt"></i></a>
           </div>
           <div className="img-bg"></div>
           <img className="personal-program-cover-img" src={Program3} alt="Träningsprogram" />
           <h4>{program2Name}</h4>
           <h5>{program2Price} kr <i className="fas fa-tags"></i> </h5>
-          <a href="#get-started-form" className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
+          <a href={program2PaymentLink} className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
         </div>
       </div>
 
