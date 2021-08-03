@@ -131,11 +131,11 @@ header .logo {
 
 .mobile-menu ul {
   list-style-type: none;
-  padding: 0 2rem;
+  padding: 0 2.5rem 0 1.5rem;
 }
 
 .mobile-menu ul li {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .mobile-menu ul li a {

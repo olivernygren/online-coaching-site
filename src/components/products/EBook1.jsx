@@ -30,25 +30,25 @@ function EBook1() {
     document.title = 'ONfitness | ' + productName
   }, [productName])
 
-  const relatedProduct1Index = 0;
-  const relatedProduct1Name = products[relatedProduct1Index].name
-  const relatedProduct1Price = products[relatedProduct1Index].price
-  const relatedProduct1Link = products[relatedProduct1Index].link
+  const relatedProduct1ID = products.findIndex((product) => product.id === 1001);
+  const relatedProduct1Name = products[relatedProduct1ID].name
+  const relatedProduct1Price = products[relatedProduct1ID].price
+  const relatedProduct1Link = products[relatedProduct1ID].link
   
-  // const relatedProduct2Index = 6;
-  // const relatedProduct2Name = products[relatedProduct2Index].name
-  // const relatedProduct2Price = products[relatedProduct2Index].price
-  // const relatedProduct2Link = products[relatedProduct2Index].link
+  const relatedProduct2ID = products.findIndex((product) => product.id === 1002);
+  const relatedProduct2Name = products[relatedProduct2ID].name
+  const relatedProduct2Price = products[relatedProduct2ID].price
+  const relatedProduct2Link = products[relatedProduct2ID].link
 
   const redirectToRelatedProduct1 = (e) => {
     e.preventDefault()
     history.push(relatedProduct1Link)
   }
 
-  // const redirectToRelatedProduct2 = (e) => {
-  //   e.preventDefault()
-  //   history.push(relatedProduct2Link)
-  // }
+  const redirectToRelatedProduct2 = (e) => {
+    e.preventDefault()
+    history.push(relatedProduct2Link)
+  }
 
   return (
     <div className="product-container">
@@ -106,21 +106,7 @@ function EBook1() {
                 <button className="add-to-cart-btn" onClick={redirectToRelatedProduct1}>Läs mer <i className="fas fa-arrow-right"></i> </button>
               </div>
             </div>
-            {/* <div className="related-product related-product-1" onClick={redirectToRelatedProduct1}>
-              <div className="program program-1">
-                <div className="program-header-btns">
-                  <i className="fas fa-eye" title="Läs mer"></i>
-                  <img src={LogoIcon} alt="Logo" />
-                  <i className="fas fa-arrow-right" title="Läs mer"></i>
-                </div>
-                <div className="img-bg"></div>
-                <img className="program-cover-img" src={Cover} alt="Program" />
-                <h4>{relatedProduct1Name}</h4>
-                <h5>{relatedProduct1Price} kr</h5>
-                <button className="add-to-cart-btn" onClick={redirectToRelatedProduct1}>Läs mer <i className="fas fa-arrow-right"></i> </button>
-              </div>
-            </div> */}
-            {/* <div className="related-product related-product-2" onClick={redirectToRelatedProduct2}>
+            <div className="related-product related-product-2" onClick={redirectToRelatedProduct2}>
               <div className="program program-2">
                 <div className="program-header-btns">
                   <i className="fas fa-eye" title="Läs mer"></i>
@@ -133,7 +119,7 @@ function EBook1() {
                 <h5>{relatedProduct2Price} kr</h5>
                 <button className="add-to-cart-btn" onClick={redirectToRelatedProduct2}>Läs mer <i className="fas fa-arrow-right"></i> </button>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

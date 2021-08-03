@@ -8,11 +8,12 @@ export const products = [
     paymentLink: 'https://buy.stripe.com/3cs28N4Iec5peSA4gg'
   },
   {
-    name: 'Träningsprogram 2',
-    price: 299,
-    desc: 'Detta träningsprogrammet har en beskrivning som visas här. Jag tycker du ska köpa detta programmet då det är väldigt bra och kommer ge dig bra reusltat',
+    name: 'Bodybuilding 101',
+    price: 139,
+    desc: 'Detta är programmet för dig som vill ta din träning till en helt ny nivå. Bodybuilding 101 är det första programmet i serien som grundar sig i de träningsprinciper som bodybuilders världen över använder för att bygga muskelmassa.',
     id: 1002,
-    link: '/e-books-and-programs/program-2'
+    link: '/e-books-and-programs/bodybuilding-101',
+    paymentLink: 'https://buy.stripe.com/eVa9BfgqWfhBaCkeUZ'
   },
   {
     name: 'Träningsprogram 3',
@@ -29,11 +30,11 @@ export const products = [
     link: '/e-books-and-programs/program-4'
   },
   {
-    name: 'Guide till Bulk (E-bok)',
+    name: 'Komplett Guide till Bulk (E-bok)',
     price: 359,
     desc: 'Den ultimata guiden för dig som vill bygga muskelmassa. Vi tar en djupdykning i allt som angår kost, träning, tillskott och sömn för att maximera dina resultat.',
     id: 2001,
-    link: '/e-books-and-programs/guide-till-bulk-e-bok',
+    link: '/e-books-and-programs/komplett-guide-till-bulk-e-bok',
     paymentLink: 'https://buy.stripe.com/00gaFj8Yu9Xh25O289'
   },
   {

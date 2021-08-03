@@ -3,7 +3,7 @@ import Hero from './Hero'
 import '../css/main.css'
 import '../css/home.css'
 import Blob from '../images/blob.svg'
-// import Blob2 from '../images/blob-2.svg'
+import Blob2 from '../images/blob-2.svg'
 import PlaceholderCover from '../images/covers/placeholder.png'
 import LogoIcon from '../images/ONfitness-icon.svg'
 import { Link } from 'react-router-dom'
@@ -48,11 +48,12 @@ function Home() {
   const program1Desc = products[program1].desc
   const program1PaymentLink = products[program1].paymentLink
 
-  // const program2Index = 1
-  // const program2Name = products[program2Index].name
-  // const program2Price = products[program2Index].price
-  // const program2Link = products[program2Index].link
-  // const program2Desc = products[program2Index].desc
+  const program2 = products.findIndex((product) => product.id === 1002)
+  const program2Name = products[program2].name
+  const program2Price = products[program2].price
+  const program2Link = products[program2].link
+  const program2Desc = products[program2].desc
+  const program2PaymentLink = products[program2].paymentLink
 
   const eBook1 = products.findIndex((product) => product.id === 2001)
   const eBook1Name = products[eBook1].name
@@ -249,22 +250,6 @@ function Home() {
           </div>
         </div>
 
-        {/* ================Träningsprogram================ 2 */}
-        {/* <div className="content-reverse">
-          <div className="image">
-            <img className="blob-img" src={Blob2} alt="blob" />
-            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
-          </div>
-          <div className="text">
-            <h3>{program2Name} <i className="fas fa-book"></i> </h3>
-            <p>{program2Desc}</p>
-            <span>{program2Price} kr <i className="fas fa-tags"></i> </span>
-            <div className="buttons">
-              <Link to={program2Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
-              <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
-            </div>
-          </div>
-        </div> */}
 
         {/* Byt sedan tbx till class=content och byt plats på image och text */}
         <div className="content-reverse">
@@ -283,6 +268,23 @@ function Home() {
           </div>
         </div>
 
+        {/* ================Träningsprogram================ 2 */}
+        <div className="content">
+          <div className="text">
+            <h3>{program2Name} <i className="fas fa-book"></i> </h3>
+            <p>{program2Desc}</p>
+            <span>{program2Price} kr <i className="fas fa-tags"></i> </span>
+            <div className="buttons">
+              <Link to={program2Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <a className="buy-now-link" href={program2PaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
+            </div>
+          </div>
+          <div className="image">
+            <img className="blob-img" src={Blob2} alt="blob" />
+            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
+          </div>
+        </div>
+        
         {/* E-bok 2================================ */}
         {/* <div className="content-reverse">
           <div className="image">

@@ -23,10 +23,10 @@ function EBooksAndPrograms() {
   const program1Price = products[program1].price
   const program1Link = products[program1].link
 
-  // const program2 = products.findIndex((product) => product.id === 1002)
-  // const program2Name = products[program2].name
-  // const program2Price = products[program2].price
-  // const program2Link = products[program2].link
+  const program2 = products.findIndex((product) => product.id === 1002)
+  const program2Name = products[program2].name
+  const program2Price = products[program2].price
+  const program2Link = products[program2].link
   
   // const program3 = products.findIndex((product) => product.id === 1003)
   // const program3Name = products[program3].name
@@ -83,10 +83,10 @@ function EBooksAndPrograms() {
     history.push(program1Link)
   }
 
-  // const redirectToProgram2 = (e) => {
-  //   e.preventDefault()
-  //   history.push(program2Link)
-  // }
+  const redirectToProgram2 = (e) => {
+    e.preventDefault()
+    history.push(program2Link)
+  }
 
   // const redirectToProgram3 = (e) => {
   //   e.preventDefault()
@@ -176,7 +176,7 @@ function EBooksAndPrograms() {
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 
-          {/* <div className="program program-2" onClick={redirectToProgram2}>
+          <div className="program program-2" onClick={redirectToProgram2}>
             <div className="program-header-btns">
               <i className="fas fa-eye" title="Läs mer"></i>
               <img src={LogoIcon} alt="Logo" />
@@ -188,7 +188,7 @@ function EBooksAndPrograms() {
             <h5>{program2Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
-
+{/* 
           <div className="program program-3" onClick={redirectToProgram3}>
             <div className="program-header-btns">
               <i className="fas fa-eye" title="Läs mer"></i>
