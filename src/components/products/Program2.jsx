@@ -68,6 +68,7 @@ function Program2() {
               <li> <b>+</b> Planerad progression över tid för att maximera resultaten</li>
               <li> <b>+</b> Guide till hur du genomför en deload-vecka</li>
               <li> <b>+</b> Noggrant planerad struktur som får programmet att stå ut från andra på marknaden</li>
+              <li> <b>+</b> Anpassat för lagom utrustade gym (exempel för övningsbyte finns på maskiner)</li>
             </ul>
             <a className="buy-now-btn" href={productPaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
