@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Cover from '../../images/covers/traningsprogram.png'
 import '../../css/productPages.css'
 import '../../css/main.css'
 import LogoIcon from '../../images/ONfitness-icon.svg'
@@ -14,24 +13,29 @@ function EBook3() {
     window.scrollTo(0, 0)
   }, [])
 
-  const i = 6;
-  const productName = products[i].name
-  const productPrice = products[i].price
-  const productDesc = products[i].desc
-
+  
+  const product = products.findIndex((product) => product.id === 2003);
+  const productName = products[product].name
+  const productPrice = products[product].price
+  const productDesc = products[product].desc
+  const productPaymentLink = products[product].paymentLink
+  const productCoverImage = products[product].coverImage
+  
   useEffect(() => {
     document.title = 'ONfitness | ' + productName
   }, [productName])
 
-  const relatedProduct1Index = 7;
-  const relatedProduct1Name = products[relatedProduct1Index].name
-  const relatedProduct1Price = products[relatedProduct1Index].price
-  const relatedProduct1Link = products[relatedProduct1Index].link
+  const relatedProduct1ID = products.findIndex((product) => product.id === 1001);
+  const relatedProduct1Name = products[relatedProduct1ID].name
+  const relatedProduct1Price = products[relatedProduct1ID].price
+  const relatedProduct1Link = products[relatedProduct1ID].link
+  const relatedProduct1CoverImage = products[relatedProduct1ID].coverImage
   
-  const relatedProduct2Index = 5;
-  const relatedProduct2Name = products[relatedProduct2Index].name
-  const relatedProduct2Price = products[relatedProduct2Index].price
-  const relatedProduct2Link = products[relatedProduct2Index].link
+  const relatedProduct2ID = products.findIndex((product) => product.id === 1002);
+  const relatedProduct2Name = products[relatedProduct2ID].name
+  const relatedProduct2Price = products[relatedProduct2ID].price
+  const relatedProduct2Link = products[relatedProduct2ID].link
+  const relatedProduct2CoverImage = products[relatedProduct2ID].coverImage
 
   const redirectToRelatedProduct1 = (e) => {
     e.preventDefault()
@@ -48,7 +52,7 @@ function EBook3() {
       <div className="content">
         <div className="product">
           <div className="image">
-            <img src={Cover} alt={productName} />
+            <img src={productCoverImage} alt={productName} />
           </div>
           <div className="info">
             <h2 className="product-title">{productName}</h2>
@@ -65,7 +69,7 @@ function EBook3() {
               <li> <b>+</b> Betalning sker smidigt och enkelt med e-faktura efter du får ditt upplägg, inga förskottsbetalningar!</li>
               <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
             </ul>
-            <a className="buy-now-btn" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
+            <a className="buy-now-btn" href={productPaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
             <p className="payment-info">Betalningen sköts snabbt, smidigt och säkert med <a href="https://stripe.com/"> <i className="fab fa-stripe"></i> </a></p>
           </div>
@@ -81,7 +85,7 @@ function EBook3() {
                   <i className="fas fa-arrow-right" title="Läs mer"></i>
                 </div>
                 <div className="img-bg"></div>
-                <img className="program-cover-img" src={Cover} alt="Program" />
+                <img className="program-cover-img" src={relatedProduct1CoverImage} alt={relatedProduct1Name} />
                 <h4>{relatedProduct1Name}</h4>
                 <h5>{relatedProduct1Price} kr</h5>
                 <button className="add-to-cart-btn" onClick={redirectToRelatedProduct1}>Läs mer <i className="fas fa-arrow-right"></i> </button>
@@ -95,7 +99,7 @@ function EBook3() {
                   <i className="fas fa-arrow-right" title="Läs mer"></i>
                 </div>
                 <div className="img-bg"></div>
-                <img className="program-cover-img" src={Cover} alt="Program" />
+                <img className="program-cover-img" src={relatedProduct2CoverImage} alt={relatedProduct2Name} />
                 <h4>{relatedProduct2Name}</h4>
                 <h5>{relatedProduct2Price} kr</h5>
                 <button className="add-to-cart-btn" onClick={redirectToRelatedProduct2}>Läs mer <i className="fas fa-arrow-right"></i> </button>

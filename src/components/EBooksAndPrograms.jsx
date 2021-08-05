@@ -46,40 +46,43 @@ function EBooksAndPrograms() {
   const eBook1Link = products[eBook1].link
   const eBook1CoverImage = products[eBook1].coverImage
 
-  // const eBook2 = products.findIndex((product) => product.id === 2002)
-  // const eBook2Name = products[eBook2].name
-  // const eBook2Price = products[eBook2].price
-  // const eBook2Link = products[eBook2].link
+  const eBook2 = products.findIndex((product) => product.id === 2002)
+  const eBook2Name = products[eBook2].name
+  const eBook2Price = products[eBook2].price
+  const eBook2Link = products[eBook2].link
+  const eBook2CoverImage = products[eBook2].coverImage
   
-  // const eBook3 = products.findIndex((product) => product.id === 2003)
-  // const eBook3Name = products[eBook3].name
-  // const eBook3Price = products[eBook3].price
-  // const eBook3Link = products[eBook3].link
+  const eBook3 = products.findIndex((product) => product.id === 2003)
+  const eBook3Name = products[eBook3].name
+  const eBook3Price = products[eBook3].price
+  const eBook3Link = products[eBook3].link
+  const eBook3CoverImage = products[eBook3].coverImage
   
-  // const eBook4 = products.findIndex((product) => product.id === 2004)
-  // const eBook4Name = products[eBook4].name
-  // const eBook4Price = products[eBook4].price
-  // const eBook4Link = products[eBook4].link
+  const eBook4 = products.findIndex((product) => product.id === 2004)
+  const eBook4Name = products[eBook4].name
+  const eBook4Price = products[eBook4].price
+  const eBook4Link = products[eBook4].link
+  const eBook4CoverImage = products[eBook4].coverImage
 
   const redirectToEBook1 = (e) => {
     e.preventDefault()
     history.push(eBook1Link)
   }
 
-  // const redirectToEBook2 = (e) => {
-  //   e.preventDefault()
-  //   history.push(eBook2Link)
-  // }
+  const redirectToEBook2 = (e) => {
+    e.preventDefault()
+    history.push(eBook2Link)
+  }
 
-  // const redirectToEBook3 = (e) => {
-  //   e.preventDefault()
-  //   history.push(eBook3Link)
-  // }
+  const redirectToEBook3 = (e) => {
+    e.preventDefault()
+    history.push(eBook3Link)
+  }
 
-  // const redirectToEBook4 = (e) => {
-  //   e.preventDefault()
-  //   history.push(eBook4Link)
-  // }
+  const redirectToEBook4 = (e) => {
+    e.preventDefault()
+    history.push(eBook4Link)
+  }
 
   const redirectToProgram1 = (e) => {
     e.preventDefault()
@@ -109,57 +112,57 @@ function EBooksAndPrograms() {
         <h2>E-böcker <i className="fas fa-book"></i> </h2>
         <div className="e-books">
 
-          <div className="book book-1" onClick={redirectToEBook1}>
+          <div className="book book-1" onClick={redirectToEBook1}> 
             <div className="book-header-btns">
               <i className="fas fa-eye" title="Läs mer"></i>
               <img src={LogoIcon} alt="Logo" />
               <i className="fas fa-arrow-right" title="Läs mer"></i>
             </div>
             <div className="img-bg"></div>
-            <img className="e-book-1-bg" src={eBook1CoverImage} alt={eBook1Name} />
+            <img className="e-book-white-bg" src={eBook1CoverImage} alt={eBook1Name} />
             <h4>{eBook1Name}</h4>
             <h5>{eBook1Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 
-          {/* <div className="book book-2" onClick={redirectToEBook2}>
+          <div className="book book-2 disabled-product" onClick={redirectToEBook2}> {/* onClick={redirectToEBook2} */}
             <div className="book-header-btns">
               <i className="fas fa-eye" title="Läs mer"></i>
               <img src={LogoIcon} alt="Logo" />
               <i className="fas fa-arrow-right" title="Läs mer"></i>
             </div>
             <div className="img-bg"></div>
-            <img className="e-book-cover-img" src={PlaceholderCover} alt="E-bok" />
+            <img className="e-book-white-bg" src={eBook2CoverImage} alt="E-bok" />
             <h4>{eBook2Name}</h4>
             <h5>{eBook2Price} kr</h5>
-            <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
+            <button className="add-to-cart-btn">KOMMER SNART! {/*<i className="fas fa-arrow-right"></i>*/} </button>
           </div>
 
-          <div className="book book-3" onClick={redirectToEBook3}>
+          <div className="book book-3 disabled-product" onClick={redirectToEBook3}>
             <div className="book-header-btns">
               <i className="fas fa-eye" title="Läs mer"></i>
               <img src={LogoIcon} alt="Logo" />
               <i className="fas fa-arrow-right" title="Läs mer"></i>
             </div>
             <div className="img-bg"></div>
-            <img className="e-book-cover-img" src={PlaceholderCover} alt="E-bok" />
+            <img className="e-book-cover-img" src={eBook3CoverImage} alt="E-bok" />
             <h4>{eBook3Name}</h4>
             <h5>{eBook3Price} kr <i className="fas fa-tags"></i> </h5>
-            <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
+            <button className="add-to-cart-btn">KOMMER SNART! {/*<i className="fas fa-arrow-right"></i>*/} </button>
           </div>
 
-          <div className="book book-4" onClick={redirectToEBook4}>
+          <div className="book book-4 disabled-product" onClick={redirectToEBook4}>
             <div className="book-header-btns">
               <i className="fas fa-eye" title="Läs mer"></i>
               <img src={LogoIcon} alt="Logo" />
               <i className="fas fa-arrow-right" title="Läs mer"></i>
             </div>
             <div className="img-bg"></div>
-            <img className="e-book-cover-img" src={PlaceholderCover} alt="E-bok" />
+            <img className="e-book-cover-img" src={eBook4CoverImage} alt="E-bok" />
             <h4>{eBook4Name}</h4>
             <h5>{eBook4Price} kr <i className="fas fa-tags"></i> </h5>
-            <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
-          </div> */}
+            <button className="add-to-cart-btn">KOMMER SNART! {/*<i className="fas fa-arrow-right"></i>*/} </button>
+          </div>
 
         </div>
       </div>

@@ -1,6 +1,7 @@
 import program1Cover from '../images/covers/traningsprogram.png'
 import program2Cover from '../images/covers/traningsprogram.png'
 import eBook1Cover from '../images/covers/kostguide-bulk-vit.jpg'
+import eBook2Cover from '../images/covers/kostguide-bulk-orange.jpg'
 
 export const products = [
   {
@@ -45,25 +46,31 @@ export const products = [
     coverImage: eBook1Cover
   },
   {
-    name: 'E-bok 2',
-    price: 499,
+    name: 'Komplett Kostguide för Deff (E-bok)',
+    price: 479,
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2002,
-    link: '/e-books-and-programs/e-book-2'
+    link: '/e-books-and-programs/komplett-kostguide-for-deff_e-bok',
+    paymentLink: '',
+    coverImage: eBook2Cover
   },
   {
-    name: 'E-bok 3',
-    price: 599,
+    name: 'Komplett Träningsguide För Att Bygga Muskler (E-bok)',
+    price: 399,
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2003,
-    link: '/e-books-and-programs/e-book-3'
+    link: '/e-books-and-programs/komplett-traningsguide-for-att-bygga-muskler_e-bok',
+    paymentLink: '',
+    coverImage: eBook2Cover
   },
   {
-    name: 'E-bok 4',
-    price: 699,
+    name: 'Komplett Kostguide För Bättre Hälsa (E-Bok)',
+    price: 429,
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2004,
-    link: '/e-books-and-programs/e-book-4'
+    link: '/e-books-and-programs/komplett-kostguide-for-battre-halsa_e-bok',
+    paymentLink: '',
+    coverImage: eBook2Cover
   },
   {
     name: 'Kostschema, 8 veckor',

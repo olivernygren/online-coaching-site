@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Cover from '../../images/covers/kostguide-bulk-vit.jpg'
 import '../../css/productPages.css'
 import '../../css/main.css'
 import LogoIcon from '../../images/ONfitness-icon.svg'
@@ -20,6 +19,7 @@ function EBook1() {
   const productPrice = products[product].price
   const productDesc = products[product].desc
   const productPaymentLink = products[product].paymentLink
+  const productCoverImage = products[product].coverImage
   
   useEffect(() => {
     document.title = 'ONfitness | ' + productName
@@ -29,11 +29,13 @@ function EBook1() {
   const relatedProduct1Name = products[relatedProduct1ID].name
   const relatedProduct1Price = products[relatedProduct1ID].price
   const relatedProduct1Link = products[relatedProduct1ID].link
+  const relatedProduct1CoverImage = products[relatedProduct1ID].coverImage
   
   const relatedProduct2ID = products.findIndex((product) => product.id === 1002);
   const relatedProduct2Name = products[relatedProduct2ID].name
   const relatedProduct2Price = products[relatedProduct2ID].price
   const relatedProduct2Link = products[relatedProduct2ID].link
+  const relatedProduct2CoverImage = products[relatedProduct2ID].coverImage
 
   const redirectToRelatedProduct1 = (e) => {
     e.preventDefault()
@@ -50,7 +52,7 @@ function EBook1() {
       <div className="content">
         <div className="product">
           <div className="image">
-            <img src={Cover} alt={productName} />
+            <img src={productCoverImage} alt={productName} />
           </div>
           <div className="info">
             <h2 className="product-title">{productName}</h2>
@@ -61,11 +63,19 @@ function EBook1() {
             <p className="desc">{productDesc}</p>
             <h3 className="included-h3">Detta ingår:</h3>
             <ul>
-              <li> <b>+</b> Personligt anpassat kostschema.</li>
-              <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
-              <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
-              <li> <b>+</b> Betalning sker smidigt och enkelt med e-faktura efter du får ditt upplägg, inga förskottsbetalningar!</li>
-              <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
+              <li> <b>+</b> 57 sidor fullproppade med information!</li>
+              <li> <b>+</b> Grunder och detaljer om kalorier och TDEE</li>
+              <li> <b>+</b> Guide för att räkna och hålla koll på ditt kaloriintag</li>
+              <li> <b>+</b> Komplett guide till mängder, hälsofördelar och bästa källor till protein, fett och kolhydrater</li>
+              <li> <b>+</b> Djupgående information kring rätt mängder, hälsofördelar och bästa källor till viktiga vitaminer och mineraler</li>
+              <li> <b>+</b> Mina topp-tips för att öka kaloriintag och aptit</li>
+              <li> <b>+</b> Detaljerad guide till hur du kan hålla koll på dina framsteg och om du behöver förändra ditt upplägg</li>
+              <li> <b>+</b> Bästa tempo och tidsramar för viktökning</li>
+              <li> <b>+</b> Info och rekommednationer kring kosttillskott, cardio och hydrering</li>
+              <li> <b>+</b> Detaljerad guide till hur du tänker kring och bygger ditt eget kostschema</li>
+              <li> <b>+</b> Flertalet utskriftsbara bilagor för att hjälpa dig hålla koll på dina framsteg</li>
+              <li> <b>+</b> Kan öppnas enkelt i mobilen eller datorn efter nedladdning.</li>
+              <li> <b>Och mer! I min åsikt en av marknandens mest prisvärda och lättförståeliga e-böcker inom ämnet</b></li>
             </ul>
             <a className="buy-now-btn" href={productPaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
@@ -83,7 +93,7 @@ function EBook1() {
                   <i className="fas fa-arrow-right" title="Läs mer"></i>
                 </div>
                 <div className="img-bg"></div>
-                <img className="program-cover-img" src={Cover} alt="Program" />
+                <img className="program-cover-img" src={relatedProduct1CoverImage} alt={relatedProduct1Name} />
                 <h4>{relatedProduct1Name}</h4>
                 <h5>{relatedProduct1Price} kr</h5>
                 <button className="add-to-cart-btn" onClick={redirectToRelatedProduct1}>Läs mer <i className="fas fa-arrow-right"></i> </button>
@@ -97,7 +107,7 @@ function EBook1() {
                   <i className="fas fa-arrow-right" title="Läs mer"></i>
                 </div>
                 <div className="img-bg"></div>
-                <img className="program-cover-img" src={Cover} alt="Program" />
+                <img className="program-cover-img" src={relatedProduct2CoverImage} alt={relatedProduct2Name} />
                 <h4>{relatedProduct2Name}</h4>
                 <h5>{relatedProduct2Price} kr</h5>
                 <button className="add-to-cart-btn" onClick={redirectToRelatedProduct2}>Läs mer <i className="fas fa-arrow-right"></i> </button>
