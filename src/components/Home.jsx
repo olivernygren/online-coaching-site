@@ -47,6 +47,7 @@ function Home() {
   const program1Link = products[program1].link
   const program1Desc = products[program1].desc
   const program1PaymentLink = products[program1].paymentLink
+  const program1CoverImage = products[program1].coverImage
 
   const program2 = products.findIndex((product) => product.id === 1002)
   const program2Name = products[program2].name
@@ -54,6 +55,7 @@ function Home() {
   const program2Link = products[program2].link
   const program2Desc = products[program2].desc
   const program2PaymentLink = products[program2].paymentLink
+  const program2CoverImage = products[program2].coverImage
 
   const eBook1 = products.findIndex((product) => product.id === 2001)
   const eBook1Name = products[eBook1].name
@@ -61,6 +63,7 @@ function Home() {
   const eBook1Link = products[eBook1].link
   const eBook1Desc = products[eBook1].desc
   const eBook1PaymentLink = products[eBook1].paymentLink
+  const eBook1CoverImage = products[eBook1].coverImage
 
   // const eBook2Index = 5
   // const eBook2Name = products[eBook2Index].name
@@ -246,7 +249,7 @@ function Home() {
           </div>
           <div className="image">
             <img className="blob-img" src={Blob} alt="blob" />
-            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
+            <img className="home-cover-img" src={program1CoverImage} alt="book" />
           </div>
         </div>
 
@@ -255,7 +258,7 @@ function Home() {
         <div className="content-reverse">
           <div className="image">
             <img className="blob-img" src={Blob} alt="blob" />
-            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
+            <img className="home-cover-img" src={eBook1CoverImage} alt="book" />
           </div>
           <div className="text">
             <h3>{eBook1Name} <i className="fas fa-book"></i> </h3>
@@ -281,7 +284,7 @@ function Home() {
           </div>
           <div className="image">
             <img className="blob-img" src={Blob2} alt="blob" />
-            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
+            <img className="home-cover-img" src={program2CoverImage} alt="book" />
           </div>
         </div>
         

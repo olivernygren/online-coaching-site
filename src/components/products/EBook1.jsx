@@ -1,15 +1,10 @@
 import React, { useEffect } from 'react'
-import Cover from '../../images/covers/kostochtraning.png'
-// import Cover2 from '../../images/covers/traningsprogram.png'
-// import Cover3 from '../../images/covers/kostschema.png'
+import Cover from '../../images/covers/kostguide-bulk-vit.jpg'
 import '../../css/productPages.css'
 import '../../css/main.css'
 import LogoIcon from '../../images/ONfitness-icon.svg'
 import { products } from '../../database/products'
 import { useHistory } from 'react-router'
-// import { Carousel } from 'react-responsive-carousel';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import '../../css/carousel.css'
 
 function EBook1() {
 
@@ -55,19 +50,7 @@ function EBook1() {
       <div className="content">
         <div className="product">
           <div className="image">
-            <img src={Cover} alt={productName} /> {/* https://www.npmjs.com/package/react-responsive-carousel */}
-            {/* <Carousel showArrows={false} showThumbs={false} infiniteLoop={true}>
-              <div>
-                <img src={Cover} alt="hj" />
-                <p>1</p>
-              </div>
-              <div>
-                <img src={Cover2} alt="hj" />
-              </div>
-              <div>
-                <img src={Cover3} alt="hj" />
-              </div>
-            </Carousel> */}
+            <img src={Cover} alt={productName} />
           </div>
           <div className="info">
             <h2 className="product-title">{productName}</h2>

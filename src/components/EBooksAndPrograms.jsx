@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import '../css/main.css'
 import '../css/eBooksAndPrograms.css'
 import LogoIcon from '../images/ONfitness-icon.svg'
-import PlaceholderCover from '../images/covers/placeholder.png'
+// import PlaceholderCover from '../images/covers/placeholder.png'
 import { products } from '../database/products'
 import { useHistory } from 'react-router'
 
@@ -22,11 +22,13 @@ function EBooksAndPrograms() {
   const program1Name = products[program1].name
   const program1Price = products[program1].price
   const program1Link = products[program1].link
+  const program1CoverImage = products[program1].coverImage
 
   const program2 = products.findIndex((product) => product.id === 1002)
   const program2Name = products[program2].name
   const program2Price = products[program2].price
   const program2Link = products[program2].link
+  const program2CoverImage = products[program2].coverImage
   
   // const program3 = products.findIndex((product) => product.id === 1003)
   // const program3Name = products[program3].name
@@ -42,6 +44,7 @@ function EBooksAndPrograms() {
   const eBook1Name = products[eBook1].name
   const eBook1Price = products[eBook1].price
   const eBook1Link = products[eBook1].link
+  const eBook1CoverImage = products[eBook1].coverImage
 
   // const eBook2 = products.findIndex((product) => product.id === 2002)
   // const eBook2Name = products[eBook2].name
@@ -113,7 +116,7 @@ function EBooksAndPrograms() {
               <i className="fas fa-arrow-right" title="Läs mer"></i>
             </div>
             <div className="img-bg"></div>
-            <img className="e-book-cover-img" src={PlaceholderCover} alt="E-bok" />
+            <img className="e-book-1-bg" src={eBook1CoverImage} alt={eBook1Name} />
             <h4>{eBook1Name}</h4>
             <h5>{eBook1Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
@@ -170,7 +173,7 @@ function EBooksAndPrograms() {
               <i className="fas fa-arrow-right" title="Läs mer"></i>
             </div>
             <div className="img-bg"></div>
-            <img className="program-cover-img" src={PlaceholderCover} alt="Program" />
+            <img className="program-cover-img" src={program1CoverImage} alt="Program" />
             <h4>{program1Name}</h4>
             <h5>{program1Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
@@ -183,7 +186,7 @@ function EBooksAndPrograms() {
               <i className="fas fa-arrow-right" title="Läs mer"></i>
             </div>
             <div className="img-bg"></div>
-            <img className="program-cover-img" src={PlaceholderCover} alt="Program" />
+            <img className="program-cover-img" src={program2CoverImage} alt="Program" />
             <h4>{program2Name}</h4>
             <h5>{program2Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>

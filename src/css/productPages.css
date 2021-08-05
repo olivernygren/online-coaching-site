@@ -221,6 +221,10 @@
   .product-container .content {
     padding: 8rem 1.5rem 6rem 1.5rem;
   }
+
+  .product-title {
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 400px) {

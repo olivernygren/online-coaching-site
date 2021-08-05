@@ -60,7 +60,7 @@ function Program2() {
             <p className="desc">{productDesc}</p>
             <h3 className="included-h3">Detta ingår:</h3>
             <ul>
-              <li> <b>+</b> 9 veckors upplägg</li>
+              <li> <b>+</b> 9 veckors upplägg, totalt 40 dagar med träningspass!</li>
               <li> <b>+</b> 4(!) olika träningspass för varje muskelgrupp, tröttna aldrig på ett pass!</li>
               <li> <b>+</b> Varje pass inkluderar övningar, sets, reps, vila och noteringar kring utförande</li>
               <li> <b>+</b> Noggrann guide till bodybuilding-typen av träning</li>
@@ -68,7 +68,7 @@ function Program2() {
               <li> <b>+</b> Planerad progression över tid för att maximera resultaten</li>
               <li> <b>+</b> Guide till hur du genomför en deload-vecka</li>
               <li> <b>+</b> Noggrant planerad struktur som får programmet att stå ut från andra på marknaden</li>
-              <li> <b>+</b> Anpassat för lagom utrustade gym (exempel för övningsbyte finns på maskiner)</li>
+              <li> <b>+</b> Anpassat för lagom utrustade gym (exempel för övningsbyte finns för maskiner)</li>
             </ul>
             <a className="buy-now-btn" href={productPaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
