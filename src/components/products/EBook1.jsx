@@ -63,7 +63,7 @@ function EBook1() {
             <p className="desc">{productDesc}</p>
             <h3 className="included-h3">Detta ingår:</h3>
             <ul>
-              <li> <b>+</b> 57 sidor fullproppade med information!</li>
+              <li> <b>+</b> 64 sidor fullproppade med information!</li>
               <li> <b>+</b> Grunder och detaljer om kalorier och TDEE</li>
               <li> <b>+</b> Guide för att räkna och hålla koll på ditt kaloriintag</li>
               <li> <b>+</b> Komplett guide till mängder, hälsofördelar och bästa källor till protein, fett och kolhydrater</li>

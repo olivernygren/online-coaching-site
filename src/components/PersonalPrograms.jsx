@@ -39,16 +39,19 @@ function PersonalPrograms() {
   const program1Name = products[program1].name
   const program1Price = products[program1].price
   const program1PaymentLink = products[program1].paymentLink
+  const program1CoverImage = products[program1].coverImage
 
   const program2 = products.findIndex((product) => product.id === 3002)
   const program2Name = products[program2].name
   const program2Price = products[program2].price
   const program2PaymentLink = products[program2].paymentLink
+  const program2CoverImage = products[program2].coverImage
 
   const program3 = products.findIndex((product) => product.id === 3003)
   const program3Name = products[program3].name
   const program3Price = products[program3].price
   const program3PaymentLink = products[program3].paymentLink
+  const program3CoverImage = products[program3].coverImage
 
   return (
     <div className="personal-programs-container personal-programs-page" id="plans">
@@ -64,7 +67,7 @@ function PersonalPrograms() {
               <a className="oc-card-small-link" href="#order-program" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
-            <img className="personal-program-cover-img" src={Program1} alt="Kostschema" />
+            <img className="personal-program-cover-img" src={program1CoverImage} alt="Kostschema" />
             <h4>{program1Name}</h4>
             <h5>{program1Price} kr <i className="fas fa-tags"></i> </h5>
             <a href="#order-program" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
@@ -77,7 +80,7 @@ function PersonalPrograms() {
               <a className="oc-card-small-link" href="#order-program" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
-            <img className="personal-program-cover-img" src={Program2} alt="Kost- och Träningsprogram" />
+            <img className="personal-program-cover-img" src={program2CoverImage} alt="Kost- och Träningsprogram" />
             <h4>{program3Name}</h4>
             <h5>{program3Price} kr <i className="fas fa-tags"></i> <small className="line-through">1 999 kr</small> </h5>
             <a href="#order-program" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
@@ -90,7 +93,7 @@ function PersonalPrograms() {
               <a className="oc-card-small-link" href="#order-program" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
-            <img className="personal-program-cover-img" src={Program3} alt="Träningsprogram" />
+            <img className="personal-program-cover-img" src={program3CoverImage} alt="Träningsprogram" />
             <h4>{program2Name}</h4>
             <h5>{program2Price} kr <i className="fas fa-tags"></i> </h5>
             <a href="#order-program" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
@@ -227,7 +230,7 @@ function PersonalPrograms() {
             <a className="oc-card-small-link" href={program1PaymentLink} title="Till betalning"><i className="fas fa-external-link-alt"></i></a>
           </div>
           <div className="img-bg"></div>
-          <img className="personal-program-cover-img" src={Program1} alt="Kostschema" />
+          <img className="personal-program-cover-img" src={program1CoverImage} alt="Kostschema" />
           <h4>{program1Name}</h4>
           <h5>{program1Price} kr <i className="fas fa-tags"></i> </h5>
           <a href={program1PaymentLink} className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
@@ -240,7 +243,7 @@ function PersonalPrograms() {
             <a className="oc-card-small-link" href={program3PaymentLink} title="Till betalning"><i className="fas fa-external-link-alt"></i></a>
           </div>
           <div className="img-bg"></div>
-          <img className="personal-program-cover-img" src={Program2} alt="Kost- och Träningsprogram" />
+          <img className="personal-program-cover-img" src={program3CoverImage} alt="Kost- och Träningsprogram" />
           <h4>{program3Name}</h4>
           <h5>{program3Price} kr <i className="fas fa-tags"></i> <small className="line-through">1 999 kr</small> </h5>
           <a href={program3PaymentLink} className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>
@@ -253,7 +256,7 @@ function PersonalPrograms() {
             <a className="oc-card-small-link" href={program2PaymentLink} title="Till betalning"><i className="fas fa-external-link-alt"></i></a>
           </div>
           <div className="img-bg"></div>
-          <img className="personal-program-cover-img" src={Program3} alt="Träningsprogram" />
+          <img className="personal-program-cover-img" src={program2CoverImage} alt="Träningsprogram" />
           <h4>{program2Name}</h4>
           <h5>{program2Price} kr <i className="fas fa-tags"></i> </h5>
           <a href={program2PaymentLink} className="get-started-btn-2">Beställ ditt upplägg <i className="fas fa-external-link-alt"></i> </a>

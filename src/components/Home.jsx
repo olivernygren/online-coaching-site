@@ -12,6 +12,8 @@ import Me from '../images/me-cropped-with-icon.png'
 import MeAlt from '../images/me-cropped-2.jpg'
 import Logo from '../images/ONfitness-light.svg'
 import { useHistory } from 'react-router'
+import onlineCoachingCover from '../images/covers/online-coaching.png'
+
 
 function Home() {
 
@@ -65,11 +67,8 @@ function Home() {
   const eBook1PaymentLink = products[eBook1].paymentLink
   const eBook1CoverImage = products[eBook1].coverImage
 
-  // const eBook2Index = 5
-  // const eBook2Name = products[eBook2Index].name
-  // const eBook2Price = products[eBook2Index].price
-  // const eBook2Link = products[eBook2Index].link
-  // const eBook2Desc = products[eBook2Index].desc
+  const personalProgramComplete = products.findIndex((product) => product.id === 3003)
+  const personalProgramCompleteCover = products[personalProgramComplete].coverImage
 
   const redirectToPersonalPrograms = (e) => {
     e.preventDefault()
@@ -150,7 +149,7 @@ function Home() {
               <img src={LogoIcon} alt="Logo" />
               <i className="fas fa-arrow-right" title="Kontakta mig" onClick={redirectToOnlineCoaching}></i>
             </div>
-            <img className="home-online-coaching-cover-img" src={PlaceholderCover} alt="Kost- och Träningsprogram" />
+            <img className="home-online-coaching-cover-img" src={onlineCoachingCover} alt="Kost- och Träningsprogram" />
             <h4>Komplett Kost- och Träningsupplägg + Coaching</h4>
             <h5>1 099 kr / mån <small className="line-through">1 799 kr / mån</small> </h5>
             <button className="get-started-btn" onClick={redirectToOnlineCoaching}>Kom igång <i className="fas fa-arrow-right"></i> </button>
@@ -199,7 +198,7 @@ function Home() {
               <img src={LogoIcon} alt="Logo" />
               <i className="fas fa-arrow-right" title="Kontakta mig" onClick={redirectToPersonalPrograms}></i>
             </div>
-            <img className="home-online-coaching-cover-img" src={PlaceholderCover} alt="Kost- och Träningsprogram" />
+            <img className="home-online-coaching-cover-img" src={personalProgramCompleteCover} alt="Kost- och Träningsprogram" />
             <h4>10 veckors Komplett Kost- och Träningsupplägg</h4>
             <h5>999 kr <small className="line-through">1 599 kr</small> </h5>
             <button className="get-started-btn" onClick={redirectToPersonalPrograms}>Kom igång <i className="fas fa-arrow-right"></i> </button>
@@ -237,7 +236,7 @@ function Home() {
 
       <div className="home-ebooks-and-programs">
         <h2>E-böcker och Program</h2>
-        <div className="content">
+        {/* <div className="content">
           <div className="text">
             <h3>{program1Name} <i className="fas fa-book"></i> </h3>
             <p>{program1Desc}</p>
@@ -251,7 +250,7 @@ function Home() {
             <img className="blob-img" src={Blob} alt="blob" />
             <img className="home-cover-img" src={program1CoverImage} alt="book" />
           </div>
-        </div>
+        </div> */}
 
 
         {/* Byt sedan tbx till class=content och byt plats på image och text */}
@@ -271,8 +270,8 @@ function Home() {
           </div>
         </div>
 
-        {/* ================Träningsprogram================ 2 */}
-        <div className="content">
+        {/* ================Träningsprogram 2================ */}
+        {/* <div className="content">
           <div className="text">
             <h3>{program2Name} <i className="fas fa-book"></i> </h3>
             <p>{program2Desc}</p>
@@ -286,7 +285,7 @@ function Home() {
             <img className="blob-img" src={Blob2} alt="blob" />
             <img className="home-cover-img" src={program2CoverImage} alt="book" />
           </div>
-        </div>
+        </div> */}
         
         {/* E-bok 2================================ */}
         {/* <div className="content-reverse">

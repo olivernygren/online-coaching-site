@@ -1,7 +1,15 @@
-import program1Cover from '../images/covers/traningsprogram.png'
-import program2Cover from '../images/covers/traningsprogram.png'
-import eBook1Cover from '../images/covers/kostguide-bulk-vit.jpg'
-import eBook2Cover from '../images/covers/kostguide-bulk-orange.jpg'
+import program1Cover from '../images/covers/träningsprogram-nybörjare.png'
+import program2Cover from '../images/covers/bodybuilding-101.png'
+
+import eBook1Cover from '../images/covers/kostguide-bulk-vit.png'
+import eBook2Cover from '../images/covers/kostguide-deff-orange.png'
+import eBook3Cover from '../images/covers/träningsguide-blank.png'
+import eBook4Cover from '../images/covers/hälsoguide.png'
+
+import personalProgramCompleteCover from '../images/covers/upplägg-komplett.png'
+import personalProgramDietCover from '../images/covers/upplägg-kost.png'
+import personalProgramTrainingCover from '../images/covers/upplägg-träning.png'
+
 
 export const products = [
   {
@@ -61,33 +69,36 @@ export const products = [
     id: 2003,
     link: '/e-books-and-programs/komplett-traningsguide-for-att-bygga-muskler_e-bok',
     paymentLink: '',
-    coverImage: eBook2Cover
+    coverImage: eBook3Cover
   },
   {
     name: 'Komplett Kostguide För Bättre Hälsa (E-Bok)',
-    price: 429,
+    price: 289,
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2004,
     link: '/e-books-and-programs/komplett-kostguide-for-battre-halsa_e-bok',
     paymentLink: '',
-    coverImage: eBook2Cover
+    coverImage: eBook4Cover
   },
   {
     name: 'Kostschema, 8 veckor',
     price: 899,
     id: 3001,
-    paymentLink: 'https://buy.stripe.com/5kA00F1w27P98uccMP'
+    paymentLink: 'https://buy.stripe.com/28o5kZgqW8Td6m4aEL',
+    coverImage: personalProgramDietCover
   },
   {
     name: 'Träningsprogram, 8 veckor',
     price: 599,
     id: 3002,
-    paymentLink: 'https://buy.stripe.com/7sIbJn1w27P98ucbIM'
+    paymentLink: 'https://buy.stripe.com/aEUaFjeiO6L5cKs28h',
+    coverImage: personalProgramTrainingCover
   },
   {
     name: 'Komplett Kost- & Träningsupplägg, 10 veckor',
     price: "1 199",
     id: 3003,
-    paymentLink: 'https://buy.stripe.com/14k5kZb6C4CX11K146'
+    paymentLink: 'https://buy.stripe.com/dR6eVzgqWc5ph0I008',
+    coverImage: personalProgramCompleteCover
   }
 ]
