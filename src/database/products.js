@@ -5,6 +5,7 @@ import eBook1Cover from '../images/covers/kostguide-bulk-vit.png'
 import eBook2Cover from '../images/covers/kostguide-deff-orange.png'
 import eBook3Cover from '../images/covers/träningsguide-blank.png'
 import eBook4Cover from '../images/covers/hälsoguide.png'
+import eBook5Cover from '../images/covers/nybörjares-guide-till-kost-och-träning.png'
 
 import personalProgramCompleteCover from '../images/covers/upplägg-komplett.png'
 import personalProgramDietCover from '../images/covers/upplägg-kost.png'
@@ -79,6 +80,15 @@ export const products = [
     link: '/e-books-and-programs/komplett-kostguide-for-battre-halsa_e-bok',
     paymentLink: '',
     coverImage: eBook4Cover
+  },
+  {
+    name: 'En Nybörjares Guide Till Kost & Träning (E-Bok)',
+    price: 399,
+    desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
+    id: 2005,
+    link: '/e-books-and-programs/en-nyborjares-guide-till-kost-och-traning',
+    paymentLink: '',
+    coverImage: eBook5Cover
   },
   {
     name: 'Kostschema, 8 veckor',
