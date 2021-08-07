@@ -1,15 +1,15 @@
-import program1Cover from '../images/covers/träningsprogram-nybörjare.png'
+import program1Cover from '../images/covers/träningsprogram-nybörjare.png' //fel
 import program2Cover from '../images/covers/bodybuilding-101.png'
 
 import eBook1Cover from '../images/covers/kostguide-bulk-vit.png'
 import eBook2Cover from '../images/covers/kostguide-deff-orange.png'
-import eBook3Cover from '../images/covers/träningsguide-blank.png'
+import eBook3Cover from '../images/covers/träningsguide-blank.png' //fel
 import eBook4Cover from '../images/covers/hälsoguide.png'
 import eBook5Cover from '../images/covers/nybörjares-guide-till-kost-och-träning.png'
 
-import personalProgramCompleteCover from '../images/covers/upplägg-komplett.png'
-import personalProgramDietCover from '../images/covers/upplägg-kost.png'
-import personalProgramTrainingCover from '../images/covers/upplägg-träning.png'
+import personalProgramCompleteCover from '../images/covers/upplägg-komplett.png' //fel
+import personalProgramDietCover from '../images/covers/upplägg-kost.png' //fel
+import personalProgramTrainingCover from '../images/covers/upplägg-träning.png' //fel
 
 
 export const products = [

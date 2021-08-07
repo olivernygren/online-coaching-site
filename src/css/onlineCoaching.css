@@ -284,6 +284,14 @@
   width: fit-content;
 }
 
+.whats-included .wi-h2 {
+  margin: 3rem auto 2rem auto;
+  text-align: center;
+  font-size: 2.25rem;
+  box-shadow: inset 0 -12px 0 0 var(--clr-main);
+  width: fit-content;
+}
+
 .whats-included h3 {
   font-size: 1.75rem;
   margin-top: 3.5rem;

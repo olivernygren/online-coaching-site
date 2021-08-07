@@ -73,7 +73,7 @@ function OnlineCoaching() {
 
       <div className="whats-included">
         <div className="content">
-          <h2>Vad ingår i online coaching?</h2>
+          <h2 className="wi-h2">Vad ingår i online coaching?</h2>
           <p>
             Redan direkt efter ditt köp får du kontaktuppgifter till mig. Då är jag redo att svara på alla frågor du kan tänka dig. <br /> <br />
             Dessutom får du efter köp av valfritt online-coaching-paket ett motsvarande svarsformulär. Här svarar du på
