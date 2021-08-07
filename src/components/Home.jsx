@@ -3,8 +3,8 @@ import Hero from './Hero'
 import '../css/main.css'
 import '../css/home.css'
 import Blob from '../images/blob.svg'
-import Blob2 from '../images/blob-2.svg'
-import PlaceholderCover from '../images/covers/placeholder.png'
+// import Blob2 from '../images/blob-2.svg'
+// import PlaceholderCover from '../images/covers/placeholder.png'
 import LogoIcon from '../images/ONfitness-icon.svg'
 import { Link } from 'react-router-dom'
 import { products } from '../database/products'
@@ -43,21 +43,21 @@ function Home() {
     window.scrollTo(0, 0)
   }, [])
 
-  const program1 = products.findIndex((product) => product.id === 1001)
-  const program1Name = products[program1].name
-  const program1Price = products[program1].price
-  const program1Link = products[program1].link
-  const program1Desc = products[program1].desc
-  const program1PaymentLink = products[program1].paymentLink
-  const program1CoverImage = products[program1].coverImage
+  // const program1 = products.findIndex((product) => product.id === 1001)
+  // const program1Name = products[program1].name
+  // const program1Price = products[program1].price
+  // const program1Link = products[program1].link
+  // const program1Desc = products[program1].desc
+  // const program1PaymentLink = products[program1].paymentLink
+  // const program1CoverImage = products[program1].coverImage
 
-  const program2 = products.findIndex((product) => product.id === 1002)
-  const program2Name = products[program2].name
-  const program2Price = products[program2].price
-  const program2Link = products[program2].link
-  const program2Desc = products[program2].desc
-  const program2PaymentLink = products[program2].paymentLink
-  const program2CoverImage = products[program2].coverImage
+  // const program2 = products.findIndex((product) => product.id === 1002)
+  // const program2Name = products[program2].name
+  // const program2Price = products[program2].price
+  // const program2Link = products[program2].link
+  // const program2Desc = products[program2].desc
+  // const program2PaymentLink = products[program2].paymentLink
+  // const program2CoverImage = products[program2].coverImage
 
   const eBook1 = products.findIndex((product) => product.id === 2001)
   const eBook1Name = products[eBook1].name
