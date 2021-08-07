@@ -68,6 +68,7 @@ function Home() {
   const eBook1CoverImage = products[eBook1].coverImage
 
   const personalProgramComplete = products.findIndex((product) => product.id === 3003)
+  const personalProgramPrice = products[personalProgramComplete].price
   const personalProgramCompleteCover = products[personalProgramComplete].coverImage
 
   const redirectToPersonalPrograms = (e) => {
@@ -151,7 +152,7 @@ function Home() {
             </div>
             <img className="home-online-coaching-cover-img" src={onlineCoachingCover} alt="Kost- och Träningsprogram" />
             <h4>Komplett Kost- och Träningsupplägg + Coaching</h4>
-            <h5>1 099 kr / mån <small className="line-through">1 799 kr / mån</small> </h5>
+            <h5>999 kr / mån <small className="day-price">33,3 kr / dag</small> </h5>
             <button className="get-started-btn" onClick={redirectToOnlineCoaching}>Kom igång <i className="fas fa-arrow-right"></i> </button>
           </div>
 
@@ -162,7 +163,7 @@ function Home() {
               <li> <b>+</b> Personligt anpassat kostschema.</li>
               <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
               <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
-              <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
+              <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter och kunder.</li>
               <li> <b>+</b> Direktkontakt med mig via Instagram DM för motivation, frågor eller ändringar av upplägget.</li>
               <li> <b>+</b> (Valfritt) kortare online-möte med mig innan skapandet av programmet.</li>
               <li> <b>+</b> Ändringar görs löpande efter behov.</li>
@@ -200,7 +201,7 @@ function Home() {
             </div>
             <img className="home-online-coaching-cover-img" src={personalProgramCompleteCover} alt="Kost- och Träningsprogram" />
             <h4>10 veckors Komplett Kost- och Träningsupplägg</h4>
-            <h5>999 kr <small className="line-through">1 599 kr</small> </h5>
+            <h5>{personalProgramPrice} kr <small className="line-through">1 685 kr</small> </h5>
             <button className="get-started-btn" onClick={redirectToPersonalPrograms}>Kom igång <i className="fas fa-arrow-right"></i> </button>
           </div>
 
@@ -212,7 +213,9 @@ function Home() {
               <li> <b>+</b> Personligt anpassat kostschema.</li>
               <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
               <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
-              <li className="minus-top"> <b>-</b> <span className="line-through">Tillgång till en privat facebook-grupp med alla andra klienter.</span> </li>
+              <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
+              <li> <b>+</b> Allt detta för endast 15,7 kr/dag!</li>
+              {/* <li className="minus-top"> <b>-</b> <span className="line-through"></span> </li> */}
               <li> <b>-</b> <span className="line-through">Direktkontakt med mig via Instagram DM för motivation, frågor eller ändringar av upplägget.</span> </li>
               <li> <b>-</b> <span className="line-through">(Valfritt) kortare online-möte med mig innan skapandet av programmet.</span> </li>
               <li> <b>-</b> <span className="line-through">Ändringar görs löpande efter behov</span> </li>

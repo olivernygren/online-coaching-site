@@ -270,7 +270,7 @@ form .disabled-submit-btn:hover {
 
 @media (max-width: 650px) {
   .hero .content {
-    padding: 14rem 2rem 8rem 2rem;
+    padding: 12.5rem 2rem 8rem 2rem;
   }
 
   .hero .buttons {

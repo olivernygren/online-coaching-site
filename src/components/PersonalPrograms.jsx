@@ -82,7 +82,7 @@ function PersonalPrograms() {
             <div className="img-bg"></div>
             <img className="personal-program-cover-img" src={program3CoverImage} alt="Kost- och Träningsprogram" />
             <h4>{program3Name}</h4>
-            <h5>{program3Price} kr <i className="fas fa-tags"></i> <small className="line-through">1 999 kr</small> </h5>
+            <h5>{program3Price} kr <i className="fas fa-tags"></i> <small className="line-through">1 685 kr</small> </h5>
             <a href="#order-program" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
 
