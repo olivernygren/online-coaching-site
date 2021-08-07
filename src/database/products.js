@@ -74,7 +74,7 @@ export const products = [
   },
   {
     name: 'Komplett Kostguide För Bättre Hälsa (E-Bok)',
-    price: 289,
+    price: 299,
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2004,
     link: '/e-books-and-programs/komplett-kostguide-for-battre-halsa_e-bok',
@@ -92,21 +92,21 @@ export const products = [
   },
   {
     name: 'Kostschema, 8 veckor',
-    price: 899,
+    price: 799,
     id: 3001,
     paymentLink: 'https://buy.stripe.com/28o5kZgqW8Td6m4aEL',
     coverImage: personalProgramDietCover
   },
   {
     name: 'Träningsprogram, 8 veckor',
-    price: 599,
+    price: 549,
     id: 3002,
     paymentLink: 'https://buy.stripe.com/aEUaFjeiO6L5cKs28h',
     coverImage: personalProgramTrainingCover
   },
   {
     name: 'Komplett Kost- & Träningsupplägg, 10 veckor',
-    price: "1 199",
+    price: "1 099",
     id: 3003,
     paymentLink: 'https://buy.stripe.com/dR6eVzgqWc5ph0I008',
     coverImage: personalProgramCompleteCover
