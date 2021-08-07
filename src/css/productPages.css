@@ -74,6 +74,10 @@
   padding-inline-start: 0;
   list-style-type: none;
   margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-container .delivery-notice {
   margin-bottom: 3rem;
 }
 

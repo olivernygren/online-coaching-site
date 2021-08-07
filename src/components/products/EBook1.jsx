@@ -71,12 +71,13 @@ function EBook1() {
               <li> <b>+</b> Mina topp-tips för att öka kaloriintag och aptit</li>
               <li> <b>+</b> Detaljerad guide till hur du kan hålla koll på dina framsteg och om du behöver förändra ditt upplägg</li>
               <li> <b>+</b> Bästa tempo och tidsramar för viktökning</li>
-              <li> <b>+</b> Info och rekommednationer kring kosttillskott, cardio och hydrering</li>
+              <li> <b>+</b> Info och rekommendationer kring kosttillskott, cardio och hydrering</li>
               <li> <b>+</b> Detaljerad guide till hur du tänker kring och bygger ditt eget kostschema</li>
               <li> <b>+</b> Flertalet utskriftsbara bilagor för att hjälpa dig hålla koll på dina framsteg</li>
               <li> <b>+</b> Kan öppnas enkelt i mobilen eller datorn efter nedladdning.</li>
               <li> <b>Och mer! I min åsikt en av marknandens mest prisvärda och lättförståeliga e-böcker inom ämnet</b></li>
             </ul>
+            <p className="delivery-notice">Notera att leverans av program och e-böcker kan ta upp till 24h efter betalning!</p>
             <a className="buy-now-btn" href={productPaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
             <p className="payment-info">Betalningen sköts snabbt, smidigt och säkert med <a href="https://stripe.com/"> <i className="fab fa-stripe"></i> </a></p>

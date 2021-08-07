@@ -32,11 +32,11 @@ function Consultation() {
           <p>När jag fått forumläret hör jag av mig så snabbt som möjligt för att boka in en tid!</p>
         </div>
 
-      <form className="hero-form oc-form" method="POST" action="https://formspree.io/f/xeqvkpzg" id="consultation-form">
-        <Form />
-      </form>
 
       </div>
+        <form className="hero-form oc-form" method="POST" action="https://formspree.io/f/xeqvkpzg" id="consultation-form">
+          <Form />
+        </form>
       
     </div>
   )

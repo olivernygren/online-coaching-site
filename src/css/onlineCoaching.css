@@ -263,7 +263,18 @@
   box-shadow: 4px 4px 8px rgb(28, 28, 28);
 }
 
+.day-price {
+  color: grey;
+  margin-left: .75rem;
+}
 
+.home-online-coaching .info-text .payment-notice {
+  margin-bottom: 2.5rem;
+}
+
+.online-coaching-page-top .info-text {
+  padding-bottom: 3rem;
+}
 
 
 .whats-included {
@@ -539,6 +550,10 @@
 
   .home-online-coaching {
     padding-bottom: 0;
+  }
+
+  .whats-included .wi-h2 {
+    box-shadow: none;
   }
 }
 

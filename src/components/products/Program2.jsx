@@ -70,11 +70,13 @@ function Program2() {
               <li> <b>+</b> Noggrant planerad struktur som får programmet att stå ut från andra på marknaden</li>
               <li> <b>+</b> Anpassat för lagom utrustade gym (exempel för övningsbyte finns för maskiner)</li>
             </ul>
+            <p className="delivery-notice">Notera att leverans av program och e-böcker kan ta upp till 24h efter betalning!</p>
             <a className="buy-now-btn" href={productPaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
             <p className="payment-info">Betalningen sköts snabbt, smidigt och säkert med <a href="https://stripe.com/"> <i className="fab fa-stripe"></i> </a></p>
           </div>
         </div>
+        
         <div className="related-products">
           <h2>Liknande produkter</h2>
           <div className="cards-flex">

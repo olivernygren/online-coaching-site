@@ -841,7 +841,11 @@
 
 @media (max-width: 570px) {
   .home-online-coaching .info-text {
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
+  }
+
+  .home-online-coaching .info-text-2 {
+    padding-bottom: 2rem;
   }
 }
 

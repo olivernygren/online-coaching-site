@@ -69,11 +69,13 @@ function Program1() {
               <li> <b>+</b> Guide till hur du kan gå vidare och fortsätta utvecklas efter programmet</li>
               <li> <b>+</b> 31 sidor fulla av information och utan onödiga utfyllnader!</li>
             </ul>
+            <p className="delivery-notice">Notera att leverans av program och e-böcker kan ta upp till 24h efter betalning!</p>
             <a className="buy-now-btn" href={productPaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             <p className="agreement">Genom att gå vidare till betalningen godkänner du <a href="/terms-and-conditions">villkor</a> och <a href="/integrity-policy">integritetspolicyn</a>.</p>
             <p className="payment-info">Betalningen sköts snabbt, smidigt och säkert med <a href="https://stripe.com/"> <i className="fab fa-stripe"></i> </a></p>
           </div>
         </div>
+
         <div className="related-products">
           <h2>Liknande produkter</h2>
           <div className="cards-flex">

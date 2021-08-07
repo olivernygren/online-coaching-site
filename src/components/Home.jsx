@@ -97,7 +97,7 @@ function Home() {
             <p>
               Mitt namn är Oliver Nygren och det är jag som är grundare av ONfitness. Jag är idag 20 år gammal och har tränat sedan 15 års ålder. Under dessa
               fem år har jag levt totalt inkapslad i fitness-bubblan. Jag har spenderat timme efter timme, dag efter dag sedan dess på att lära mig allt som går 
-              inom kost och träning. Jag har spenderat ofattbart många timmar på att skriva både träningsprogram och kostscheman till mig själv sedan dess för att 
+              inom kost och träning. Jag har lagt ned ofantligt många timmar på att skriva både träningsprogram och kostscheman till mig själv sedan dess för att 
               optimera mina resultat på gymmet. Efter all denna tid av planering och strukturering skulle jag säga att jag lärt mig vad som funkar och vad som inte funkar.
               Och nu  vill jag hjälpa DIG! <br /> <br /> En dag i juni 2021 bestämde jag mig för att denna passion jag har för fitness är något större än bara en hobby. 
               Jag vill kunna leva på att hjälpa människor inom kost och träning genom att lära ut allt jag lärt mig genom åren. Jag gick utanför min comfort-zone 
@@ -107,7 +107,7 @@ function Home() {
             <p>
               Varför ska du då välja mig, en 20-åring utan PT-utbildning? Jag ser alldeles för ofta hur coacher säljer allt för generiska program för enorma summor.
               Dessa program är ofta ett så kallat "kopiera och klistra in" program. Oavsett klientens förutsättningar och preferenser skickar de iväg sitt generiska
-              program och samlar in pengarna. i hopp om att klienten inte vet bättre. Jag brinner för att hjälpa folk utefter deras förutsättningar och preferenser.
+              program och samlar in pengarna i hopp om att klienten inte vet bättre. Jag brinner för att hjälpa folk utefter deras förutsättningar och preferenser.
               Jag påstår inte att jag är expert eller bättre än någon annan. Men, jag tar inga genvägar. Jag kommer göra allt jag kan för att du som klient ska få 
               långsiktigt hållbara resultat genom att gå in på en nivå av detaljer som är ovanlig i denna bransch. Med 5 års erfarenhet och timme efter timme av 
               research kring ämnet, anser jag att du bör välja mig om du vill maximera dina resultat.
@@ -157,19 +157,19 @@ function Home() {
 
           <div className="info-text">
             <h3>Vad ingår?</h3>
-            <p>Direkt efter beställning kommer du få besvara ett antal frågor i ett formulär. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
+            <p>Direkt efter ansökan kommer du få ett formulär skickat till den e-post du angivit som du då ska besvara. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
             <ul>
               <li> <b>+</b> Personligt anpassat kostschema.</li>
               <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
               <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
-              <li> <b>+</b> Betalning sker smidigt och enkelt med e-faktura efter du får ditt upplägg, inga förskottsbetalningar!</li>
               <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
-              <li> <b>+</b> Direktkontakt med mig via Messenger för motivation, frågor eller ändringar av upplägget.</li>
+              <li> <b>+</b> Direktkontakt med mig via Instagram DM för motivation, frågor eller ändringar av upplägget.</li>
               <li> <b>+</b> (Valfritt) kortare online-möte med mig innan skapandet av programmet.</li>
-              <li> <b>+</b> Ändringar görs löpande efter behov</li>
-              <li> <b>+</b> Kontinuerlig uppföljning och avstämningar veckovis</li>
-              <li> <b>+</b> Kan avslutas när du vill!</li>
+              <li> <b>+</b> Ändringar görs löpande efter behov.</li>
+              <li> <b>+</b> Kontinuerlig uppföljning och avstämningar veckovis.</li>
+              <li> <b>+</b> Kan avslutas när du vill! Ingen bindningstid.</li>
             </ul>
+            <p>Jag börjar skapandet av ditt upplägg efter första betalning. Sedan skickas e-faktura för betalning varje månad tills du säger upp coachingen. Ingen uppsägningstid!</p>
             <Link className="read-more-btn" to='/online-coaching'>Läs mer <i className="fas fa-arrow-right"></i> </Link>
           </div>
         </div>
@@ -204,15 +204,16 @@ function Home() {
             <button className="get-started-btn" onClick={redirectToPersonalPrograms}>Kom igång <i className="fas fa-arrow-right"></i> </button>
           </div>
 
-          <div className="info-text">
+          <div className="info-text info-text-2">
             <h3>Vad ingår?</h3>
-            <p>Direkt efter beställning kommer du få besvara ett antal frågor i ett formulär. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
+            <small>I Komplett*</small>
+            <p>Direkt efter beställning kommer du få ett formulär skickat till den e-post du angav i beställningen. Besvara frågorna i formuläret. Utefter svaren på dessa frågor bygger jag ditt upplägg HELT från grunden, vilket inkluderar:</p>
             <ul>
               <li> <b>+</b> Personligt anpassat kostschema.</li>
               <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
               <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
               <li className="minus-top"> <b>-</b> <span className="line-through">Tillgång till en privat facebook-grupp med alla andra klienter.</span> </li>
-              <li> <b>-</b> <span className="line-through">Direktkontakt med mig via Messenger för motivation, frågor eller ändringar av upplägget.</span> </li>
+              <li> <b>-</b> <span className="line-through">Direktkontakt med mig via Instagram DM för motivation, frågor eller ändringar av upplägget.</span> </li>
               <li> <b>-</b> <span className="line-through">(Valfritt) kortare online-möte med mig innan skapandet av programmet.</span> </li>
               <li> <b>-</b> <span className="line-through">Ändringar görs löpande efter behov</span> </li>
               <li> <b>-</b> <span className="line-through">Kontinuerlig uppföljning och avstämningar veckovis</span> </li>

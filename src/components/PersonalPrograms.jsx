@@ -80,7 +80,7 @@ function PersonalPrograms() {
               <a className="oc-card-small-link" href="#order-program" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
-            <img className="personal-program-cover-img" src={program2CoverImage} alt="Kost- och Träningsprogram" />
+            <img className="personal-program-cover-img" src={program3CoverImage} alt="Kost- och Träningsprogram" />
             <h4>{program3Name}</h4>
             <h5>{program3Price} kr <i className="fas fa-tags"></i> <small className="line-through">1 999 kr</small> </h5>
             <a href="#order-program" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
@@ -93,7 +93,7 @@ function PersonalPrograms() {
               <a className="oc-card-small-link" href="#order-program" title="Kom igång"><i className="fas fa-arrow-down"/></a>
             </div>
             <div className="img-bg"></div>
-            <img className="personal-program-cover-img" src={program3CoverImage} alt="Träningsprogram" />
+            <img className="personal-program-cover-img" src={program2CoverImage} alt="Träningsprogram" />
             <h4>{program2Name}</h4>
             <h5>{program2Price} kr <i className="fas fa-tags"></i> </h5>
             <a href="#order-program" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
@@ -129,29 +129,36 @@ function PersonalPrograms() {
             <p>Observera att kostschema ej ingår vid köp av endast träningsprogram!</p>
             <ul>
               <li> <b>Antal måltider</b> bestäms utifrån dina svar i formuläret.</li>
-              <li> <b>Mängden kalorier</b> baseras på dina mål. Jag kommer noggrant räkna ut dina kaloribehov, något som vi kan/kommer justera beroende på hur din vikt och din fysik utvecklas, eller om dina mål skulle förändras.</li>
+              <li> <b>Mängden kalorier</b> baseras på dina mål. Jag kommer noggrant räkna ut dina kaloribehov och ge dig kunskap och verktyg för att förändra mängden kalorier när kroppen anpassat sig.</li>
               <li> <b>Makros - Protein, Fett och Kolhydrater</b> i ditt kostschema baseras på dina mål, preferenser samt timme efter timme av de senaste 4 åren av mitt liv av research bland branschens bästa och mest pålitliga resurser.</li>
               <li> <b>En grund med vitaminer och mineraler</b> kommer utgöra grunden av ditt kostschema i form av näringsrik och lättupptaglig mat. Beroende på dina preferenser byggs grunden av en handfull av dessa livsmedel. Här kommer jag lägga störst fokus för att se till att din hälsa sätts i första rummet, oavsett dina mål.</li>
               <li> <b>Kosttillskott</b> kommer baseras på dina mål, din budget och eventuella näringsbrister pga mat-preferenser.</li>
-              <li> <b>Matsmältningen</b> blir också en prioritet som baseras på svaren i formuläret. Vi mår som magen mår. Därför är det viktigt att den mat och närning vi stoppar i oss kan absorberas och inte ger oss gas eller diarrésymptom.</li>
-              <li> <b>Olika dieter och allergier</b> kommer anpassas efter! Vegan, vegeterian, pescaterian, laktosintollerans, glutenintollerans, nötallergi eller liknande behöver inte stå i vägen för dina mål! Liknande kommer du få specificera i formuläret så att jag kan anpassa ditt schema efter dessa.</li>
+              <li> <b>Matsmältningen</b> blir också en prioritet som baseras på svaren i formuläret. Vi mår som magen mår. Därför är det viktigt att den mat och näring vi stoppar i oss kan absorberas och inte ger oss gas eller diarrésymptom.</li>
+              <li> <b>Olika dieter och allergier</b> kommer anpassas efter! Vegan, vegaterian, pescatarian, laktosintollerans, glutenintollerans, nötallergi eller liknande behöver inte stå i vägen för dina mål! Liknande kommer du få specificera i formuläret så att jag kan anpassa ditt schema efter dessa.</li>
               <li> <b>Vad du gillar och inte gillar</b> kommer avgöra hur du kan hålla dig till schemat. Att konstant behöva äta något man inte tycker om, eller alltid behöva utesluta ens favoritmat är inte hållbart i längden. Därför kommer jag noggrant anpassa ditt schema utefter dina preferenser.</li>
             </ul>
           </div>
           <div className="communication">
             <h3>Kommunikation med mig <i className="fas fa-comments"></i> </h3>
             <p>
-              Till skillnad från online-coaching får du med endast personligt upplägg ingen möjlighet till direktkontakt med på Messenger. Däremot finns jag självklart tillgänglig på
-              Instagram DM eller mail för att svara på frågor angående ditt träningsprogram eller schema! Vänlig notera att kommunikation med online-coaching-klienter går i första
+              Till skillnad från online-coaching får du med endast personligt upplägg ingen möjlighet till direktkontakt med på Instagram DM. Däremot finns jag självklart tillgänglig på
+              DM emellanåt eller på mail för att svara på frågor angående ditt träningsprogram eller schema! Vänligen notera att kommunikation med online-coaching-klienter går i första
               hand och svar kan därför dröja lite längre.
+            </p>
+          </div>
+          <div className="facebook-group">
+            <h3>Privat facebook-grupp <i className="fab fa-facebook"></i><i className="fas fa-lock"></i> </h3>
+            <p>
+              Direkt efter ditt köp kommer du få inbjudan till en privat facebook-grupp, endast för klienter och kunder. Här kan du chatta med mig och alla andra
+              om vad som helst.
             </p>
           </div>
           <div className="sustainability">
             <h3>Alltid fokus på hållbarhet i längden! <i className="fas fa-check"></i> </h3>
             <p>
-              Oavsett vilket paket du väljer kommer fokus ligga på att du ska få hållbara resultat, något som håller i längden. Jag jobbar inte kortsiktigt.
+              Min prio #1 är alltid långsiktighet! Jag jobbar inte kortsiktigt.
               Kortsiktiga mål ger kortsiktiga resultat. Nästan alla som går "på en diet" lyckas gå ner i vikt. Men endast 5% lyckas hålla vikten nere. I princip alla ökar 
-              alltså i vikt direkt efter deras så kallade "diet". När du jobbar med mig hoppar du inte på någon diet! Det där är fullkommligt skitsnack. Vi kommer jobba med
+              alltså i vikt direkt efter deras så kallade "diet". När du jobbar med mig hoppar du inte på någon diet! Det där är fullkomligt skitsnack. Vi kommer jobba med
               att skapa hållbara rutiner och en livsstil som du kan ha med dig livet ut.
             </p>
           </div>
