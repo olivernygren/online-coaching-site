@@ -43,13 +43,13 @@ function Home() {
     window.scrollTo(0, 0)
   }, [])
 
-  // const program1 = products.findIndex((product) => product.id === 1001)
-  // const program1Name = products[program1].name
-  // const program1Price = products[program1].price
-  // const program1Link = products[program1].link
-  // const program1Desc = products[program1].desc
-  // const program1PaymentLink = products[program1].paymentLink
-  // const program1CoverImage = products[program1].coverImage
+  const program1 = products.findIndex((product) => product.id === 1001)
+  const program1Name = products[program1].name
+  const program1Price = products[program1].price
+  const program1Link = products[program1].link
+  const program1Desc = products[program1].desc
+  const program1PaymentLink = products[program1].paymentLink
+  const program1CoverImage = products[program1].coverImage
 
   // const program2 = products.findIndex((product) => product.id === 1002)
   // const program2Name = products[program2].name
@@ -240,7 +240,7 @@ function Home() {
 
       <div className="home-ebooks-and-programs">
         <h2>E-böcker och Program</h2>
-        {/* <div className="content">
+        <div className="content">
           <div className="text">
             <h3>{program1Name} <i className="fas fa-book"></i> </h3>
             <p>{program1Desc}</p>
@@ -254,7 +254,7 @@ function Home() {
             <img className="blob-img" src={Blob} alt="blob" />
             <img className="home-cover-img" src={program1CoverImage} alt="book" />
           </div>
-        </div> */}
+        </div>
 
 
         {/* Byt sedan tbx till class=content och byt plats på image och text */}
