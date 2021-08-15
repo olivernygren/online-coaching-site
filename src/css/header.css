@@ -1,5 +1,4 @@
 header {
-  /* background: transparent; */
   padding: 0 4rem 0 4rem;
   display: flex;
   align-items: center;
@@ -8,7 +7,7 @@ header {
   margin: 0 auto;
   position: fixed;
   z-index: 499;
-  top: 0;
+  top: 0rem;
   left: 0;
   right: 0;
   transition: .15s ease-in-out;
@@ -20,6 +19,20 @@ header .logo {
   top: 1rem;
   z-index: 100;
 }
+
+/* .temporary-msg {
+  background: white;
+  box-shadow: inset 10px -10px 0px white;
+  width: 100vw;
+  height: fit-content;
+  min-height: 2.5rem;
+  text-align: center;
+}
+
+.temporary-msg p {
+  background: white;
+  height: 100%;
+} */
 
 .desktop-nav {
   display: flex;

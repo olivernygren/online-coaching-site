@@ -192,8 +192,10 @@ function EBooksAndPrograms() {
       </div>
       <div className="programs-container">
         <h2>Färdiga Kost- och Träningsprogram <i className="fas fa-dumbbell"></i> </h2>
+        
         <div className="programs">
-          <div className="program program-1 disabled-product" onClick={redirectToProgram1}>
+
+          <div className="program program-1" onClick={redirectToProgram1}>
             <div className="program-header-btns">
               <i className="fas fa-eye" title="Läs mer"></i>
               <img src={LogoIcon} alt="Logo" />
@@ -203,7 +205,7 @@ function EBooksAndPrograms() {
             <img className="program-cover-img" src={program1CoverImage} alt="Program" />
             <h4>{program1Name}</h4>
             <h5>{program1Price} kr <i className="fas fa-tags"></i> </h5>
-            <button className="add-to-cart-btn">KOMMER SNART! <i className="fas fa-arrow-right"></i> </button>
+            <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 
           <div className="program program-2 disabled-product" onClick={redirectToProgram2}>

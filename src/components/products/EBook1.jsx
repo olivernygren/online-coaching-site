@@ -87,7 +87,7 @@ function EBook1() {
         <div className="related-products">
           <h2>Liknande produkter</h2>
           <div className="cards-flex">
-            <div className="related-product related-product-1 disabled-product" onClick={redirectToRelatedProduct1}>
+            <div className="related-product related-product-1" onClick={redirectToRelatedProduct1}>
               <div className="program program-1">
                 <div className="program-header-btns">
                   <i className="fas fa-eye" title="Läs mer"></i>

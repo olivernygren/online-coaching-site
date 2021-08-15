@@ -15,11 +15,11 @@ import personalProgramTrainingCover from '../images/covers/upplägg-träning.png
 export const products = [
   {
     name: 'Ultimata Nybörjarprogrammet',
-    price: 179,
+    price: 139,
     desc: 'Det ultimata träningsprogrammet för dig som är ny på gymmet eller har svårt att veta hur du ska komma igång! Du får ett genomtänkt träningsprogram baserat på vad de flesta nybörjare behöver. Du får även en introduktion till hur du ska träna, äta och återhämta dig för maximal tillväxt.',
     id: 1001,
     link: '/e-books-and-programs/ultimata-nyborjarprogrammet',
-    paymentLink: 'https://buy.stripe.com/3cs28N4Iec5peSA4gg',
+    paymentLink: 'https://buy.stripe.com/28o28N3Ea6L54dW3cm',
     coverImage: program1Cover
   },
   {
