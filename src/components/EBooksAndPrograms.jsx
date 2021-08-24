@@ -147,6 +147,19 @@ function EBooksAndPrograms() {
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 
+          <div className="book book-3" onClick={redirectToEBook3}>
+            <div className="book-header-btns">
+              <i className="fas fa-eye" title="Läs mer"></i>
+              <img src={LogoIcon} alt="Logo" />
+              <i className="fas fa-arrow-right" title="Läs mer"></i>
+            </div>
+            <div className="img-bg"></div>
+            <img className="e-book-white-bg" src={eBook3CoverImage} alt="E-bok" />
+            <h4>{eBook3Name}</h4>
+            <h5>{eBook3Price} kr <i className="fas fa-tags"></i> </h5>
+            <button className="add-to-cart-btn">LÄS MER <i className="fas fa-arrow-right"></i> </button>
+          </div>
+
           <div className="book book-6" onClick={redirectToEBook6}>
             <div className="book-header-btns">
               <i className="fas fa-eye" title="Läs mer"></i>
@@ -173,18 +186,6 @@ function EBooksAndPrograms() {
             <button className="add-to-cart-btn">KOMMER SNART! {/*<i className="fas fa-arrow-right"></i>*/} </button>
           </div>
 
-          <div className="book book-3 disabled-product" onClick={redirectToEBook3}>
-            <div className="book-header-btns">
-              <i className="fas fa-eye" title="Läs mer"></i>
-              <img src={LogoIcon} alt="Logo" />
-              <i className="fas fa-arrow-right" title="Läs mer"></i>
-            </div>
-            <div className="img-bg"></div>
-            <img className="e-book-white-bg" src={eBook3CoverImage} alt="E-bok" />
-            <h4>{eBook3Name}</h4>
-            <h5>{eBook3Price} kr <i className="fas fa-tags"></i> </h5>
-            <button className="add-to-cart-btn">KOMMER SNART! {/*<i className="fas fa-arrow-right"></i>*/} </button>
-          </div>
 
           <div className="book book-4 disabled-product" onClick={redirectToEBook4}>
             <div className="book-header-btns">

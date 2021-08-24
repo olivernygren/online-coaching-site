@@ -98,10 +98,10 @@ function EBookPack1() {
                 <img className="program-cover-img" src={relatedProduct1CoverImage} alt={relatedProduct1Name} />
                 <h4>{relatedProduct1Name}</h4>
                 <h5>{relatedProduct1Price} kr</h5>
-                <button className="add-to-cart-btn" onClick={redirectToRelatedProduct1}>KOMMER SNART! {/*<i className="fas fa-arrow-right"></i>*/} </button>
+                <button className="add-to-cart-btn" onClick={redirectToRelatedProduct1}>LÄS MER <i className="fas fa-arrow-right"></i> </button>
               </div>
             </div>
-            <div className="related-product related-product-2 disabled-product" onClick={redirectToRelatedProduct2}>
+            <div className="related-product related-product-2" onClick={redirectToRelatedProduct2}>
               <div className="program program-2">
                 <div className="program-header-btns">
                   <i className="fas fa-eye" title="Läs mer"></i>
@@ -112,7 +112,7 @@ function EBookPack1() {
                 <img className="program-cover-img" src={relatedProduct2CoverImage} alt={relatedProduct2Name} />
                 <h4>{relatedProduct2Name}</h4>
                 <h5>{relatedProduct2Price} kr</h5>
-                <button className="add-to-cart-btn" onClick={redirectToRelatedProduct2}>KOMMER SNART! {/*<i className="fas fa-arrow-right"></i>*/} </button>
+                <button className="add-to-cart-btn" onClick={redirectToRelatedProduct2}>LÄS MER <i className="fas fa-arrow-right"></i> </button>
               </div>
             </div>
           </div>

@@ -65,6 +65,14 @@ function Home() {
   const eBook1Desc = products[eBook1].desc
   const eBook1PaymentLink = products[eBook1].paymentLink
   const eBook1CoverImage = products[eBook1].coverImage
+  
+  const eBook2 = products.findIndex((product) => product.id === 2003)
+  const eBook2Name = products[eBook2].name
+  const eBook2Price = products[eBook2].price
+  const eBook2Link = products[eBook2].link
+  const eBook2Desc = products[eBook2].desc
+  const eBook2PaymentLink = products[eBook2].paymentLink
+  const eBook2CoverImage = products[eBook2].coverImage
 
   const personalProgramComplete = products.findIndex((product) => product.id === 3003)
   const personalProgramPrice = products[personalProgramComplete].price
@@ -245,6 +253,23 @@ function Home() {
 
       <div className="home-ebooks-and-programs">
         <h2>E-böcker och Program</h2>
+
+        <div className="content-reverse">
+          <div className="image">
+            <img className="blob-img" src={Blob} alt="blob" />
+            <img className="home-cover-img" src={eBook2CoverImage} alt="book" />
+          </div>
+          <div className="text">
+            <h3>{eBook2Name} <i className="fas fa-book"></i> </h3>
+            <p>{eBook2Desc}</p>
+            <span>{eBook2Price} kr <i className="fas fa-tags"></i> </span>
+            <div className="buttons">
+              <Link to={eBook2Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <a className="buy-now-link" href={eBook2PaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
+            </div>
+          </div>
+        </div>
+
         <div className="content">
           <div className="text">
             <h3>{program1Name} <i className="fas fa-book"></i> </h3>
@@ -300,14 +325,14 @@ function Home() {
         {/* <div className="content-reverse">
           <div className="image">
             <img className="blob-img" src={Blob2} alt="blob" />
-            <img className="home-cover-img" src={PlaceholderCover} alt="book" />
+            <img className="home-cover-img" src={eBook3Cover} alt="book" />
           </div>
           <div className="text">
-          <h3>{eBook2Name} <i className="fas fa-book"></i> </h3>
-            <p>{eBook2Desc}</p>
-            <span>{eBook2Price} kr <i className="fas fa-tags"></i> </span>
+          <h3>{eBook3Name} <i className="fas fa-book"></i> </h3>
+            <p>{eBook3Desc}</p>
+            <span>{eBook3Price} kr <i className="fas fa-tags"></i> </span>
             <div className="buttons">
-              <Link to={eBook2Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
+              <Link to={eBook3Link} className="home-oc-link">Läs mer <i className="fas fa-eye" title="Läs mer"></i> </Link>
               <a className="buy-now-link" href="https://buy.stripe.com/test_4gw8wQ8WT6sZ35KdQR" target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>
             </div>
           </div>
