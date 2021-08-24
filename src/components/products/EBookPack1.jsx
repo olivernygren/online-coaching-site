@@ -25,7 +25,7 @@ function EBookPack1() {
     document.title = 'ONfitness | ' + productName
   }, [productName])
 
-  const relatedProduct1ID = products.findIndex((product) => product.id === 1001);
+  const relatedProduct1ID = products.findIndex((product) => product.id === 2003);
   const relatedProduct1Name = products[relatedProduct1ID].name
   const relatedProduct1Price = products[relatedProduct1ID].price
   const relatedProduct1Link = products[relatedProduct1ID].link
@@ -63,19 +63,9 @@ function EBookPack1() {
             <p className="desc">{productDesc}</p>
             <h3 className="included-h3">Detta ingår:</h3>
             <ul>
-              <li> <b>+</b> 64 sidor fullproppade med information!</li>
-              <li> <b>+</b> Grunder och detaljer om kalorier och TDEE</li>
-              <li> <b>+</b> Guide för att räkna och hålla koll på ditt kaloriintag</li>
-              <li> <b>+</b> Komplett guide till mängder, hälsofördelar och bästa källor till protein, fett och kolhydrater</li>
-              <li> <b>+</b> Djupgående information kring rätt mängder, hälsofördelar och bästa källor till viktiga vitaminer och mineraler</li>
-              <li> <b>+</b> Mina topp-tips för att öka kaloriintag och aptit</li>
-              <li> <b>+</b> Detaljerad guide till hur du kan hålla koll på dina framsteg och om du behöver förändra ditt upplägg</li>
-              <li> <b>+</b> Bästa tempo och tidsramar för viktökning</li>
-              <li> <b>+</b> Info och rekommendationer kring kosttillskott, cardio och hydrering</li>
-              <li> <b>+</b> Detaljerad guide till hur du tänker kring och bygger ditt eget kostschema</li>
-              <li> <b>+</b> Flertalet utskriftsbara bilagor för att hjälpa dig hålla koll på dina framsteg</li>
-              <li> <b>+</b> Kan öppnas enkelt i mobilen eller datorn efter nedladdning.</li>
-              <li> <b>Och mer! I min åsikt en av marknandens mest prisvärda och lättförståeliga e-böcker inom ämnet</b></li>
+              <li> <b>+</b> Både "Komplett Kostguide för Bulk" och "Komplett Träningsguide för Muskler" ingår!</li>
+              <li> <b>+</b> Totalt 111 sidors läsning</li>
+              <li> <b>+</b> Läs mer om varje individuell e-bok på dess respektive produktsida</li>
             </ul>
             <p className="delivery-notice">Notera att leverans av program och e-böcker kan ta upp till 24h efter betalning!</p>
             <a className="buy-now-btn" href={productPaymentLink} target="blank">Köp nu <i className="fas fa-arrow-right"></i> </a>

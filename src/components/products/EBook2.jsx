@@ -14,7 +14,7 @@ function EBook2() {
   }, [])
 
   
-  const product = products.findIndex((product) => product.id === 2003);
+  const product = products.findIndex((product) => product.id === 2002);
   const productName = products[product].name
   const productPrice = products[product].price
   const productDesc = products[product].desc
@@ -64,7 +64,7 @@ function EBook2() {
             <h3 className="included-h3">Detta ingår:</h3>
             <ul>
               <li> <b>+</b> 64 sidor fullproppade med information!</li>
-              <li> <b>+</b> Grunder och detaljer om kalorier och TDEE</li>
+              <li> <b>+</b> Grunder för hur du tränar för muskelmassa</li>
               <li> <b>+</b> Guide för att räkna och hålla koll på ditt kaloriintag</li>
               <li> <b>+</b> Komplett guide till mängder, hälsofördelar och bästa källor till protein, fett och kolhydrater</li>
               <li> <b>+</b> Djupgående information kring rätt mängder, hälsofördelar och bästa källor till viktiga vitaminer och mineraler</li>

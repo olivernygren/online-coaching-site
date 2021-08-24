@@ -70,7 +70,7 @@ export const products = [
   {
     name: 'Komplett Träningsguide För Att Bygga Muskler (E-bok)',
     price: 299,
-    desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
+    desc: 'Lär dig bygga det bästa möjliga träningsprogrammet för DIG! I denna e-boken går jag igenom koncept som volym, intensitet, välja rätt övningar, vila, progressiv belastning, deloads och mycket mer!',
     id: 2003,
     link: '/e-books-and-programs/komplett-traningsguide-for-att-bygga-muskler_e-bok',
     paymentLink: 'https://buy.stripe.com/6oEfZD2A62uPbGo28o',
@@ -97,7 +97,7 @@ export const products = [
   {
     name: 'Muskelbyggarpaketet (Träning & Kostguide) (E-Böcker)',
     price: 499,
-    desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
+    desc: 'Innehåller "Komplett Kostguide för Bulk" och "Komplett Träningsguide för Muskler" för att ge dig absolut optimala förutsättningar att skapa dina egna kostscheman och träningsprogram!',
     id: 2006,
     link: '/e-books-and-programs/muskelbyggarpaketet_e-bocker',
     paymentLink: '',

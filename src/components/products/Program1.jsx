@@ -30,7 +30,7 @@ function Program1() {
   const relatedProduct1Link = products[relatedProduct1ID].link
   const relatedProduct1Cover = products[relatedProduct1ID].coverImage
   
-  const relatedProduct2ID = products.findIndex((product) => product.id === 1002)
+  const relatedProduct2ID = products.findIndex((product) => product.id === 2003)
   const relatedProduct2Name = products[relatedProduct2ID].name
   const relatedProduct2Price = products[relatedProduct2ID].price
   const relatedProduct2Link = products[relatedProduct2ID].link
@@ -96,7 +96,7 @@ function Program1() {
                 <button className="add-to-cart-btn" onClick={redirectToRelatedProduct1}>Läs mer <i className="fas fa-arrow-right"></i> </button>
               </div>
             </div>
-            <div className="related-product related-product-2 disabled-product" onClick={redirectToRelatedProduct2}>
+            <div className="related-product related-product-2" onClick={redirectToRelatedProduct2}>
               <div className="program program-2">
                 <div className="program-header-btns">
                   <i className="fas fa-eye" title="Läs mer"></i>
@@ -107,7 +107,7 @@ function Program1() {
                 <img className="program-cover-img" src={relatedProduct2Cover} alt="Program" />
                 <h4>{relatedProduct2Name}</h4>
                 <h5>{relatedProduct2Price} kr</h5>
-                <button className="add-to-cart-btn" onClick={redirectToRelatedProduct2}>KOMMER SNART <i className="fas fa-arrow-right"></i> </button>
+                <button className="add-to-cart-btn" onClick={redirectToRelatedProduct2}>LÄS MER <i className="fas fa-arrow-right"></i> </button>
               </div>
             </div>
           </div>
