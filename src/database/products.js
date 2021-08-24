@@ -11,11 +11,14 @@ import personalProgramCompleteCover from '../images/covers/upplägg-komplett.png
 import personalProgramDietCover from '../images/covers/upplägg-kost.png' //fel
 import personalProgramTrainingCover from '../images/covers/upplägg-träning.png' //fel
 
+import onlineCoachingCover from '../images/covers/online-coaching.png'
+
+
 
 export const products = [
   {
     name: 'Ultimata Nybörjarprogrammet',
-    price: 139,
+    price: 99,
     desc: 'Det ultimata träningsprogrammet för dig som är ny på gymmet eller har svårt att veta hur du ska komma igång! Du får ett genomtänkt träningsprogram baserat på vad de flesta nybörjare behöver. Du får även en introduktion till hur du ska träna, äta och återhämta dig för maximal tillväxt.',
     id: 1001,
     link: '/e-books-and-programs/ultimata-nyborjarprogrammet',
@@ -24,7 +27,7 @@ export const products = [
   },
   {
     name: 'Bodybuilding 101',
-    price: 139,
+    price: 129,
     desc: 'Detta är programmet för dig som vill ta din träning till en helt ny nivå. Bodybuilding 101 är det första programmet i serien som grundar sig i de träningsprinciper som bodybuilders världen över använder för att bygga muskelmassa.',
     id: 1002,
     link: '/e-books-and-programs/bodybuilding-101',
@@ -47,7 +50,7 @@ export const products = [
   },
   {
     name: 'Komplett Kostguide för Bulk (E-bok)',
-    price: 479,
+    price: 349,
     desc: 'Den KOMPLETTA guiden för dig som vill bygga muskelmassa. Vi tar en djupdykning i ALLT som angår kost och tillskott för att maximera dina resultat.',
     id: 2001,
     link: '/e-books-and-programs/komplett-kostguide-for-bulk_e-bok',
@@ -56,7 +59,7 @@ export const products = [
   },
   {
     name: 'Komplett Kostguide för Deff (E-bok)',
-    price: 479,
+    price: 349,
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2002,
     link: '/e-books-and-programs/komplett-kostguide-for-deff_e-bok',
@@ -65,7 +68,7 @@ export const products = [
   },
   {
     name: 'Komplett Träningsguide För Att Bygga Muskler (E-bok)',
-    price: 399,
+    price: 299,
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2003,
     link: '/e-books-and-programs/komplett-traningsguide-for-att-bygga-muskler_e-bok',
@@ -74,7 +77,7 @@ export const products = [
   },
   {
     name: 'Komplett Kostguide För Bättre Hälsa (E-Bok)',
-    price: 299,
+    price: 249,
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2004,
     link: '/e-books-and-programs/komplett-kostguide-for-battre-halsa_e-bok',
@@ -83,7 +86,7 @@ export const products = [
   },
   {
     name: 'En Nybörjares Guide Till Kost & Träning (E-Bok)',
-    price: 399,
+    price: 249,
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2005,
     link: '/e-books-and-programs/en-nyborjares-guide-till-kost-och-traning',
@@ -92,23 +95,32 @@ export const products = [
   },
   {
     name: 'Kostschema, 8 veckor',
-    price: 799,
+    price: 599,
     id: 3001,
     paymentLink: 'https://buy.stripe.com/28o5kZgqW8Td6m4aEL',
     coverImage: personalProgramDietCover
   },
   {
     name: 'Träningsprogram, 8 veckor',
-    price: 549,
+    price: 399,
     id: 3002,
     paymentLink: 'https://buy.stripe.com/aEUaFjeiO6L5cKs28h',
     coverImage: personalProgramTrainingCover
   },
   {
     name: 'Komplett Kost- & Träningsupplägg, 10 veckor',
-    price: "1 099",
+    price: 749,
+    defaultPrice: 1249,
+    pricePerDay: 749 / 70,
     id: 3003,
     paymentLink: 'https://buy.stripe.com/dR6eVzgqWc5ph0I008',
     coverImage: personalProgramCompleteCover
+  },
+  {
+    name: 'Online Coaching',
+    price: 849,
+    pricePerDay: 849 / 30,
+    id: 4001,
+    coverImage: onlineCoachingCover
   }
 ]

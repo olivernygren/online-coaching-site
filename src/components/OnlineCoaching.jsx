@@ -5,7 +5,7 @@ import LogoIcon from '../images/ONfitness-icon.svg'
 // import PlaceholderCover from '../images/covers/placeholder.png'
 import { Link } from 'react-router-dom'
 import Form from './Form'
-import onlineCoachingCover from '../images/covers/online-coaching.png'
+import { products } from '../database/products'
 
 
 function OnlineCoaching() {
@@ -34,6 +34,11 @@ function OnlineCoaching() {
     window.scrollTo(0, 0)
   }, [])
 
+  const onlineCoaching = products.findIndex((product) => product.id === 4001)
+  const price = products[onlineCoaching].price
+  const pricePerDay = products[onlineCoaching].pricePerDay
+  const cover = products[onlineCoaching].coverImage
+
   return (
     <>
       <h2 className="oc-main-h2">Online Coaching</h2>
@@ -46,9 +51,9 @@ function OnlineCoaching() {
               <a className="oc-card-small-link" href="#get-started-form" title="Kom igång"><i className="fas fa-arrow-down"/></a>
               {/* <i href="#get-started-form" className="fas fa-arrow-down" title="Kom igång"></i> */}
             </div>
-            <img className="home-online-coaching-cover-img" src={onlineCoachingCover} alt="Kost- och Träningsprogram" />
+            <img className="home-online-coaching-cover-img" src={cover} alt="Kost- och Träningsprogram" />
             <h4>Komplett Kost- och Träningsupplägg + Coaching</h4>
-            <h5>999 kr / mån <small className="day-price">33,3 kr / dag</small> </h5>
+            <h5>{price} kr / mån <small className="day-price">{pricePerDay} kr / dag</small> </h5>
             <a href="#get-started-form" className="get-started-btn-2">Kom igång <i className="fas fa-arrow-down"></i> </a>
           </div>
 

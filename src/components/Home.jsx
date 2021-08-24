@@ -12,7 +12,6 @@ import Me from '../images/me-cropped-with-icon.png'
 import MeAlt from '../images/me-cropped-2.jpg'
 import Logo from '../images/ONfitness-light.svg'
 import { useHistory } from 'react-router'
-import onlineCoachingCover from '../images/covers/online-coaching.png'
 
 
 function Home() {
@@ -69,7 +68,13 @@ function Home() {
 
   const personalProgramComplete = products.findIndex((product) => product.id === 3003)
   const personalProgramPrice = products[personalProgramComplete].price
+  const personalProgramPricePerDay = products[personalProgramComplete].pricePerDay
   const personalProgramCompleteCover = products[personalProgramComplete].coverImage
+
+  const onlineCoaching = products.findIndex((product) => product.id === 4001)
+  const onlineCoachingPrice = products[onlineCoaching].price
+  const onlineCoachingPricePerDay = products[onlineCoaching].pricePerDay
+  const onlineCoachingCover = products[onlineCoaching].coverImage
 
   const redirectToPersonalPrograms = (e) => {
     e.preventDefault()
@@ -152,7 +157,7 @@ function Home() {
             </div>
             <img className="home-online-coaching-cover-img" src={onlineCoachingCover} alt="Kost- och Träningsprogram" />
             <h4>Komplett Kost- och Träningsupplägg + Coaching</h4>
-            <h5>999 kr / mån <small className="day-price">33,3 kr / dag</small> </h5>
+            <h5>{onlineCoachingPrice} kr / mån <small className="day-price">{onlineCoachingPricePerDay} kr / dag</small> </h5>
             <button className="get-started-btn" onClick={redirectToOnlineCoaching}>Kom igång <i className="fas fa-arrow-right"></i> </button>
           </div>
 
@@ -201,7 +206,7 @@ function Home() {
             </div>
             <img className="home-online-coaching-cover-img" src={personalProgramCompleteCover} alt="Kost- och Träningsprogram" />
             <h4>10 veckors Komplett Kost- och Träningsupplägg</h4>
-            <h5>{personalProgramPrice} kr <small className="line-through">1 685 kr</small> </h5>
+            <h5>{personalProgramPrice} kr <small className="line-through">1 249 kr</small> </h5>
             <button className="get-started-btn" onClick={redirectToPersonalPrograms}>Kom igång <i className="fas fa-arrow-right"></i> </button>
           </div>
 
@@ -214,7 +219,7 @@ function Home() {
               <li> <b>+</b> Personligt anpassat träningsprogram inkl. övningar, sets, reps, vila och noteringar kring utförande.</li>
               <li> <b>+</b> Både kost- och träningsupplägg kan enkelt öppnas i mobilen eller datorn.</li>
               <li> <b>+</b> Tillgång till en privat facebook-grupp med alla andra klienter.</li>
-              <li> <b>+</b> Allt detta för endast 15,7 kr/dag!</li>
+              <li> <b>+</b> Allt detta för endast {personalProgramPricePerDay} kr/dag!</li>
               {/* <li className="minus-top"> <b>-</b> <span className="line-through"></span> </li> */}
               <li> <b>-</b> <span className="line-through">Direktkontakt med mig via Instagram DM för motivation, frågor eller ändringar av upplägget.</span> </li>
               <li> <b>-</b> <span className="line-through">(Valfritt) kortare online-möte med mig innan skapandet av programmet.</span> </li>

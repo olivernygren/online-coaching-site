@@ -241,6 +241,12 @@ form .disabled-submit-btn:hover {
 
 
 
+@media (max-width: 1360px) {
+  .hero .content {
+    padding-top: 11rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero .content {
     flex-direction: column;
