@@ -70,6 +70,12 @@ function EBooksAndPrograms() {
   const eBook5Link = products[eBook5].link
   const eBook5CoverImage = products[eBook5].coverImage
 
+  const eBookPack1 = products.findIndex((product) => product.id === 2006)
+  const eBookPack1Name = products[eBookPack1].name
+  const eBookPack1Price = products[eBookPack1].price
+  const eBookPack1Link = products[eBookPack1].link
+  const eBookPack1CoverImage = products[eBookPack1].coverImage
+
   const redirectToEBook1 = (e) => {
     e.preventDefault()
     history.push(eBook1Link)
@@ -93,6 +99,11 @@ function EBooksAndPrograms() {
   const redirectToEBook5 = (e) => {
     e.preventDefault()
     history.push(eBook5Link)
+  }
+  
+  const redirectToEBook6 = (e) => {
+    e.preventDefault()
+    history.push(eBookPack1Link)
   }
 
   const redirectToProgram1 = (e) => {
@@ -133,6 +144,19 @@ function EBooksAndPrograms() {
             <img className="e-book-white-bg" src={eBook1CoverImage} alt={eBook1Name} />
             <h4>{eBook1Name}</h4>
             <h5>{eBook1Price} kr <i className="fas fa-tags"></i> </h5>
+            <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
+          </div>
+
+          <div className="book book-6" onClick={redirectToEBook6}>
+            <div className="book-header-btns">
+              <i className="fas fa-eye" title="Läs mer"></i>
+              <img src={LogoIcon} alt="Logo" />
+              <i className="fas fa-arrow-right" title="Läs mer"></i>
+            </div>
+            <div className="img-bg"></div>
+            <img className="e-book-cover-img" src={eBookPack1CoverImage} alt="E-bok" />
+            <h4>{eBookPack1Name}</h4>
+            <h5>{eBookPack1Price} kr <i className="fas fa-tags"></i> </h5>
             <button className="add-to-cart-btn">Läs mer <i className="fas fa-arrow-right"></i> </button>
           </div>
 

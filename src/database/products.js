@@ -6,6 +6,7 @@ import eBook2Cover from '../images/covers/kostguide-deff-orange.png'
 import eBook3Cover from '../images/covers/träningsguide-blank.png' //fel
 import eBook4Cover from '../images/covers/hälsoguide.png'
 import eBook5Cover from '../images/covers/nybörjares-guide-till-kost-och-träning.png'
+import eBook6Cover from '../images/covers/paket-bulk-träning.png'
 
 import personalProgramCompleteCover from '../images/covers/upplägg-komplett.png' //fel
 import personalProgramDietCover from '../images/covers/upplägg-kost.png' //fel
@@ -22,12 +23,12 @@ export const products = [
     desc: 'Det ultimata träningsprogrammet för dig som är ny på gymmet eller har svårt att veta hur du ska komma igång! Du får ett genomtänkt träningsprogram baserat på vad de flesta nybörjare behöver. Du får även en introduktion till hur du ska träna, äta och återhämta dig för maximal tillväxt.',
     id: 1001,
     link: '/e-books-and-programs/ultimata-nyborjarprogrammet',
-    paymentLink: 'https://buy.stripe.com/28o28N3Ea6L54dW3cm',
+    paymentLink: 'https://buy.stripe.com/00g8xb2A6d9t4dW5kw',
     coverImage: program1Cover
   },
   {
     name: 'Bodybuilding 101',
-    price: 129,
+    price: 139,
     desc: 'Detta är programmet för dig som vill ta din träning till en helt ny nivå. Bodybuilding 101 är det första programmet i serien som grundar sig i de träningsprinciper som bodybuilders världen över använder för att bygga muskelmassa.',
     id: 1002,
     link: '/e-books-and-programs/bodybuilding-101',
@@ -54,7 +55,7 @@ export const products = [
     desc: 'Den KOMPLETTA guiden för dig som vill bygga muskelmassa. Vi tar en djupdykning i ALLT som angår kost och tillskott för att maximera dina resultat.',
     id: 2001,
     link: '/e-books-and-programs/komplett-kostguide-for-bulk_e-bok',
-    paymentLink: 'https://buy.stripe.com/dR6eVzgqWd9t5i07sy',
+    paymentLink: 'https://buy.stripe.com/28o00FeiO6L5eSA9AL',
     coverImage: eBook1Cover
   },
   {
@@ -72,7 +73,7 @@ export const products = [
     desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
     id: 2003,
     link: '/e-books-and-programs/komplett-traningsguide-for-att-bygga-muskler_e-bok',
-    paymentLink: '',
+    paymentLink: 'https://buy.stripe.com/6oEfZD2A62uPbGo28o',
     coverImage: eBook3Cover
   },
   {
@@ -94,17 +95,26 @@ export const products = [
     coverImage: eBook5Cover
   },
   {
+    name: 'Muskelbyggarpaketet (Träning & Kostguide) (E-Böcker)',
+    price: 499,
+    desc: 'Denna e-boken har en beskrivning som visas här. Jag tycker du ska köpa denna e-boken då den är väldigt bra och kommer ge dig bra reusltat',
+    id: 2006,
+    link: '/e-books-and-programs/muskelbyggarpaketet_e-bocker',
+    paymentLink: '',
+    coverImage: eBook6Cover
+  },
+  {
     name: 'Kostschema, 8 veckor',
     price: 599,
     id: 3001,
-    paymentLink: 'https://buy.stripe.com/28o5kZgqW8Td6m4aEL',
+    paymentLink: 'https://buy.stripe.com/00g8xb2A66L5aCkaET',
     coverImage: personalProgramDietCover
   },
   {
     name: 'Träningsprogram, 8 veckor',
     price: 399,
     id: 3002,
-    paymentLink: 'https://buy.stripe.com/aEUaFjeiO6L5cKs28h',
+    paymentLink: 'https://buy.stripe.com/aEUcNr5Mi9XhbGobIW',
     coverImage: personalProgramTrainingCover
   },
   {
@@ -113,7 +123,7 @@ export const products = [
     defaultPrice: 1249,
     pricePerDay: 749 / 70,
     id: 3003,
-    paymentLink: 'https://buy.stripe.com/dR6eVzgqWc5ph0I008',
+    paymentLink: 'https://buy.stripe.com/9AQaFjcaGglFcKsbIV',
     coverImage: personalProgramCompleteCover
   },
   {

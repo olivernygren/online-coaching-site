@@ -25,8 +25,38 @@ import EBook3 from './products/EBook3'
 import EBook4 from './products/EBook4'
 import Success from './Success'
 import { products } from '../database/products'
+import EBookPack1 from './products/EBookPack1'
 
 function Layout() {
+
+  const program1 = products.findIndex((product) => product.id === 1001)
+  const program1Link = products[program1].link
+  
+  const program2 = products.findIndex((product) => product.id === 1002)
+  const program2Link = products[program2].link
+  
+  const program3 = products.findIndex((product) => product.id === 1003)
+  const program3Link = products[program3].link
+  
+  const program4 = products.findIndex((product) => product.id === 1004)
+  const program4Link = products[program4].link
+
+  const eBook1 = products.findIndex((product) => product.id === 2001)
+  const eBook1Link = products[eBook1].link
+  
+  const eBook2 = products.findIndex((product) => product.id === 2002)
+  const eBook2Link = products[eBook2].link
+  
+  const eBook3 = products.findIndex((product) => product.id === 2003)
+  const eBook3Link = products[eBook3].link
+  
+  const eBook4 = products.findIndex((product) => product.id === 2004)
+  const eBook4Link = products[eBook4].link
+  
+  const eBookPack1 = products.findIndex((product) => product.id === 2006)
+  const eBookPack1Link = products[eBookPack1].link
+
+
   return (
     <>
       <Router>
@@ -35,14 +65,15 @@ function Layout() {
             <Route exact path='/' component={Home} />
             {/* <Route path='/login' component={Login} />
             <Route path='/register' component={Register} /> */}
-            <Route exact path={products[0].link} component={Program1} />
-            <Route exact path={products[1].link} component={Program2} />
-            <Route exact path={products[2].link} component={Program3} />
-            <Route exact path={products[3].link} component={Program4} />
-            <Route exact path={products[4].link} component={EBook1} />
-            <Route exact path={products[5].link} component={EBook2} />
-            <Route exact path={products[6].link} component={EBook3} />
-            <Route exact path={products[7].link} component={EBook4} />
+            <Route exact path={program1Link} component={Program1} />
+            <Route exact path={program2Link} component={Program2} />
+            <Route exact path={program3Link} component={Program3} />
+            <Route exact path={program4Link} component={Program4} />
+            <Route exact path={eBook1Link} component={EBook1} />
+            <Route exact path={eBook2Link} component={EBook2} />
+            <Route exact path={eBook3Link} component={EBook3} />
+            <Route exact path={eBook4Link} component={EBook4} />
+            <Route exact path={eBookPack1Link} component={EBookPack1} />
             <Route path='/e-books-and-programs' component={EBooksAndPrograms} />
             <Route path='/online-coaching' component={OnlineCoaching} />
             <Route path='/personal-programs' component={PersonalPrograms} />
