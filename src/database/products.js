@@ -100,7 +100,7 @@ export const products = [
     desc: 'Innehåller "Komplett Kostguide för Bulk" och "Komplett Träningsguide för Muskler" för att ge dig absolut optimala förutsättningar att skapa dina egna kostscheman och träningsprogram!',
     id: 2006,
     link: '/e-books-and-programs/muskelbyggarpaketet_e-bocker',
-    paymentLink: '',
+    paymentLink: 'https://buy.stripe.com/8wMfZDcaGedxcKsdR7',
     coverImage: eBook6Cover
   },
   {
